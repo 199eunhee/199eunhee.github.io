@@ -1,0 +1,381 @@
+@charset "utf-8";
+
+body,
+    html {
+            clear: both;
+            position: relative;
+        }
+
+.collap {
+            position: fixed;
+            top: -110%;
+            right: 0;
+            z-index: 55;
+            background-color: #004c97;
+                width: 100vw;
+            height: 100vh;
+            padding-top: 70px;
+             box-sizing: border-box;
+            transition: 0.7s;
+     overflow-y: auto;
+        }
+
+.collap .logo{
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+        .collap.on {top: 0;}
+
+     
+.main_menu{
+    width: 100%;
+    
+}
+        
+.main_menu >li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-bottom: 20px;
+    height: 450px;
+    
+}
+.main_menu >li >a{
+    display: block;
+    width: 100%;
+    color: #fff;
+        line-height: 3.5;
+ font-size: 1.8rem;
+ font-weight: bold;
+}
+       
+        .collap li ul.dep2{
+            opacity: 1;
+            width: 100%;
+            height: auto;
+             background: transparent;
+            position: static;
+    
+            /*display: none;*/
+            
+        }
+
+        .collap li ul.dep2 li{
+            clear: both;
+            line-height: 2;
+        }
+        
+        .collap li ul.dep2 li a{
+            display: block;
+            color: rgba(255, 255, 255,0.6);
+            font-size: 1.2rem;
+            text-align: center;
+            line-height: 2;
+        }
+.collap li ul.dep2 li a:hover{
+     color: rgba(255, 255, 255,1);
+    text-decoration: underline;
+    
+}
+
+/*헤더*/
+
+  /*헤더영역*/
+        .hd{
+            clear: both;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 50;
+            width: 100%;
+            height: 90px;
+            background-color: transparent;
+            transition: 0.5s;
+        }
+
+
+        
+      
+        .hd.off{
+            top: -120px;
+        }
+        
+        .hd .logo{
+            display: block; 
+            width: 200px;
+            height: auto;
+            float: left;
+            margin-left: 2em;
+            margin-top: 3em;
+        }
+        .hd .logo img{
+            display: block;
+            width: 100%;
+        }
+  .gnb{
+         width: 75%;
+         position: absolute;
+         top: 40px;
+         left:15%;
+         z-index: 50;
+   
+      }
+      .gnb li{
+         width: 12.5%;
+         float: left;
+         text-align: center;
+          display: block;
+         height: auto;
+         line-height: 40px;
+         background: transparent;
+          
+    
+      }
+      .gnb li a.dep3{
+         display: block;
+         color: #fff;
+          font-size: 18px;
+          
+      }
+      
+.gnb li a.dep3:hover{
+    border-bottom:  3px solid #0b4177;
+}
+     
+      
+      .gnb li:hover a.dep3{
+         background: transparent;
+         color: #fff;
+      }
+     .gnb ul.sub{
+         clear: both;
+         width: 100%;
+         height: 405px;
+         opacity: 1;
+       /*  visibility: visible;*/
+         transition: 0.5s;
+         display:none; 
+      }
+      .gnb ul.sub li{
+         width: 100%;
+         clear: both;
+          line-height: 2.5em;
+         text-align: center;
+          
+          transition: 0.5s;
+      }
+.gnb ul.sub:hover{
+    background: rgba(51, 51, 51,1);
+}
+.gnb ul.sub:hover li{
+    background: rgba(51, 51, 51,1);
+}
+      .gnb .sub li:hover a{
+         background: #0b4177;
+         color: #fff;
+          font-weight: bold;
+      }
+      .gnb .sub li a{
+         display: block;
+          color: #fff;
+          font-size: 15px;
+          text-align: left;
+          text-indent: 5px;
+          padding: 5px;
+          
+      }
+      
+      /* 앞뒤에 가상공간을 만들어주는 것 */
+      
+      .gnb li:first-child .sub:before{
+         content: "";
+         display: block;
+         width: 300px;
+         height: 495px;
+         background-color: rgba(0, 0, 0,0.8);
+         position: absolute;
+         top: 63px;
+         left: -300px; /* 내 넓이 만큼 */
+      
+      }
+      .gnb li:last-child .sub:after{
+         content: "";
+         display: block;
+         width: 400px;
+         height: 495px;
+         background: rgba(0, 0, 0,0.8);
+         position: absolute;
+         top: 63px;
+         right: -220px;
+      }
+      
+      
+      .gnb:hover .sub{
+         height: 495px;
+           background: rgba(0, 0, 0,0.8);
+         display: block;
+          transition: 0.5s;
+         
+      }
+
+  .lang{display: block; position: absolute; top: 3.5em; right: 13%; width: 130px; height: 42px; border: 2px solid #fff; z-index: 50; line-height: 3;} 
+
+        .lang.on{height: 159px; transition: 0.5s;}
+        .this_lang{display: block; width: 130px; color: #fff; padding: 0.5em; line-height: 2.4;
+         cursor: pointer; background-image: url(image/lang_icon.png); background-position: 1em center; background-repeat: no-repeat;}
+        .this_lang:after{
+            content: "▼";
+           position: absolute;
+            right: 1em;
+        }
+        
+        .this_lang.on:after{
+            content: "▲";
+        }
+
+.lang_list{display: block; height: 0; overflow: hidden; transition: 0.6s;}
+        .lang_list.on{height: 96px;}
+        .lang_list li{clear: both; line-height: 32px;text-indent: 0.8rem;}
+        .lang_list a{display: block; color: #fff; width: 130px;}
+
+
+.lst_btn{
+            position: absolute; right: 5%; top: 3.5em; width: 48px; height: 48px; background: #3639ba; border-radius: 30px; cursor: pointer;
+            z-index: 99; box-sizing: border-box;
+        }
+
+    .lst_btn .line{display: block; background-color: white;height: 2px;position: absolute; right: 10px; transition: 0.4s;z-index: 99;transform: rotate(0deg);}
+        .lst_btn .item1{width: 25px;top: 1.1em;}
+        .lst_btn .item2{width: 25px;top: 1.5em;}
+.lst_btn .item3{width: 25px;top: 2.0em;}
+        .lst_btn:hover .item1{width: 30px;}
+        .lst_btn:hover .item2{width: 30px;}
+.lst_btn:hover .item3{width: 30px;}
+        
+        .lst_btn.on .item1{width: 30px; transform: rotate(45deg);top: 23px;}
+.lst_btn.on .item2{display: none;}
+        .lst_btn.on .item3{width: 30px; transform: rotate(-45deg);top: 23px;}
+
+      
+/*푸터영역*/
+
+#ft{
+  width: 100vw;
+    height: auto;
+    clear: both;
+    position: relative;
+}
+
+.ft_tit{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.ft_logo{display: block; position: absolute; top: 25%; left: 20%; }
+
+.ft_tit p{
+    display: block; color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    position: absolute;
+    top: 25%; left: 33%;
+}
+
+.fnb{
+    clear: both; 
+    position: relative;
+    width: 100%;
+    height:180px;
+    padding-top: 30px;
+    background-color: #232b36;
+}
+
+.fnb ul{
+    width: 60%;
+    margin: 0 auto;
+  padding-top: 20px;
+}
+
+.fnb ul li{
+    float: left;
+    display: block;
+    padding-left: 20px;
+    cursor: pointer;
+    
+}
+
+.fnb ul li a{
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.fnb ul li a.item1{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.fnb .add {
+    display: block; 
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 30px;
+    color: rgba(255,255,255,0.7);
+    padding-left: 30px;
+    font-size: 16px;  
+    line-height: 1.2;
+}
+
+.fnb .copy{
+       display: block; 
+    width: 100%;
+   padding-top: 10px;
+    color: rgba(255,255,255,0.7);
+    padding-left: 30px;
+    font-size: 16px;  
+    line-height: 1.2;
+     width: 60%;
+    margin: 0 auto;
+}
+
+#selBox{
+    display: block;
+    width: 150px;
+    height: 30px;
+     position: absolute;
+    top: 20%;
+    right: 20%;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+#selBox option{
+    color: #333;
+    font-size: 14px;
+   }
+
+.ft_img{
+    clear: both;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ft_img li{
+    display: block;
+    float: left;
+    position: absolute;
+}
+
+.ft_img li.img1{
+    right: 10%;
+}    
