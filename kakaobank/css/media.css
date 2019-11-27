@@ -1,0 +1,356 @@
+/*모바일*/
+
+@media screen and (max-width:767px){ 
+    #page1{width: 100%; height: auto;}
+    video { display: inline-block; width: auto\9 !important; /* ie8 */ width: auto !important; max-width: 100%; height: auto !important; }
+    .vid { position: relative; height: 0; padding-top: 30px; padding-bottom: 56.25%; overflow: hidden; } .vid object,.vid embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    
+    
+    
+    .btnBox1{
+    display: none;
+}
+    
+    
+    /*페이지2*/
+    #page2{
+         height: auto;
+           background-image: url(../img/bg2_m.jpg);
+      background-size: 100% cover;
+        background-position: center center;
+        
+    }
+    #page2 h3{
+    
+    font-size: 20px;
+   
+    line-height: 30px;
+        font-weight: 600;
+    top: 50%;
+left:60%; 
+}
+
+#page2 .pageCom{
+    display: none;
+}
+    .btn3{
+   
+    top: 80%;
+    left: 45%;
+    border: 1px solid #eee;
+        border-radius: 15px;
+    width: 290px;
+    height: 70px;
+    background-color: #f1d31b; 
+    line-height: 70px;
+    
+    font-size: 16px;
+   
+}
+
+.btn3 .bull1{
+    
+    top: 20px;
+   
+}
+    /*페이지3*/
+    #page3{
+        
+    }
+    #page3 h3{
+    font-size: 25px;
+   width: 60%;
+    line-height: 30px;
+       left: 23%;
+        top: 15%;
+}
+
+#page3 .pageCom{
+    width: 100%;
+    font-size: 12px;
+  position: absolute; 
+   left: 5%;
+    top:26%;
+}
+    .ico1{
+    width: 400px;
+}
+
+
+.ico2{
+       position: absolute;
+    bottom: 10%;
+   left: 67%;
+}
+.ico3{
+ display: none;
+}
+    .btn4_frame li{
+    background-color: transparent;
+    width: 150px; height: 60px;
+
+    float: left;
+    position: absolute;
+    top:38%;
+  
+    
+}
+
+.btn4_frame li.btn4_1{
+      right: 49%;
+}
+.btn4_frame li button{
+    font-size: 18px;
+     line-height: 60px;
+    text-indent: 25px;   
+ 
+     
+}
+.btn4_frame li.btn4_2{
+    right: 17%;
+}
+
+.btn4 .bull1{
+   
+    top: 28%;
+    right: 20px;
+    animation-name: b3;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+} 
+    @keyframes b3{
+        0%{right: 18px;}
+        100%{right: 22px;}
+    }
+
+    
+
+
+/*페이지4*/
+.ico4{
+    /*width: 400px;
+    top: 50%;
+    left: 25%;*/
+}
+
+.txt_img1{
+    /*width: 200px;
+    height: 250px;
+    top: 45%;
+    left: 10%;*/
+}
+
+.txt_img2{
+   /*display: none;*/
+}
+
+}/*여기가 끝*/
+/*고해상도 데스크탑*/
+@media screen and (min-width: 1281px) and (max-width : 1919px){
+    
+    
+    #page1{width: 100%; height: auto;}
+    video { display: inline-block; width: auto\9 !important; /* ie8 */ width: auto !important; max-width: 100%; height: auto !important; }
+    .vid { position: relative; height: 0; padding-top: 30px; padding-bottom: 56.25%; overflow: hidden; } .vid object,.vid embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+#page2 h3{
+   width:25%;
+    font-size: 28px;
+    line-height:40px;
+    left: 6%;
+}
+.pageCom{
+
+    font-size: 16px;
+    line-height: 28px;
+    color: #222;
+}
+    
+    #page2 .pageCom{
+     position: absolute; 
+    right: 8%;
+    top: 50%;
+}
+
+.btn3{
+    width: 260px; 
+    font-size: 18px;
+    left: 5%;
+}
+    
+    .btn3 .bull1{
+    
+    right: 10px;
+    top: 30px;
+    width: 10px;
+    height: 15px;
+    animation-name: b2_1;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+    
+    
+    @keyframes b2_1{
+    0%{right:8px;}
+    100%{right:12px;}
+}
+    
+    /*페이지3*/
+    
+    #page3{
+        width: 100%;
+        height: auto;
+    }
+    #page3 h3{
+    top: 23%;
+        right: 17%;
+}
+    
+    #page3 .pageCom{
+     position: absolute; 
+    right: 5%;
+    top:40%;
+}
+    .ico1{
+    left: 5%;
+    width: 550px;
+}
+    
+    .ico3{
+   top:70%;
+    right: 15%;
+    width: 400px;
+    height: 180px;
+}
+    .btn4_frame li button{
+     text-indent:50px;
+}
+    .btn4_frame li{
+    width: 220px;
+    top:52%;
+}
+    
+    .btn4_frame li.btn4_2{
+    right: 15%;
+}
+    /*페이지4*/
+    
+    #page4{ width: 100%; height: 65%;
+  }    
+    
+    .ico4{
+    display: block;
+    position: absolute;
+    top: 6%;
+    left: 23%;
+    width: 650px;
+}
+    .txt_img1{
+    top: 43%;
+    right: 15%;
+    width: 230px;
+    height: 310px;}
+    
+    .txt_img2{ position: absolute;
+    bottom:10%;
+    right: 25%;}
+    
+    #page4 .btn5{
+    top: 34%;
+}
+    
+    /*페이지5*/
+    #page5{
+     width: 100%; height: 65%;
+         background-size: 100% auto;
+}
+    
+#page5 h3{
+    font-size: 35px;
+    line-height: 40px;
+    width: 40%;
+    top: 22%;
+}
+
+   .niniz{
+    width: 200px;
+    top: 48%; 
+} 
+    
+#page5 .btn6{
+     
+    top: 65%;
+    right: 23%;
+}
+    
+    /*페이지6*/
+    #page6{
+        width: 100%; height: 65%;
+         background-size: 100% auto;
+        
+    }
+    
+    #page6 .ico5{
+    position: absolute;
+  
+    width: 650px;
+}
+    
+    #page6 h3{
+        font-size: 35px;
+    line-height: 40px;
+       left: 20%; 
+         top: 23%;
+    }
+    #page6 .pageCom{
+        left: 20%;  
+    }
+    #page6 .btn7{
+        left: 20%;  
+    }
+    
+    
+    /*페이지7*/
+    
+    /*페이지8*/
+    #page8{
+        width: 100%; height: 65%;
+         background-size: 100% auto; 
+    }
+    #page8 h3{
+     font-size: 35px;
+    line-height: 40px;
+    width: 40%;
+right: 5%; 
+}
+    
+    #page8 .pageCom{
+    
+    right:18%;
+}
+    
+    #page8 .btn8{
+        right: 15%;
+        width: 385px;
+    }
+    
+    .ico6{width: 500px;}
+      
+    /*페이지9*/
+    #page9{width: 100%; height: 65%;}
+#page9 .ico7{left: 15%;
+}
+#page9 .ico8{left: 25%;
+} 
+#page9 .ico9{left: 30%;
+width: 600px; }
+    
+    
+    
+}/*여기가 끝*/
+    
+    /*저해상도 데스크탑*/
+@media screen and (min-width:768px) and (max-width:1280px){
+    
+}
