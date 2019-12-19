@@ -10,6 +10,28 @@
 	margin-right: 1em;
 	text-align: center;
 }
+    
+    
+    #page2{
+    clear: both;
+    width: 100%;
+    height: 50%;
+        background-color: #292929;
+    position: relative;
+    overflow-x: hidden;
+    
+    
+}
+    
+ #container{ 
+    clear: both;
+    width: 60%; margin: 0 auto;
+    height:200%;
+    position: relative;
+    top: -10%;  
+   
+}
+     .pro0 .h_com{ font-size: 0.875em; font-weight: 500; color: #7b7777; line-height: 1.5;padding-top: 1em; }
      /*page4, 홍보*/
     #page4{
     width: 100%;
@@ -246,31 +268,35 @@ width: 100%;
     float: left;
      overflow: hidden;
 }
-   .fade.item1 .more2,.fade.item2 .more2,.fade.item4 .more2,.fade.item3 .more2,.fade.item5 .more2{
-    width: 120px;
-    height: 30px;
-       line-height: 30px;
-       font-size: 0.875em;
+  
+    #page6 p{
+  font-size: 1em;
+} 
+    
+    .content2{
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    
+    position: relative;
+   padding: 0;
 }
     .fade.item1 .more2{
-    right: 31%;
-    
+    width: 150px;
+    height: 30px;
+    right: 25%;
+    font-size: 0.875em;
 }
     .fade.item2 .more2,.fade.item4 .more2,.fade.item3 .more2,.fade.item5 .more2{
-   right: 31%;
-    
+    width: 150px;
+    height: 30px;
+    right: 25%;
+    font-size: 0.875em;
 }
     
-       #page6 h3{
-  left: 30%;
-     
-}
-
-#page6 p{
-    display: block;
-    top: 5%; left: 15%;
-}     
-     
+    
+    
+    
     
     /*푸터*/
     
@@ -636,54 +662,29 @@ width: 100%;
 }
 	
 	#page5 .sns_icoBox{
-  left: 35%; 
-}
-#page6{
-      clear: both;
-    width: 100%;
-    height: 130%;
-    overflow: hidden;
-    position: relative;
-}
-.content2{ 
-    clear: both;
-    width: 100%;
-    height: 80%;
-    margin: 0 auto;
-    position: relative;    
-    padding-top: 5em;
-}
-
-.more2{
-   display: none;   
+  left: 25%; 
 }
     
-      #page6 h3{
-left: 20%;
-          top:0%;
-    font-size: 2em;
-  
-}
-
-#page6 p{
- 
-    top: 5%; left: 10%;
-    font-size: 0.875em;
-    font-weight: 500;
+    #page6 h3{
+  font-size: 1.25em;
 } 
     
-     .fade{ 
-        opacity: 0;
-        width: 100%;
-         height: 20%;
-        position: relative;
-      
-        }
+      #page6 p{
+  font-size: 0.875em;
+} 
     
-       .fade img{
-  width: 100%; height:100%; display: block;
-        }
+    .content2{
+    width: 100%;
+    height: 90%;
+    margin: 0 auto;
     
+    position: relative;
+   padding: 0;
+}
+    .more2{
+        display: none;
+    }
+
     
         /*푸터*/
     .fnb_m{

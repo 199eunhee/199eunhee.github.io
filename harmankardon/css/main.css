@@ -94,9 +94,9 @@
 
 /*페이지2*/
 #page2{
-
+    clear: both;
     width: 100%;
-    height: auto;
+    height: 80%;
     position: relative;
     overflow-x: hidden;
     
@@ -104,12 +104,12 @@
 }
 .banFrame{
     width: 500%;
-  
+  height: 100%;
 }
 
 .banFrame li{
     width: 20%;
-    height: auto;
+    height:100%;
     float: left;
     overflow: hidden;
     position: relative;
@@ -118,7 +118,7 @@
 
 .banFrame li img{
     width: 100%;
-    height: auto;
+    height:100%;
 }
 
 .vs2_more{
@@ -153,6 +153,8 @@
 
 /*page3*/
 #page3{
+    overflow: hidden;
+    position: relative;
     clear: both;
 width: 100%;
 	height: 200%;
@@ -274,6 +276,7 @@ width: 100%;
     width: 100%;
     height: 70%;
     clear: both;
+    overflow: hidden;
     position: relative;
     background-color: #292929;
 }
@@ -432,26 +435,68 @@ width: 100%;
 }
 
 /*페이지6*/
+
 #page6{
-      clear: both;
     width: 100%;
-    height: 250%;
+    height: 150%;
+    
     overflow: hidden;
-  position: relative;
+    position: relative;
 }
-.content2{ 
-    clear: both;
-    width: 100%; margin: 0 auto;
-   height: 90%;
-    position: absolute;
-    top: 10%;
+
+#page6 h3{
+    width: 70%;
+    margin: 0 auto;
+        text-align: center;
+    font-size: 3em;
+    font-weight: bold;line-height: 1;
+    color: #9f8b74;
+    padding-top: 1em;
+     
 }
+
+#page6 p{
+     width: 70%;
+    margin: 0 auto;
+        text-align: center;
+    display: block;
+    
+    font-size: 1.2em;
+    font-weight: 600;line-height: 2;
+    color: #9f8b74;
+}     
+      
+
+.content2{
+    width: 70%;
+    height: 90%;
+    margin: 0 auto;
+    
+    position: relative;
+   padding: 0;
+}
+.fade{
+    width: 100%;
+    height: 20%;
+    
+}
+.fade img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
 
 .fade.item1 .more2{
     width: 170px;
     height: 50px;
     position: absolute;
-    bottom: 20%; right: 38%;
+    bottom: 20%; right: 35%;
     border: 1px solid #fff;
     color: #fff;
     font-size: 1em;
@@ -466,7 +511,7 @@ width: 100%;
     width: 170px;
     height: 50px;
     position: absolute;
-    bottom: 20%; right: 38%;
+    bottom: 20%; right: 35%;
     border: 1px solid #222;
     color: #222;
     font-size: 1em;
@@ -501,24 +546,6 @@ width: 100%;
   width: 100%; height:100%; display: block;
         }
         
-   #page6 h3{
-    position: absolute;
-    display: block;
-    top: 2%; left: 40%;
-    font-size: 3em;
-    font-weight: bold;line-height: 1;
-    color: #9f8b74;
-     
-}
-
-#page6 p{
-    position: absolute;
-    display: block;
-    top: 5%; left: 35%;
-    font-size: 1.2em;
-    font-weight: 600;line-height: 2;
-    color: #9f8b74;
-}     
-      
+   
  
 
