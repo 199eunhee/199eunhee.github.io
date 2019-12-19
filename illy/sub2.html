@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="title" content="ILLY COFFEE">
+    <meta name="keywords" content="ILLY COFFEE,coffee,illy,coffee machine,ground,cafe,homecafe">
+    <meta name="auther" content="ILLY COFFEE">
+    <meta name="description" content="완벽한 한 잔의 커피, 일리">
+
+    <meta property="og:title" content="ILLY COFFEE">
+    <!--해당사이트의 제목 -->
+    <meta property="og:url" content="./index.html">
+    <!--URL링크 -->
+    <meta property="og:description" content="완벽한 한 잔의 커피, 일리">
+	<title>ILLY COFFEE</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/sub2.css">
+	
+	
+	
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/modernizr.custom.min.js"></script>
+	
+	
+</head>
+<style>
+    
+     @media screen and (min-width: 1281px) and (max-width : 1919px){
+        
+         /*고해상 태블릿 피씨 사이즈*/
+         
+             /*메뉴*/
+     .sub ul{
+    position: absolute;
+    left: 4%;
+}
+         
+         
+    .product{width: 70%;}
+        .product .col{width: 25%;}
+            .proTit{line-height: 2; font-size: 1em;}
+         
+          .mobile_ft{display: none;}
+    
+    }
+    @media screen and (min-width:768px) and (max-width:1280px){
+         /*저해상 태블릿 피씨 사이즈*/
+        /*헤더 모바일버전*/
+    .pc_mode{display: none;}
+    
+    .mobile_mode{
+        display: block;
+    }
+    .ra{display: none;}
+    .hd{
+        width: 100%;
+        height: 120px;
+        background-color: #fff;
+        position: relative;
+        z-index: 10;
+    }
+    .logo{
+        display: block;
+        width: 52px;
+        height: 52px;
+        line-height: 120px;
+        margin: 0 auto;
+    }
+    .toggle{
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 5%;
+        top: 45%;
+        cursor: pointer;
+    }
+    
+    .gnb2{
+        z-index: 99;
+        width: 100%;
+        height: 1024px;
+        background-color: #fff;
+        position: absolute;
+        right: -100%;
+        top: 33%; 
+        transition: 0.5s;
+    }
+    .gnb2 .main2{
+        margin-top: 20px;
+    }
+    .gnb2 .main2 li{
+        line-height:2;
+        display: block;
+        width: 160px;
+      
+        padding-bottom: 1em;
+       
+    }
+    
+    .gnb2 .main2 li a.dep_m{
+        font-size: 1.25em;
+        color: #333;
+         padding: 1em;
+        font-weight: bold;
+    }
+    .gnb2 .main2 li a.dep_m:hover{
+        color: #d12521;
+    }
+    
+    .gnb2 .sub2{
+        position: absolute;
+        top: 5%;
+        left: 35%;
+        width: 100%;
+        height: 0px;
+        opacity: 0;
+        visibility: hidden;
+       
+    }
+    
+    .gnb2 .sub2 li a{
+        color: #333;
+        font-size: 1.125em;
+    }
+    .gnb2 .sub2 li a:hover{
+        text-decoration: underline;
+    }
+    .gnb2 .main2 li:hover .sub2{
+        opacity: 1;
+        height: 200px;
+        visibility: visible;
+    }
+    
+    .close{
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 2%;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        line-height: 50px;
+        border: 1px solid #333;
+        text-align: center;
+        border-radius: 50%;
+         color: #d12521; 
+        cursor: pointer;
+    }
+    
+    #ra1:checked ~ .gnb2{
+        right: 0%;
+         transition: 0.8s;
+    }
+    #ra2:checked ~ .gnb2{
+        right: -100%;
+    }
+    
+        
+        
+         .product{width: 70%;}
+            .product .col{width: 50%;}
+            .proTit{line-height: 1.5; font-size: 1em;}
+        
+         /*푸터*/
+        .mobile_ft{display: none;}
+       .fnb_m{
+width: 100%;
+}
+      .fnb2{
+          width: 100%;
+          height: 110px;
+      }
+     
+    }
+    
+    @media screen and (max-width:767px){
+        /*모바일 사이즈*/
+         /*헤더 모바일버전*/
+    .pc_mode{display: none;}
+    
+    .mobile_mode{
+        display: block;
+    }
+    .txt_rolling p{
+        font-size: 0.625em;
+    }
+   .header_toprow .btn_special{ position:absolute; right:0; background:url(../IMG/specialoffers_m.png);
+        background-repeat: no-repeat; top: 0%;
+        background-color: #d12521;
+        background-position: center; display: block;
+        background-size: 100px 20px; width:100px; height:40px; font-size:0; }
+   
+    .ra{display: none;}
+    .hd{
+        width: 100%;
+        height: 120px;
+        background-color: #fff;
+        position: relative;
+        z-index: 10;
+    }
+    .logo{
+        display: block;
+        width: 52px;
+        height: 52px;
+        line-height: 120px;
+        margin: 0 auto;
+    }
+    .toggle{
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 5%;
+        top: 45%;
+        cursor: pointer;
+    }
+    
+    .gnb2{
+        z-index: 99;
+        width: 100%;
+        height: 1024px;
+        background-color: #fff;
+        position: absolute;
+        right: -100%;
+        top: 33%; 
+        transition: 0.5s;
+    }
+    .gnb2 .main2{
+        margin-top: 20px;
+    }
+    .gnb2 .main2 li{
+        line-height:2;
+        display: block;
+        width: 160px;
+      
+        padding-bottom: 1em;
+       
+    }
+    
+    .gnb2 .main2 li a.dep_m{
+        font-size: 1em;
+        color: #333;
+         padding: 1em;
+        font-weight: bold;
+    }
+    .gnb2 .main2 li a.dep_m:hover{
+        color: #d12521;
+    }
+    
+    .gnb2 .sub2{
+        position: absolute;
+        top: 5%;
+        left: 45%;
+        width: 100%;
+        height: 0px;
+        opacity: 0;
+        visibility: hidden;
+       
+    }
+    
+    .gnb2 .sub2 li a{
+        color: #333;
+        font-size: 0.875em;
+    }
+    .gnb2 .sub2 li a:hover{
+        text-decoration: underline;
+    }
+    .gnb2 .main2 li:hover .sub2{
+        opacity: 1;
+        height: 200px;
+        visibility: visible;
+    }
+    
+    .close{
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 2%;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        border: 1px solid #333;
+        text-align: center;
+        border-radius: 50%;
+         color: #d12521; 
+        cursor: pointer;
+    }
+    
+    #ra1:checked ~ .gnb2{
+        right: 0%;
+         transition: 0.8s;
+    }
+    #ra2:checked ~ .gnb2{
+        right: -100%;
+    }
+    
+    
+    
+       
+       
+        .list li a{
+            font-size: 0.625rem;}
+
+       .product{width: 50%;}
+        .product .col{float: left; width: 100%; position: relative;}
+       
+      
+        .proTit{line-height: 1.5; color: #333; font-size: 0.875rem; } 
+        
+        .hoverBox{
+    width: 210px;
+    height: 280px;
+    border: 2px solid #d12420;
+    border-radius: 20px;
+    position: absolute;
+    top: 0; left: -10%;
+    z-index: 10;
+    background-color: rgba(255,255,255,0.3);
+    transition: 0.6s;
+    opacity: 0;
+}
+        .cart{
+   top: 50%; left: 5%;
+}
+.buy{
+    top: 50%; right: 5%;
+}
+        
+        
+        .btn{
+    width: 90px;
+    height: 30px;
+    color: #fff;
+    font-size: 0.875em;
+    line-height: 30px;
+    background-color: #d12420;
+    border-radius: 60px;
+    cursor: pointer;
+    position: absolute;
+}
+       
+        /*푸터*/
+ #ft{
+        border-top: 1px solid #333;
+    }
+    .pc_ft{
+        display: none;
+    }
+    .mobile_ft{
+        width: 100%;
+        clear: both; 
+        height: 280px;
+        position: relative;
+        top: 20px;
+        border-bottom: 1px solid #333;
+       
+    }
+    
+    .fnb_mobile{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .fnb_mobile li{
+        float: left;
+        line-height: 2;
+    }
+    .fnb_mobile li a{
+        color: #333;
+        display: block;
+        font-weight: bold;
+        font-size: 0.875em;
+    }
+    .fnb_mobile li a:hover{
+        text-decoration: underline;
+    }
+    
+    .fnb_sub li{
+        margin-right: 10px;
+    }
+    .fnb_sub li a{
+        font-size: 0.725em;
+        font-weight: 500;
+    }
+    .fnb_wrap_m{
+        width: 100%;
+    }
+    
+    .fnb_wrap_m li{
+        float: left;
+    }
+    .fnb_wrap_m li .pay{
+        width: 100px;
+        height: 50px;
+        margin-right: 20px;
+    }
+    .fnb_wrap_m li .sns{
+        width: 80px;
+        height: 50px;
+    }
+    .contact{
+        width: 100px;
+        height: 30px;
+        font-size: 11px;
+        position: absolute;
+        bottom: 12%;
+        right: 5%;
+    }
+    
+      .fnb2{
+          width: 100%;  
+          height: 120px;
+      }
+.fnb2 p{
+    font-size: 0.625em;
+    line-height: 2;
+}
+.add{
+   width: 100%;
+	float: left;
+    font-size: 0.625em; margin-top: 20px;
+}
+.copy{
+	width: 100%;
+}
+
+.copy p{
+	text-align: left;
+	left: 3%;
+    bottom: 0.625em;}
+
+
+    
+        
+    }
+    
+    
+    
+    
+    
+    
+    </style>
+<body>
+  <header class="hd">
+	<!--pc모드-->
+	<div class="pc_mode">	
+    	<div class="header_toprow">
+        	<div class="txt_rolling">
+            	<p>일리 스틱원두커피 출시</p>
+            </div>
+        	<div class="btn_special"><a href="#" target="_blank">special offers</a></div>
+        </div>
+        <div class="gnb">
+			<h1><a href="index.html"><img src="IMG/logo.jpg" alt="illy"></a></h1>
+			<div class="col">
+			<ul class="main">
+				<li class="brand1 "><a href="sub1.html" class="dep1">BRAND</a>
+				<div class="sub b">
+              <ul class="brand">
+                  <li><a href="sub1.html" class="dep2">BRAND</a></li>
+                  <li><a href="">브랜드</a></li>
+                  <li><a href="">일리커피이야기</a></li>
+                  <li><a href="">뉴스 및 공지</a></li>
+                  <li><a href="">제휴안내</a></li>
+                  <li><a href="">UDC</a></li>
+              </ul>
+              <ul class="imgBox">
+                  <li class="item1"><img src="IMG/menu1.jpg" alt=""></li>
+                  <li class="item2"><img src="IMG/menu2.jpg" alt=""></li>
+                  <li class="item3"> <img src="IMG/menu3.jpg" alt=""></li>
+              </ul>
+               
+           </div>
+				</li>
+				<li class="store1 "><a href="#" class="dep1">CAFFE &amp; SHOP</a>
+				<div class="sub c">
+              <ul class="coffee">
+                  <li><a href="" class="dep2">CAFFE &amp; SHOP</a></li>
+                  <li><a href="">일리카페</a></li>
+                  <li><a href="">일리샵</a></li>
+                  <li><a href="">가맹안내</a></li>
+              </ul>
+              <ul class="imgBox">
+                  <li class="item2"><img src="IMG/menu4.jpg" alt=""></li>
+                  <li class="item3"><img src="IMG/menu5.jpg" alt=""></li>
+              </ul>
+               
+           </div>
+				
+				</li>
+				<li class="location1 "><a href="#" class="dep1">매장찾기</a>
+				<div class="sub l">
+              <ul class="location">
+                  <li><a href="" class="dep2">매장찾기</a></li>
+                  <li><a href="">일리카페</a></li>
+                  <li><a href="">일리샵</a></li>
+                  <li><a href="">지역대리점</a></li>
+                  <li><a href="">A/S 고객지원</a></li>
+                  
+              </ul>
+              <ul class="imgBox">
+                  <li class="item1"><img src="IMG/shop1.jpg" alt=""></li>
+                  <li class="item2"><img src="IMG/shop2.jpg" alt=""></li>
+                  <li class="item3"> <img src="IMG/shop3.jpg" alt=""></li>
+              </ul>
+               
+           </div>
+				
+				</li>
+				<li class="shop1 "><a href="sub2.html" class="dep1">e-SHOP</a>
+				<div class="sub e">
+              <ul class="shop">
+                  <li><a href="" class="dep2">e-SHOP</a></li>
+                  <li><a href="">커피제품</a></li>
+                  <li><a href="">캡슐머신</a></li>
+                  <li><a href="">일리아트컬렉션</a></li>
+                  <li><a href="">커피악세사리</a></li>
+                  
+              </ul>
+              <ul class="imgBox">
+                  <li class="item1"><img src="IMG/p1.jpg" alt=""></li>
+                  <li class="item2"><img src="IMG/p2.jpg" alt=""></li>
+                  <li class="item3"> <img src="IMG/p4.jpg" alt=""></li>
+              </ul>
+               
+           </div>
+				</li>
+			</ul>
+			</div>
+ 
+        </div>
+</div>
+   
+   
+    <div class="mobile_mode">
+        <div class="header_toprow">
+        	<div class="txt_rolling">
+            	<p>일리 스틱원두커피 출시</p>
+            </div>
+        	<div class="btn_special"><a href="#" target="_blank">special offers</a></div>
+        </div>
+        <input type="radio" name="radio" class="ra" id="ra1">
+        <input type="radio" name="radio" class="ra" id="ra2">
+        <label for="ra1"><img src="IMG/toggle.png" alt=""  class="toggle"></label>
+        <a href="index.html" class="logo"><img src="IMG/logo.jpg" alt=""></a>
+        <nav class="gnb2">
+          
+            <ul class="main2">
+                <li><a href="" class="dep_m">BRAND</a>
+                 <ul class="sub2">
+                  <li><a href="">브랜드</a>
+                  </li>
+                  <li><a href="">일리커피이야기</a></li>
+                  <li><a href="">뉴스 및 공지</a></li>
+                  <li><a href="">제휴안내</a></li>
+                  <li><a href="">UDC</a></li>
+              </ul>
+                
+                </li>
+                <li><a href="" class="dep_m">CAFFE&amp;SHOP</a>
+                 <ul class="sub2">
+                  <li><a href="">일리카페</a></li>
+                  <li><a href="">일리샵</a></li>
+                  <li><a href="">가맹안내</a></li>
+              </ul>
+                
+                
+                </li>
+                <li><a href="" class="dep_m">매장찾기</a>
+                <ul class="sub2">
+                 
+                  <li><a href="">일리카페</a></li>
+                  <li><a href="">일리샵</a></li>
+                  <li><a href="">지역대리점</a></li>
+                  <li><a href="">A/S 고객지원</a></li>
+                  
+              </ul>
+                
+                </li>
+                <li><a href="" class="dep_m">e-SHOP</a>
+                <ul class="sub2">
+                  
+                  <li><a href="">커피제품</a></li>
+                  <li><a href="">캡슐머신</a></li>
+                  <li><a href="">일리아트컬렉션</a></li>
+                  <li><a href="">커피악세사리</a></li>
+                  
+              </ul>
+                
+                
+                </li>
+            </ul>
+             <label for="ra2" class="close">X</label>
+        </nav>
+        
+        
+        
+    </div>
+
+	</header>
+  <section id="page1">
+     <div class="bg">
+      <img src="IMG/sub2_bg.gif" alt="">
+      </div>
+       <h2>All <strong>Product</strong></h2>
+  </section>
+  <section id="page2">
+     <h2 class="pageTit">상품83개</h2>
+        <ul class="list">
+            <li><a href="">판매인기순</a></li>
+            <li><a href="">낮은가격순</a></li>
+            <li><a href="">높은가격순</a></li>
+            <li><a href="">상품평순</a></li>
+             <li><a href="">등록일순</a></li>
+        </ul>
+        <ul class="product">
+            <li class="col"><a href="">
+                  
+                    <img src="IMG/pro1.jpg" alt="" class="img">
+                    
+                    
+                    <h3 class="proTit">21p 캡슐커피 [인텐소:다크]</h3>
+                    
+                    <p class="proCom">
+                       <br>
+                         <span class="price">17,500원</span>
+                          
+                    </p>
+                </a>
+                <div class="hoverBox">
+                    <button class="btn cart">장바구니</button>
+                    <button class="btn buy">구매하기</button>
+                    
+                </div>
+                
+                
+                </li>
+            <li class="col"><a href="">
+                    <img src="IMG/pro2.jpg" alt="" class="img">
+                    
+                    <h3 class="proTit">21p 캡슐커피 [글라시코:미디움]</h3>
+                    <p class="proCom">
+                        <br>
+                         <span class="price">17,500원</span>
+                    </p>
+                </a>
+                 <div class="hoverBox">
+                    <button class="btn cart">장바구니</button>
+                    <button class="btn buy">구매하기</button>
+                    
+                </div>
+                
+                </li>
+            <li class="col"><a href="">
+                    <img src="IMG/pro3.jpg" alt=""class="img">
+                    
+                    <h3 class="proTit">21p 캡슐커피 [글라시코:룽고]</h3>
+                    <p class="proCom">
+                       <br>
+                         <span class="price">17,500원</span>
+                    </p>
+                </a>
+                 <div class="hoverBox">
+                    <button class="btn cart">장바구니</button>
+                    <button class="btn buy">구매하기</button>
+                    
+                </div>
+                </li>
+            <li class="col"><a href="">
+                    <img src="IMG/pro12.jpg" alt=""class="img">
+                   
+                    <h3 class="proTit">21p 캡슐커피 [디카프:디카페인]</h3>
+                    <p class="proCom">
+                         <br>
+                         <span class="price">17,500원</span>
+                    </p>
+                </a>
+                 <div class="hoverBox">
+                    <button class="btn cart">장바구니</button>
+                    <button class="btn buy">구매하기</button>
+                    
+                </div>
+                </li>
+          <li class="col"><a href="">
+                    <img src="IMG/pro4.jpg" alt=""class="img">
+                  
+                    <h3 class="proTit">21p 모노아라비카 캡슐커피 [과테말라]</h3>
+                    <p class="proCom">
+                         <br>
+                         <span class="price">17,500원</span>
+                    </p>
+                </a>
+                 <div class="hoverBox">
+                    <button class="btn cart">장바구니</button>
+                    <button class="btn buy">구매하기</button>
+                    
+                </div>
+                </li>
+            <li class="col"><a href="">
+                    <img src="IMG/pro6.jpg" alt=""class="img">
+                  
+                    <h3 class="proTit">21p 모노아라비카 캡슐커피 [브라질]</h3>
+                    <p class="proCom">
+                       <br>
+                         <span class="price">17,500원</span>
+                    </p>
+                </a>
+                 <div class="hoverBox">
+                    <button class="btn cart">장바구니</button>
+                    <button class="btn buy">구매하기</button>
+                    
+                </div>
+                
+                </li>
+           <li class="col"><a href="">
+                    <img src="IMG/pro7.jpg" alt=""class="img">
+                    
+                    <h3 class="proTit">21p 모노아라비카 캡슐커피 [에티오피아]</h3>
+                    <p class="proCom">
+                         <br>
+                         <span class="price">17,500원</span>
+                    </p>
+                </a>
+                 <div class="hoverBox">
+                    <button class="btn cart">장바구니</button>
+                    <button class="btn buy">구매하기</button>
+                    
+                </div>
+                </li>
+           <li class="col"><a href="">
+                    <img src="IMG/pro8.jpg" alt=""class="img">
+                  
+                    <h3 class="proTit">21p 모노아라비카 캡슐커피 [콜롬비아]</h3>
+                    <p class="proCom">
+                        <br>
+                         <span class="price">17,500원</span>
+                    </p>
+                </a>
+                 <div class="hoverBox">
+                    <button class="btn cart">장바구니</button>
+                    <button class="btn buy">구매하기</button>
+                    
+                </div>
+                </li>
+           <li class="col"><a href="">
+                    <img src="IMG/pro9.jpg" alt=""class="img">
+                    
+                    <h3 class="proTit">18필터 캡슐커피 [인텐소:다크]</h3>
+                    <p class="proCom">
+                       <br>
+                         <span class="price">15,500원</span>
+                    </p>
+                </a>
+                 <div class="hoverBox">
+                    <button class="btn cart">장바구니</button>
+                    <button class="btn buy">구매하기</button>
+                    
+                </div>
+                </li>
+           <li class="col"><a href="">
+                    <img src="IMG/pro10.jpg" alt=""class="img">
+                  
+                    <h3 class="proTit">18필터 캡슐커피 [글라시코:미디움]</h3>
+                    <p class="proCom">
+                       <br>
+                         <span class="price">15,500원</span>
+                    </p>
+                </a>
+                 <div class="hoverBox">
+                    <button class="btn cart">장바구니</button>
+                    <button class="btn buy">구매하기</button>
+                    
+                </div>
+                </li>
+                <li class="col"><a href="">
+                    <img src="IMG/pro11.jpg" alt=""class="img">
+                   
+                    <h3 class="proTit">일리 Y3.2캡슐커피머신 [화이트]</h3>
+                    <p class="proCom">
+                       <br>
+                         <span class="price">179,000원</span>
+                    </p>
+                </a>
+                 <div class="hoverBox">
+                    <button class="btn cart">장바구니</button>
+                    <button class="btn buy">구매하기</button>
+                    
+                </div>
+                </li>
+               <li class="col"><a href="">
+                    <img src="IMG/pro5.jpg" alt=""class="img">
+                  
+                    <h3 class="proTit">250g 원두커피 [글라시코:미디움]</h3>
+                    <p class="proCom">
+                        <br>
+                         <span class="price">16,500원</span>
+                    </p>
+                </a>
+                 <div class="hoverBox">
+                    <button class="btn cart">장바구니</button>
+                    <button class="btn buy">구매하기</button>
+                    
+                </div>
+                </li>    
+        </ul>
+
+  </section>
+   <section>
+    <div class="row_sub3">
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+			</div>
+    </section>
+  
+  
+  
+ <footer id="ft">
+    <div class="pc_ft">
+        <div class="fnb">
+            <div class="fnb_m">
+
+                <div class="flex-item">
+                    <div class="fnb_tit">
+                        <ul class="fnb_wrap">
+                            <li class="title">BRAND</li>
+                            <li><a href="">브랜드</a></li>
+                            <li><a href="">일리커피이야기</a></li>
+                            <li><a href="">뉴스 및 공지</a></li>
+                            <li><a href="">제휴안내</a></li>
+                            <li><a href="">UDC</a></li>
+                        </ul>
+                        <ul class="fnb_wrap">
+                            <li  class="title" >CAFFE&amp;SHOP</li>
+                            <li><a href="">일리카페</a></li>
+                             <li><a href="">일리샵</a></li>
+                            <li><a href="">가맹안내</a></li>
+                            
+                        </ul>
+                        <ul class="fnb_wrap">
+                            <li class="title">매장찾기</li>
+                            <li><a href="">일리카페</a></li>
+                            <li><a href="">일리샵</a></li>
+                            <li><a href="">지역대리점</a></li>
+                            <li><a href="">A/S고객지원</a></li>
+                           
+                        </ul>
+                        <ul class="fnb_wrap">
+                            <li class="title">e-SHOP</li>
+                            <li><a href="">커피제품</a></li>
+                            <li><a href="">캡슐머신</a></li>
+                             <li><a href="">일리아트 컬렉션</a></li>
+                              <li><a href="">커피악세사리</a></li>
+                              
+                        </ul>
+                        <ul class="fnb_wrap">
+                            <li ><button class="contact">CONTACT US</button></li>
+                            
+                            <li><a href=""><img src="img/pay.png" alt=""></a></li>
+                            
+                            <li><a href=""><img src="img/snsbox.png" alt=""></a></li>
+                           
+                            </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+             
+     </div> 
+     </div>
+     <div class="mobile_ft">
+         <ul class="fnb_mobile">
+             <li><a href="">BRAND</a>
+             <ul class="fnb_sub">
+                            
+                            <li><a href="">브랜드</a></li>
+                            <li><a href="">일리커피이야기</a></li>
+                            <li><a href="">뉴스 및 공지</a></li>
+                            <li><a href="">제휴안내</a></li>
+                            <li><a href="">UDC</a></li>
+                        </ul>
+             </li>
+             <li><a href="">CAFFE&amp;SHOP</a>
+              <ul class="fnb_sub">
+                            
+                            <li><a href="">일리카페</a></li>
+                             <li><a href="">일리샵</a></li>
+                            <li><a href="">가맹안내</a></li>
+                            
+                        </ul>
+             </li>
+             <li><a href="">매장찾기</a>
+             <ul class="fnb_sub">
+                           
+                            <li><a href="">일리카페</a></li>
+                            <li><a href="">일리샵</a></li>
+                            <li><a href="">지역대리점</a></li>
+                            <li><a href="">A/S고객지원</a></li>
+                           
+                        </ul>
+             </li>
+             <li><a href="">e-SHOP</a>
+              <ul class="fnb_sub">
+                           
+                            <li><a href="">커피제품</a></li>
+                            <li><a href="">캡슐머신</a></li>
+                             <li><a href="">일리아트 컬렉션</a></li>
+                              <li><a href="">커피악세사리</a></li>
+                              
+                        </ul>
+             
+             </li> 
+              <ul class="fnb_wrap_m">
+                            <li ><button class="contact">CONTACT US</button></li>
+                            
+                            <li><a href=""><img src="img/pay.png" alt="" class="pay"></a></li>
+                            
+                            <li><a href=""><img src="img/snsbox.png" alt="" class="sns"></a></li>
+                           
+                            </ul>
+             
+             
+         </ul>
+         
+         
+         
+         
+         
+         
+     </div>
+    
+     <div class="fnb2">
+        <ul class="add">
+            <li><a href="">
+
+(주)큐로홀딩스
+
+   </a></li>
+            <li><a href="">대표자 | 조중기    주소 | 서울시 강남구 테헤란로 77길 7, 동원빌딩 4층</a></li>
+            <li>고객센터 | <a href="tel:1666-1282" >1666-1282 </a></li>
+            <li>이메일 | <a href="mailto:cs@curoholdings.com">cs@curoholdings.com</a></li>
+            <li>
+               
+            </li>
+          
+        </ul>
+        <ul class="copy">
+        	<p>Copyright(c) 2019 www.illycaffe.co.kr All rights reserved. <br>
+© 2019 illycaffè S.p.A. | P.IVA 00055180327 | Via Flavia 110, 34147 Trieste – Italy</p>
+        </ul>
+  
+     </div>
+     
+     
+     
+ </footer>
+
+    
+</body>
+</html>

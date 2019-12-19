@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="title" content="ILLY COFFEE">
+    <meta name="keywords" content="ILLY COFFEE,coffee,illy,coffee machine,ground,cafe,homecafe">
+    <meta name="auther" content="ILLY COFFEE">
+    <meta name="description" content="완벽한 한 잔의 커피, 일리">
+
+    <meta property="og:title" content="ILLY COFFEE">
+    <!--해당사이트의 제목 -->
+    <meta property="og:url" content="./index.html">
+    <!--URL링크 -->
+    <meta property="og:description" content="완벽한 한 잔의 커피, 일리">
+	<title>ILLY COFFEE</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/sub1.css">
+	
+	
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/modernizr.custom.min.js"></script>
+	
+	<style>
+        
+     @media screen and (min-width: 1281px) and (max-width : 1919px){
+        
+         /*고해상 태블릿 피씨 사이즈*/
+         .mobile_mode{
+        display: none;
+    }
+             /*메뉴*/
+     .sub ul{
+    position: absolute;
+    left: 4%;
+}
+    .product{width: 70%;}
+        .product .col{width: 25%;}
+            .proTit{line-height: 2; font-size: 1em;}
+         
+          .mobile_ft{display: none;}
+    
+    }
+    @media screen and (min-width:768px) and (max-width:1280px){
+         /*저해상 태블릿 피씨 사이즈*/
+        /*헤더 모바일버전*/
+    .pc_mode{display: none;}
+    
+    .mobile_mode{
+        display: block;
+    }
+    .ra{display: none;}
+    .hd{
+        width: 100%;
+        height: 120px;
+        display: block;
+        background-color: #fff;
+        position: relative;
+        z-index: 10;
+    }
+    .logo{
+        display: block;
+        width: 52px;
+        height: 52px;
+        line-height: 120px;
+        margin: 0 auto;
+    }
+    .toggle{
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 5%;
+        top: 45%;
+        cursor: pointer;
+    }
+    
+    .gnb2{
+        z-index: 99;
+        width: 100%;
+        height: 1024px;
+        background-color: #fff;
+        position: absolute;
+        right: -100%;
+        top: 33%; 
+        transition: 0.5s;
+    }
+    .gnb2 .main2{
+        margin-top: 20px;
+    }
+    .gnb2 .main2 li{
+        line-height:2;
+        display: block;
+        width: 160px;
+      
+        padding-bottom: 1em;
+       
+    }
+    
+    .gnb2 .main2 li a.dep_m{
+        font-size: 1.25em;
+        color: #333;
+         padding: 1em;
+        font-weight: bold;
+    }
+    .gnb2 .main2 li a.dep_m:hover{
+        color: #d12521;
+    }
+    
+    .gnb2 .sub2{
+        position: absolute;
+        top: 5%;
+        left: 35%;
+        width: 100%;
+        height: 0px;
+        opacity: 0;
+        visibility: hidden;
+       
+    }
+    
+    .gnb2 .sub2 li a{
+        color: #333;
+        font-size: 1.125em;
+    }
+    .gnb2 .sub2 li a:hover{
+        text-decoration: underline;
+    }
+    .gnb2 .main2 li:hover .sub2{
+        opacity: 1;
+        height: 200px;
+        visibility: visible;
+    }
+    
+    .close{
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 2%;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        line-height: 50px;
+        border: 1px solid #333;
+        text-align: center;
+        border-radius: 50%;
+         color: #d12521; 
+        cursor: pointer;
+    }
+    
+    #ra1:checked ~ .gnb2{
+        right: 0%;
+         transition: 0.8s;
+    }
+    #ra2:checked ~ .gnb2{
+        right: -100%;
+    }
+/*페이지2*/
+        #page2 h3{
+	padding: 1em;
+}
+        
+        /*페이지3*/
+        .boxTit{
+	
+	position: absolute; right: 28%; 
+}
+.box_bar{
+	height: 3px;
+	right: 21%;
+}
+        .box2 .boxCom{
+            left: 0%;
+} 
+        
+    /*페이지4*/
+        .numberBox h3{
+	display: block;
+	color: #d12420;
+	font-size: 2.5em;
+	text-align: center;
+	font-weight: 500;
+	padding: 2em;
+	
+}
+        .numberBox img{
+	width: 600px;
+	height: 230px;
+	
+	display: block;
+	position: absolute;
+	bottom: 20%; left: 12%;
+}
+
+       
+     /*푸터*/
+         .mobile_ft{display: none;}
+       .fnb_m{
+width: 100%;
+}
+      .fnb2{
+          width: 100%;
+          height: 110px;
+      }
+     
+     
+    }
+    
+    @media screen and (max-width:767px){
+        /*모바일 사이즈*/
+         /*헤더 모바일버전*/
+    .pc_mode{display: none;}
+    
+    .mobile_mode{
+        display: block;
+    }
+    .txt_rolling p{
+        font-size: 0.625em;
+    }
+     .header_toprow .btn_special{ position:absolute; right:0; background:url(../IMG/specialoffers_m.png);
+        background-repeat: no-repeat; top: 0%;
+        background-color: #d12521;
+        background-position: center; display: block;
+        background-size: 100px 20px; width:100px; height:40px; font-size:0; }
+   
+    .ra{display: none;}
+    .hd{
+        width: 100%;
+        height: 120px;
+        background-color: #fff;
+        position: relative;
+        z-index: 10;
+    }
+    .logo{
+        display: block;
+        width: 52px;
+        height: 52px;
+        line-height: 120px;
+        margin: 0 auto;
+    }
+    .toggle{
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 5%;
+        top: 45%;
+        cursor: pointer;
+    }
+    
+    .gnb2{
+        z-index: 99;
+        width: 100%;
+        height: 1024px;
+        background-color: #fff;
+        position: absolute;
+        right: -100%;
+        top: 33%; 
+        transition: 0.5s;
+    }
+    .gnb2 .main2{
+        margin-top: 20px;
+    }
+    .gnb2 .main2 li{
+        line-height:2;
+        display: block;
+        width: 160px;
+      
+        padding-bottom: 1em;
+       
+    }
+    
+    .gnb2 .main2 li a.dep_m{
+        font-size: 1em;
+        color: #333;
+         padding: 1em;
+        font-weight: bold;
+    }
+    .gnb2 .main2 li a.dep_m:hover{
+        color: #d12521;
+    }
+    
+    .gnb2 .sub2{
+        position: absolute;
+        top: 5%;
+        left: 45%;
+        width: 100%;
+        height: 0px;
+        opacity: 0;
+        visibility: hidden;
+       
+    }
+    
+    .gnb2 .sub2 li a{
+        color: #333;
+        font-size: 0.875em;
+    }
+    .gnb2 .sub2 li a:hover{
+        text-decoration: underline;
+    }
+    .gnb2 .main2 li:hover .sub2{
+        opacity: 1;
+        height: 200px;
+        visibility: visible;
+    }
+    
+    .close{
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 2%;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        border: 1px solid #333;
+        text-align: center;
+        border-radius: 50%;
+         color: #d12521; 
+        cursor: pointer;
+    }
+    
+    #ra1:checked ~ .gnb2{
+        right: 0%;
+         transition: 0.8s;
+    }
+    #ra2:checked ~ .gnb2{
+        right: -100%;
+    }
+        
+        /*페이지2*/
+        #page2{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	clear: both;
+}
+
+#page2 .txtBox{
+	width: 90%;
+	margin: 0 auto;
+}
+
+#page2 h3{	
+	font-size: 2.5em;
+	line-height: 1;
+	padding: 1em;
+}
+
+#page2 p{
+	font-size: 1em;
+}
+        
+        /*페이지3*/
+#page3{
+	width: 100%;
+	height: 250%;
+	position: relative;
+	clear: both;
+	overflow: hidden;
+    
+}
+.box1{
+	width: 100%;
+	height: 50%;
+	position: relative;
+	top: 0;
+}
+.boxImg{
+	width: 100%;
+	height: 50%;
+	display: block;
+	float: left;
+}
+
+.boxTit{
+	display: block;
+	position: absolute; top: 52%;
+	font-size: 2em;
+}
+.box_bar{
+display: none;
+}
+.boxCom{
+	display: block;
+	padding: 0em;
+	width: 100%;
+	position: absolute;
+	left: 0%;
+	top: 58%;
+	line-height: 2;
+	font-size: 1em;
+}
+        .box2{
+            top: 0%;
+        }
+        .box2 .boxTit{
+	position: absolute;
+	left: 38%;
+}
+
+.box2 .boxCom{
+	width: 100%;padding: 0;
+	position: absolute;left: 3%;
+} 
+        .box3{
+          
+        }
+    #page4{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	clear: both;
+	overflow: hidden;
+}
+        .numberBox h3{
+	font-size: 1.5em;
+            position: absolute;
+            top: 40%;
+            left: 15%;
+}
+        .numberBox img{
+	width: 350px;
+	height: 130px;
+	
+	display: block;
+	position: absolute;
+	bottom: 10%; left: 5%;
+}
+        
+ #ft{
+        border-top: 1px solid #333;
+    }
+    .pc_ft{
+        display: none;
+    }
+    .mobile_ft{
+        width: 100%;
+        clear: both; 
+        height: 280px;
+        position: relative;
+        top: 20px;
+        border-bottom: 1px solid #333;
+       
+    }
+    
+    .fnb_mobile{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .fnb_mobile li{
+        float: left;
+        line-height: 2;
+    }
+    .fnb_mobile li a{
+        color: #333;
+        display: block;
+        font-weight: bold;
+        font-size: 0.875em;
+    }
+    .fnb_mobile li a:hover{
+        text-decoration: underline;
+    }
+    
+    .fnb_sub li{
+        margin-right: 10px;
+    }
+    .fnb_sub li a{
+        font-size: 0.725em;
+        font-weight: 500;
+    }
+    .fnb_wrap_m{
+        width: 100%;
+    }
+    
+    .fnb_wrap_m li{
+        float: left;
+    }
+    .fnb_wrap_m li .pay{
+        width: 100px;
+        height: 50px;
+        margin-right: 20px;
+    }
+    .fnb_wrap_m li .sns{
+        width: 80px;
+        height: 50px;
+    }
+    .contact{
+        width: 100px;
+        height: 30px;
+        font-size: 11px;
+        position: absolute;
+        bottom: 12%;
+        right: 5%;
+    }
+    
+      .fnb2{
+          width: 100%;  
+          height: 120px;
+      }
+.fnb2 p{
+    font-size: 0.625em;
+    line-height: 2;
+}
+.add{
+   width: 100%;
+	float: left;
+    font-size: 0.625em; margin-top: 20px;
+}
+.copy{
+	width: 100%;
+}
+
+.copy p{
+	text-align: left;
+	left: 3%;
+    bottom: 0.625em;}
+
+
+
+}
+    
+        
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+<header class="hd">
+	<!--pc모드-->
+	<div class="pc_mode">	
+    	<div class="header_toprow">
+        	<div class="txt_rolling">
+            	<p>일리 스틱원두커피 출시</p>
+            </div>
+        	<div class="btn_special"><a href="#" target="_blank">special offers</a></div>
+        </div>
+        <div class="gnb">
+			<h1><a href="index.html"><img src="IMG/logo.jpg" alt="illy"></a></h1>
+			<div class="col">
+			<ul class="main">
+				<li class="brand1 "><a href="sub1.html" class="dep1">BRAND</a>
+				<div class="sub b">
+              <ul class="brand">
+                  <li><a href="sub1.html" class="dep2">BRAND</a></li>
+                  <li><a href="">브랜드</a></li>
+                  <li><a href="">일리커피이야기</a></li>
+                  <li><a href="">뉴스 및 공지</a></li>
+                  <li><a href="">제휴안내</a></li>
+                  <li><a href="">UDC</a></li>
+              </ul>
+              <ul class="imgBox">
+                  <li class="item1"><img src="IMG/menu1.jpg" alt=""></li>
+                  <li class="item2"><img src="IMG/menu2.jpg" alt=""></li>
+                  <li class="item3"> <img src="IMG/menu3.jpg" alt=""></li>
+              </ul>
+               
+           </div>
+				</li>
+				<li class="store1 "><a href="#" class="dep1">CAFFE &amp; SHOP</a>
+				<div class="sub c">
+              <ul class="coffee">
+                  <li><a href="" class="dep2">CAFFE &amp; SHOP</a></li>
+                  <li><a href="">일리카페</a></li>
+                  <li><a href="">일리샵</a></li>
+                  <li><a href="">가맹안내</a></li>
+              </ul>
+              <ul class="imgBox">
+                  <li class="item2"><img src="IMG/menu4.jpg" alt=""></li>
+                  <li class="item3"><img src="IMG/menu5.jpg" alt=""></li>
+              </ul>
+               
+           </div>
+				
+				</li>
+				<li class="location1 "><a href="#" class="dep1">매장찾기</a>
+				<div class="sub l">
+              <ul class="location">
+                  <li><a href="" class="dep2">매장찾기</a></li>
+                  <li><a href="">일리카페</a></li>
+                  <li><a href="">일리샵</a></li>
+                  <li><a href="">지역대리점</a></li>
+                  <li><a href="">A/S 고객지원</a></li>
+                  
+              </ul>
+              <ul class="imgBox">
+                  <li class="item1"><img src="IMG/shop1.jpg" alt=""></li>
+                  <li class="item2"><img src="IMG/shop2.jpg" alt=""></li>
+                  <li class="item3"> <img src="IMG/shop3.jpg" alt=""></li>
+              </ul>
+               
+           </div>
+				
+				</li>
+				<li class="shop1 "><a href="sub2.html" class="dep1">e-SHOP</a>
+				<div class="sub e">
+              <ul class="shop">
+                  <li><a href="" class="dep2">e-SHOP</a></li>
+                  <li><a href="">커피제품</a></li>
+                  <li><a href="">캡슐머신</a></li>
+                  <li><a href="">일리아트컬렉션</a></li>
+                  <li><a href="">커피악세사리</a></li>
+                  
+              </ul>
+              <ul class="imgBox">
+                  <li class="item1"><img src="IMG/p1.jpg" alt=""></li>
+                  <li class="item2"><img src="IMG/p2.jpg" alt=""></li>
+                  <li class="item3"> <img src="IMG/p4.jpg" alt=""></li>
+              </ul>
+               
+           </div>
+				</li>
+			</ul>
+			</div>
+ 
+        </div>
+</div>
+   
+   
+    <div class="mobile_mode">
+        <div class="header_toprow">
+        	<div class="txt_rolling">
+            	<p>일리 스틱원두커피 출시</p>
+            </div>
+        	<div class="btn_special"><a href="#" target="_blank">special offers</a></div>
+        </div>
+        <input type="radio" name="radio" class="ra" id="ra1">
+        <input type="radio" name="radio" class="ra" id="ra2">
+        <label for="ra1"><img src="IMG/toggle.png" alt=""  class="toggle"></label>
+        <a href="index.html" class="logo"><img src="IMG/logo.jpg" alt=""></a>
+        <nav class="gnb2">
+          
+            <ul class="main2">
+                <li><a href="sub1.html" class="dep_m">BRAND</a>
+                 <ul class="sub2">
+                  <li><a href="sub1.html">브랜드</a>
+                  </li>
+                  <li><a href="">일리커피이야기</a></li>
+                  <li><a href="">뉴스 및 공지</a></li>
+                  <li><a href="">제휴안내</a></li>
+                  <li><a href="">UDC</a></li>
+              </ul>
+                
+                </li>
+                <li><a href="" class="dep_m">CAFFE&amp;SHOP</a>
+                 <ul class="sub2">
+                  <li><a href="">일리카페</a></li>
+                  <li><a href="">일리샵</a></li>
+                  <li><a href="">가맹안내</a></li>
+              </ul>
+                
+                
+                </li>
+                <li><a href="" class="dep_m">매장찾기</a>
+                <ul class="sub2">
+                 
+                  <li><a href="">일리카페</a></li>
+                  <li><a href="">일리샵</a></li>
+                  <li><a href="">지역대리점</a></li>
+                  <li><a href="">A/S 고객지원</a></li>
+                  
+              </ul>
+                
+                </li>
+                <li><a href="sub2.html" class="dep_m">e-SHOP</a>
+                <ul class="sub2">
+                  
+                  <li><a href="">커피제품</a></li>
+                  <li><a href="">캡슐머신</a></li>
+                  <li><a href="">일리아트컬렉션</a></li>
+                  <li><a href="">커피악세사리</a></li>
+                  
+              </ul>
+                
+                
+                </li>
+            </ul>
+             <label for="ra2" class="close">X</label>
+        </nav>
+        
+        
+        
+    </div>
+
+	</header>
+	<section id="page1">
+		<img src="IMG/sub1_bg.jpg" alt="">
+	</section>
+	<section id="page2">
+	<div class="txtBox">
+		<h3>illy :</h3>
+		<p>일리는 혁신, 직관과 전문성으로 탄생된 아주 특별한 커피 브랜드입니다. <br>
+일리 카페(illycaffe)는 1933년 기업가이자 과학자인 프란체스코 일리(Francesco Illy)에 의해 자신의 고향인 이태리 트리에스테(Trieste)에 창립되었고, 2년 후 프란체스코는 "일레따(illleta)"라고 하는 증기를 압축 공기로 대체하는 혁신적인 에스프레소 커피 기계를 발명하였습니다. <br>
+현재의 커피 머신의 최초의 모델인 "일레따"는 곧 이태리 전역의 커피 애호가에게 고품질의 커피를 공급할 수 있게 하였으며 근대 커피 머신의 발전에 지대한 공헌을 했습니다. <br>
+일리카페는 과거 100 여년 동안 전통과 조화를 이루는 동시에 창조의 영역을 확장하는데 헌신함으로써 커피의 역사에 중요한 발자취를 남기고 있습니다. 
+
+<p>일리는 그 무엇보다 삶의 질을 가장 중요하게 생각합니다.</p>
+
+<p>일리커피는
+매일 집, 사무실, 호텔, 식당 및 카페에서 수백만 명의 사람들을 즐겁게하는 5 대륙의 유명하고 순수하고 고급스러운 9가지 아라비카로 구성된 탁월한 블렌드 인 커피의 높은 품질과 뚜렷하고 부드러운 맛을 자랑합니다.</p>
+		</div>
+	</section>
+	<section id="page3">
+		<div class="box1">
+			<img src="IMG/sub1_content2.jpg" alt="" class="boxImg">
+			<h2 class="boxTit">Mission</h2>
+			<span class="box_bar"></span>
+			<p class="boxCom">
+				일리는 완벽한 한 잔의 커피, <br>즉 감각과 정신으로 모두 즐길 수 있는 한 잔의 커피를 개발하는 데 계속적으로 헌신하고 있습니다. <br>우리가 끊임없이 완벽함을 추구하는 이유는<br> 언제나 그보다 더 높은 목표와 제공해야 할 더 좋은 맛이 있기 때문입니다. <br> 한 잔의 커피는 단지 음료가 아니라 마음을 따뜻하게 하는 순간이기 때문입니다.
+			</p>
+			
+		</div>
+		<div class="box2">
+			<img src="IMG/sub1_content3.jpg" alt="" class="boxImg">
+			<h2 class="boxTit">Vision</h2>
+			<span class="box_bar"></span>
+			<p class="boxCom">
+				우리의 꿈은 특별한 커피 문화를 전세계 시장에 보급하는것입니다. <br> 우리의 꿈은 최고급 원두로 시작하여 한잔의 커피로 여러분의 <br>감각과 정신을 즐겁게 하는 것으로 완성됩니다. <br> 우리는 한 모금의 커피에서 여러분이 언제나 완벽한 커피를 경험할 수 있도록 <br> 시대마다 진보된 정신과 기술혁신을 통하여 변화하는 일리의 전통을 제공합니다.
+			</p>
+			
+		</div>
+		
+	</section>
+	<section id="page4">
+	<div class="box1">
+			<img src="IMG/sub1_content1.jpg" alt="" class="boxImg">
+			<h2 class="boxTit">Values</h2>
+			<span class="box_bar"></span>
+			<p class="boxCom">
+				Ethics. 우리는 투명성, 지속 가능성 및 인력 개발에 대한 약속을 통해 시간이 지남에 따라 <br> 우수한 이해 관계 가치를 공유 할 수 있습니다.<br> 
+Excellence. 우리는 고객의 요구와 소망을 항상 만족시키기위해 <br> 우리의 탐구에서 능률적이고 효율적으로 일하는 것 뿐만 아니라 <br> 매우 훌륭하고 아름다운 경험과 제품을 창출함으로써 <br> 커피원두에서 컵으로 이어지는 가치기준의 모든 접점에 영감을 불어 넣는 것을 목표로 합니다.
+			</p>
+			
+		</div>
+		<div class="numberBox">
+			<h3>illycaffè, in numbers</h3>
+			<img src="IMG/number.png" alt="">
+		</div>
+		
+		
+	</section>
+	
+<footer id="ft">
+    <div class="pc_ft">
+        <div class="fnb">
+            <div class="fnb_m">
+
+                <div class="flex-item">
+                    <div class="fnb_tit">
+                        <ul class="fnb_wrap">
+                            <li class="title">BRAND</li>
+                            <li><a href="">브랜드</a></li>
+                            <li><a href="">일리커피이야기</a></li>
+                            <li><a href="">뉴스 및 공지</a></li>
+                            <li><a href="">제휴안내</a></li>
+                            <li><a href="">UDC</a></li>
+                        </ul>
+                        <ul class="fnb_wrap">
+                            <li  class="title" >CAFFE&amp;SHOP</li>
+                            <li><a href="">일리카페</a></li>
+                             <li><a href="">일리샵</a></li>
+                            <li><a href="">가맹안내</a></li>
+                            
+                        </ul>
+                        <ul class="fnb_wrap">
+                            <li class="title">매장찾기</li>
+                            <li><a href="">일리카페</a></li>
+                            <li><a href="">일리샵</a></li>
+                            <li><a href="">지역대리점</a></li>
+                            <li><a href="">A/S고객지원</a></li>
+                           
+                        </ul>
+                        <ul class="fnb_wrap">
+                            <li class="title">e-SHOP</li>
+                            <li><a href="">커피제품</a></li>
+                            <li><a href="">캡슐머신</a></li>
+                             <li><a href="">일리아트 컬렉션</a></li>
+                              <li><a href="">커피악세사리</a></li>
+                              
+                        </ul>
+                        <ul class="fnb_wrap">
+                            <li ><button class="contact">CONTACT US</button></li>
+                            
+                            <li><a href=""><img src="img/pay.png" alt=""></a></li>
+                            
+                            <li><a href=""><img src="img/snsbox.png" alt=""></a></li>
+                           
+                            </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+             
+     </div> 
+     </div>
+     <div class="mobile_ft">
+         <ul class="fnb_mobile">
+             <li><a href="">BRAND</a>
+             <ul class="fnb_sub">
+                            
+                            <li><a href="">브랜드</a></li>
+                            <li><a href="">일리커피이야기</a></li>
+                            <li><a href="">뉴스 및 공지</a></li>
+                            <li><a href="">제휴안내</a></li>
+                            <li><a href="">UDC</a></li>
+                        </ul>
+             </li>
+             <li><a href="">CAFFE&amp;SHOP</a>
+              <ul class="fnb_sub">
+                            
+                            <li><a href="">일리카페</a></li>
+                             <li><a href="">일리샵</a></li>
+                            <li><a href="">가맹안내</a></li>
+                            
+                        </ul>
+             </li>
+             <li><a href="">매장찾기</a>
+             <ul class="fnb_sub">
+                           
+                            <li><a href="">일리카페</a></li>
+                            <li><a href="">일리샵</a></li>
+                            <li><a href="">지역대리점</a></li>
+                            <li><a href="">A/S고객지원</a></li>
+                           
+                        </ul>
+             </li>
+             <li><a href="">e-SHOP</a>
+              <ul class="fnb_sub">
+                           
+                            <li><a href="">커피제품</a></li>
+                            <li><a href="">캡슐머신</a></li>
+                             <li><a href="">일리아트 컬렉션</a></li>
+                              <li><a href="">커피악세사리</a></li>
+                              
+                        </ul>
+             
+             </li> 
+              <ul class="fnb_wrap_m">
+                            <li ><button class="contact">CONTACT US</button></li>
+                            
+                            <li><a href=""><img src="img/pay.png" alt="" class="pay"></a></li>
+                            
+                            <li><a href=""><img src="img/snsbox.png" alt="" class="sns"></a></li>
+                           
+                            </ul>
+             
+             
+         </ul>
+         
+         
+         
+         
+         
+         
+     </div>
+    
+     <div class="fnb2">
+        <ul class="add">
+            <li><a href="">
+
+(주)큐로홀딩스
+
+   </a></li>
+            <li><a href="">대표자 | 조중기    주소 | 서울시 강남구 테헤란로 77길 7, 동원빌딩 4층</a></li>
+            <li>고객센터 | <a href="tel:1666-1282" >1666-1282 </a></li>
+            <li>이메일 | <a href="mailto:cs@curoholdings.com">cs@curoholdings.com</a></li>
+            <li>
+               
+            </li>
+          
+        </ul>
+        <ul class="copy">
+        	<p>Copyright(c) 2019 www.illycaffe.co.kr All rights reserved. <br>
+© 2019 illycaffè S.p.A. | P.IVA 00055180327 | Via Flavia 110, 34147 Trieste – Italy</p>
+        </ul>
+  
+     </div>
+     
+     
+     
+ </footer>
+
+	
+	
+</body>
+</html>
