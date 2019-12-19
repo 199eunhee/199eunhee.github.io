@@ -1,5 +1,5 @@
 @charset"UTF-8" ;
-
+ .toggle,.close{display: none;}
 #page0{
     clear: both;
     width: 100%;
