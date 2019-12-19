@@ -437,7 +437,7 @@ width: 100%;
     width: 100%;
     height: auto;
     overflow: hidden;
-    position: relative;
+  position: relative;
 }
 .content2{ 
     clear: both;
