@@ -1,0 +1,529 @@
+
+
+
+@media screen and (min-width:1281px) and (max-width:1919px){
+    /*고해상도 타블렛*/
+    .car_more{
+        left: 35%;
+    }
+    .carBack{
+        left: 28%;
+    }
+ 
+}
+
+
+@media screen and (min-width:768px) and (max-width:1280px){
+    /*w저해상도 타블렛*/
+ /* video { display: inline-block; width: auto\9 !important;  ie8  width: auto !important; max-width: 100%; height: auto !important; }*/
+   
+    
+    #page1{
+    overflow: hidden;
+    width: 100%;
+    height:90vh;
+}
+      
+    .toggle{
+        width: 30px;
+        height: 50px;
+        position: fixed;
+        top: 5%; right: 18%;
+        cursor: pointer;
+        display: block;
+        z-index: 10;
+    }
+    .toggle img{
+        display: block;
+        width: 30px;
+        height: 50px;
+        
+    }
+    
+    #header .gnb{
+    position:absolute;
+    left: 130%;    
+        width: 370px;
+        height: 100%;
+    top: 0px;
+    z-index: 90;
+        background-color: #fff;
+        transition:0.7s;
+        
+}
+#header .gnb > li{
+    float: none;
+    margin-left: 45px;
+    margin-top: 30px;
+    padding: 30px
+}
+        
+        #header .gnb > li a{
+            color: #222;
+            font-size: 16px;
+        }
+        #header .gnb > li a:hover{
+            text-decoration: underline;
+        }
+    .gnb_close img{width: 25px; height: 25px;display: block;} 
+    .gnb_close{width: 30px; height: 30px;display: block; position: absolute; display: block; top: 2%; left: 5%; z-index: 99; cursor: pointer;}
+    
+    #ra1:checked ~ .gnb{
+        left: 65%;
+      
+    }
+    #ra2:checked ~ .gnb{
+        left: 130%;
+   
+    }
+    
+    .seach_page input{
+        left: 35%;
+    }
+    .main{
+    width: 650px;
+    height: 1024px;
+    position: relative;
+}
+    
+            .main aside{
+    position: relative;
+    left: -100%;
+    top: 0;
+    width: 650px;
+    height: 1024px;
+    background: #ededed;
+            z-index: 10;
+           
+}
+    .main aside .car{left:5%;top: 25%;}
+    .main aside .name{
+        left: 10%;
+    }
+    .main aside .txt{
+        left: 5%;
+    }
+    .main aside .txt_under{
+        left: 8%;
+    }
+    .page2Open{
+     left: 100%;
+    }
+    #page3{
+        height:80vh;
+        background-color: #ededed;
+    }
+    .banFrame li{
+    width: 33.3333%;
+    height: 80vh;
+    float: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+}
+    .btn_box1{
+   
+    bottom: 80%;
+
+}
+    .titBox{
+        top: 30%; width: 250px; height: 300px;
+    }
+    .vsmore{
+        left: 10%;
+        top: 75%;
+    }
+   
+    
+    #page4{
+        width: 100%;
+        height: 90vh;
+         background-size: 100% 90%; 
+    }
+    .img_box{left: 15%;}
+    #btn_box2{left: 30%;}
+    
+    .css_tit{
+        top: 15%;
+    }
+    .lst{
+        margin: 0 auto;
+        top: 20%; left: 5%;
+        width: 90%;
+    }
+    .lst li{
+        
+    width: 300px;
+    }
+     .lst li .tit_Box {
+        width: 300px;
+        height: 300px;
+        background: #282828;
+        transition: 0.5s;
+        color: #fff;
+        position: relative;
+    }
+    .bx_lst span{
+        display: none;
+    }
+    .car_more{
+      bottom: 5%;
+        left: 30%;
+    }
+
+    
+    #page6 h3{
+        left: 35%;
+    }
+    .carBack{
+        left: 20%;
+    }
+    #page6 h3{
+        left: 30%;
+    }
+    .carBack{
+        left: 15%;
+    }
+    
+    #ft{
+        height: 450px;
+    }
+    .fnb ul{
+    position: relative;
+    left:0%;
+}
+    .fnb li{
+    float: left;
+    width: 140px;
+    line-height: 130px;
+}
+    #language{
+    width: 140px;
+    height:50px;
+        right: 5%;
+   
+}
+}
+
+
+@media only screen and (max-width:767px){
+    /*모바일 사이즈일때*/
+     #header .logo img{
+            width: 100px;
+            height: auto;
+        }
+    #header .logo{top: 3.5%;}
+    .toggle{
+        width: 30px;
+        height: 50px;
+        position: absolute;
+        top: 4.5%; right: 20%;
+        cursor: pointer;
+        display: block;
+        z-index: 10;
+    }
+    .toggle img{
+        display: block;
+        width: 30px;
+        height: 50px;
+        
+    }
+    
+    #header .gnb{
+    position:absolute;
+    left:120%;    
+        width: 300px;
+        height: 100%;
+    top: 0px;
+    z-index: 90;
+        background-color: #fff;
+        transition:0.7s;
+        
+}
+#header .gnb > li{
+    float: none;
+    margin-left: 45px;
+    margin-top: 30px;
+    padding: 30px
+}
+        
+        #header .gnb > li a{
+            color: #222;
+            font-size: 16px;
+        }
+        #header .gnb > li a:hover{
+            text-decoration: underline;
+        }
+    .gnb_close img{width: 25px; height: 25px;display: block;} 
+    .gnb_close{width: 30px; height: 30px;display: block; position: absolute; display: block; top: 2%; left: 5%; z-index: 99; cursor: pointer;}
+    
+    #ra1:checked ~ .gnb{
+        left: 23%;
+      
+    }
+    #ra2:checked ~ .gnb{
+        left: 120%;
+   
+    }
+    .search_btn2{
+        left: 10%;
+    }
+    .seach_page input{
+        left: 25%;
+        width: 250px;
+    }
+    .search_close{
+        right: 10%;
+    }
+    
+    .main{
+    width: 300px;
+    height: 850px;
+    position: relative;
+}
+    
+            .main aside{
+    position: relative;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ededed;
+            z-index: 10;
+           
+}
+    .main aside .car{left:0%;top: 25%; width: 350px; height: 200px;}
+    .main aside .name{
+        left: 10%;
+        top: 55%;
+        font-size: 1em;
+    }
+    .main aside .txt{
+        left: 5%;
+        top: 65%;
+        height: 30px;
+        display: block;
+    }
+    .main aside .txt1{
+        font-size: 0.725em;
+        background: none;
+         padding-left: 20px;
+    margin-left: 25px;
+    }
+    .main aside .txt_under{
+        left: 8%;
+        top: 70%;
+         font-size: 0.725em;
+    }
+    .page2Open{
+     left: 100%;
+    }
+     .main aside .txt_under .txt_under1{
+    margin-right: 15px;
+    float: left;
+}
+
+ .main aside .txt_under .txt_under2{
+    margin-right: 25px;
+    float: left;
+}
+ .main aside .txt_under .txt_under3{
+    margin-right: 35px;
+    float: left;
+}
+ .main aside .txt_under .txt_under4{
+    margin-right: 0;
+    float: left;
+}
+    #page3{
+    clear: both;
+    width: 100%;
+    height:100%;
+    position: relative;
+        background-color: #ededed;
+}
+    .banFrame{width: 300%;
+    height: 100vh;
+    position: relative;
+}
+
+.banFrame li{
+    width: 33.3333%;
+    height: 100vh;
+    float: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+}
+   
+    .titBox{
+        width: 250px;
+        height: 150px;
+        top: 60%;
+    }
+    #page3:hover .titBox{
+     top: 60%;
+}
+    .vsCom{
+       display: none; 
+    }
+    
+    .vsmore{
+        width: 150px;
+        top: 60%;
+    }
+    
+    #page4{
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+    
+    .img_box{
+        top: 48%;
+        left: 10%;
+    }
+    #page4 img{
+        width: 380px;
+        height: 250px;
+    }
+    .num{
+        bottom: 70px;
+    }
+    #btn_box2{
+    left: 5%;
+    }
+    #btn_box2 button{
+        margin: 0px;
+    }
+    #btn_box2 button img{
+        width:30px;
+        height: 30px;
+    }
+    
+    
+    #page5{
+    width: 100%;
+    height: 200%;
+    background-color: #ededed;
+    position: relative;
+    clear: both;
+}
+    
+    .css_tit {
+  
+      top: 10%;
+    }
+    .lst {
+        clear: both;
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        top:12%;    
+    }
+    .lst li {
+        float: left;
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+    }
+    .bx_lst{display: none;}
+    .car_more{
+        left: 20%;
+        bottom: 3%;
+        width: 250px;
+        font-size: 1em;
+    }
+    .car_more img{
+        width: 40px; height: 40px;
+        left: 5%;
+    }
+    #page6 h3{
+         font-size:1.5em;
+        top: 15%;
+        left: 30%;
+    }
+    .carBack{
+        width: 350px;
+        height: auto;
+        left: 10%;
+        top: 20%;
+    }
+    #tab{
+        width: 320px; top: 45%;
+    }
+    #tab .title li{
+        width: 80px;
+        font-size: 0.875em;
+    }
+    table{
+    
+width:100%;
+    margin: 1.25em auto; 
+    
+}
+    table td{
+    
+    font-size: 0.875em;
+    
+   
+}
+    
+    #ft{
+    
+    height: 700px;
+ 
+}
+
+.fnb{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.fnb ul{
+    position: relative;
+    left: 10%;   top: 30%;
+    
+}
+.fnb li{
+    float: left;
+    width: 150px;
+    position: relative;
+  
+    
+}
+
+.fnb li a{
+    
+    font-size: 0.875em;
+  
+    
+    line-height: 1.5;
+   
+}
+
+
+#language{
+    width: 180px;
+    height: 40px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    text-transform: uppercase;
+    position: absolute; right: 5%;
+   top: 110%; 
+}
+
+.copy p{
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 0.875em;
+    color: #454545;
+}
+    
+    .copy p:first-child{
+       padding-top: 55px;
+    }
+   
+}

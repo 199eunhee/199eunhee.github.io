@@ -1,0 +1,587 @@
+@charset"UTF-8" ;
+        #video{position: fixed; left: -200px; top: -160px; background-color: #333; z-index: -10;}
+
+        
+#page1{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+        
+/*header*/
+
+.raItem{display: none;}
+
+#header .logo{
+    position: fixed;
+    left: 33px;
+    top:2%;
+    z-index: 20;
+    
+}
+        #header .logo img{
+            width: 150px;
+            height: auto;
+        }
+#header .gnb{
+    position: fixed;
+    left: 224px;
+    top: 60px;
+    z-index: 9999;
+}
+#header .gnb > li{
+    float: left;
+    margin-left: 45px;
+}
+        
+        #header .gnb > li a{
+            color: rgba(67, 66, 66, 0.8);
+            font-size: 14px;
+        }
+        #header .gnb > li a:hover{
+            text-decoration: underline;
+        }
+
+.seach_page{width: 100%; height: 1000px;   
+background-color: rgba(237, 237, 237,0.8); position: absolute; display: none;
+z-index: 25;}
+.seach_page input{
+    width: 40%;
+    height: 60px;
+    position: absolute;
+    background-color: rgba(255,255,255,0.5);
+    top: 30%; left: 30%;
+    text-indent: 10%;
+    font-size: 1.125em;
+    font-weight: bold;
+    border-bottom: 1px solid #5a5a5a;
+}
+
+.search_btn{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10%;
+    top: 6%;
+    cursor: pointer;
+    z-index: 20;
+    display: block;
+}
+
+.search_btn2{
+    width: 60px;    
+    height: 60px;
+    position: absolute;
+    display: block;
+    top: 30%; left: 29%;
+    background-color: #222;
+}
+.search_btn2 img{
+    width: 30px;
+    height: 30px;
+    line-height: 60px;
+}
+
+.search_close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    align-content: space-between;
+    top: 15%;
+    right: 30%;
+    cursor: pointer;
+}
+
+
+.toggle,.gnb_close{
+    display: none;
+}
+/*#header .side_bar{
+    width: 10px;
+    height: 344px;
+    position: absolute;
+    left: 45px;
+    top: 50%;
+    margin-top: -172px;
+    background: url("img/sidebar.png")no-repeat left top;
+    background-size: 20px 250px;
+    z-index: 9999;
+}*/.main{
+    width: 1100px;
+    height: 980px;
+    position: relative;
+}
+ 
+        .main aside{
+    position: relative;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height:100%;
+    background: #ededed;
+            z-index: 10;
+           
+}
+
+
+
+ .main aside .car{width: 640px;height: 333px; position: absolute;left: 290px;top: 290px;}
+
+
+ .main aside .name{
+    position: absolute;
+    left: 340px;
+    top: 650px;
+    font-size: 1.5625em;
+    font-weight: 600;
+}
+
+ .main aside .txt{
+    height: 55px;
+    position: absolute;
+    left: 241px;
+    top: 743px;
+    
+}
+
+ .main aside .txt1{
+    float: left;
+    background: url(../img/line.jpg) no-repeat left top;
+    padding-left: 56px;
+    margin-left: 55px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ .main aside .txt1:first-child{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+ .main aside .txt_under{
+    position: absolute;
+    left: 261px;
+    top: 788px;
+     font-size: 16px;
+    font-weight: bold;
+
+}
+ .main aside .txt_under .txt_under1{
+    margin-right: 80px;
+    float: left;
+}
+
+ .main aside .txt_under .txt_under2{
+    margin-right: 95px;
+    float: left;
+}
+ .main aside .txt_under .txt_under3{
+    margin-right: 115px;
+    float: left;
+}
+ .main aside .txt_under .txt_under4{
+    margin-right: 0;
+    float: left;
+}
+.page2Open{display: block; position: absolute; top: 40%; left: 100%; border: 0; outline: 0; background-color: rgba(0,0,0,0.8); width: 52px; height: 132px; }
+.page2Open img{
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+
+
+/*페이지 3*/
+
+#page3{
+    clear: both;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.titBox{
+    background-color: rgba(255,255,255,0.6);
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    top: 50%; left: 5%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+#page3:hover .titBox{
+    top: 40%;
+}
+.vsTit{
+    padding: 1.25em;
+    display: block;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.vsTit:after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #b1b1b1;
+    display: block;
+    margin-top: 10px;
+}
+
+.vsCom{padding: 1.25em; display: block; font-size: 1.125em;}
+   
+.vsmore{width: 200px;height: 50px; line-height: 50px;
+color: rgba(255, 255, 255,0.8); background-color: #222; font-size: 1em; position: absolute; left: 20%; top: 65%;}
+
+.banFrame{width: 300%;
+    height: 100vh;
+    position: relative;
+}
+
+.banFrame li{
+    width: 33.3333%;
+    height: 100vh;
+    float: left;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.banFrame li.item1{
+    background-image: url(../img/deffender1.jpg);
+}
+.banFrame li.item2{background-image: url(../img/deffender2.jpg);}
+.banFrame li.item3{background-image: url(../img/deffender11.jpg);}
+
+
+.btn_box1{
+   position: relative;
+    bottom: 50%;
+}
+
+.btn_box1 li button{
+    width: 50px;
+    height: 50px;
+    display: block;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.prevBtn{position: absolute; left: 5%;}
+.nextBtn{position: absolute; right: 5%;}
+
+.btn_box1 li img{width: 50px; height: 50px;}
+
+
+/*Page4*/
+
+#page4{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #ededed;
+    background-image: url(../img/stage2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img_box{width: 700%; height: 340px; position: relative; top: 45%; left: 40%;}
+        #page4 a{display: block; width: 14.28571428571429%; height: 333px; float: left;position: relative;}
+        #page4 img{display: block; width: 640px; height: 333px; }
+        .num{display: block;width: 60px; height: 40px; background: #222; color: #fff; text-align: center; line-height: 40px; border-radius: 25px; position: absolute; bottom: 15px; left: 15px; z-index: 10;}
+        
+        #btn_box2{ width: 700%; height: 50px; position: absolute; bottom: 10%; left: 50%;}
+        #btn_box2 button{ width: 50px; height: 50px; float: left; margin: 10px;}
+
+#btn_box2 button img{
+    width: 50px; height: 50px; display: block; 
+}
+
+/*page5*/
+#page5{
+    width: 100%;
+    height: 100%;
+    background-color: #ededed;
+    position: relative;
+    clear: both;
+}
+
+ /*9번째*/
+  .css_tit {
+        text-align: center;
+        border-bottom: 1px solid #333;
+      position: relative;
+      top: 30%;
+    }
+
+    .lst {
+        clear: both;
+        width: 1280px;
+        margin: 10px auto;
+        position: relative;
+        top:35%;    
+    }
+
+    .lst li {
+        float: left;
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+
+    .lst.sq li {
+        overflow: hidden;
+    }
+
+    .lst .bx_fr {
+        width: 600px;
+        height: 300px;
+        transition: 0.5s;
+    }
+
+    .lst .bx_fr .img_Box,
+    .lst .bx_fr .tit_Box {
+        float: left;
+    }
+
+    .lst li .img_Box {
+        width: 300px;
+        height: 300px;
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .lst li .img_Box img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .lst li .tit_Box {
+        width: 300px;
+        height: 300px;
+        background: #282828;
+        transition: 0.5s;
+        color: #fff;
+        position: relative;
+    }
+
+    .tit {
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        font-size: 16px;
+        line-height: 3;
+    }
+
+    .com {
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    .lnk_Box {
+        text-align: center;
+        line-height: 1.3;
+        padding-top: 36px;
+    }
+
+    .more {
+        font-size: 18px;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 8px 28px;
+        border-radius: 8px;
+    }
+
+.more:hover{
+    background-color: #fff;
+    color: #222;
+}
+    .lst.sq9 li {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .lst.sq9 li .img_Box {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 5;
+        overflow: hidden;
+    }
+
+    .lst.sq9 li .tit_Box {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 6;
+        overflow: hidden;
+        background: rgba(40, 40, 40, 0.7);
+        opacity: 0;
+    }
+
+    .lst.sq9 li .img_Box img {
+        height: 100%;
+    }
+
+    .lst.sq9 li:hover .tit_Box {
+        opacity: 1;
+    }
+
+    .bx.sq33 .img_Box {
+        transform: scale(1);
+    }
+
+    .bx.sq33:hover .img_Box {
+        transform: scale(1.5);
+    }
+
+    .bx.sq33 .tit_Box {
+        transform: scale(1.5);
+    }
+
+    .bx.sq33:hover .tit_Box {
+        transform: scale(1);
+    }
+
+.bx_lst{width: 100%; position: absolute;clear: both; text-align: center; 
+bottom: 20%;}
+
+.bx_lst span{
+    font-size: 1.25em;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    display: block;
+}
+
+.car_more{
+    clear: both;
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+   width: 380px;
+    height: 80px;
+    background-color:#222;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.25em;
+    text-indent:3em;
+    cursor: pointer;
+}
+
+.car_more img{
+    width: 50px;
+    height: 50px;
+    line-height: 80px;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+/*page6*/
+#page6{
+    width: 100%;
+    height: 100%;
+    background-color: #ededed;
+    position: relative;
+    clear: both;
+}
+
+#page6 h3{
+    display: block; 
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #3a4a3a;
+    line-height: 1.5;
+    position: absolute;
+    top: 10%; left: 40%;
+    text-align: center;
+    
+    
+}
+.carBack{
+    display: block; position: absolute;
+    left: 35%;top: 15%;
+}
+ #tab{width: 720px; margin: 0 auto; position: relative; top: 52%;}
+        #tab .title{ background-color: #fff; box-sizing: border-box; border-radius: 15px 15px 0 0; overflow: hidden;}
+        #tab .title li{float: left; width: 180px; height: 40px;font-size: 16px; font-weight: bold; text-align: center; line-height: 40px;box-sizing: border-box; 
+border-left: 1px solid #ddd;}
+        #tab .title li a{display: block; color: #222;}
+        #tab .title li a.select{background-color:#fff; color: #222; box-shadow: 10px 0px 10px #ddd; }
+        #tab .title li:first-child{border-left: 0;}
+        #tab .content{clear: both; border: 1px solid #fff; background-color: #fff; height: 370px; padding: 10px; border-top: 0; position: relative; }
+table{
+    
+width:60%;
+    margin: 1.25em auto; 
+    
+}
+
+table td{
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+    line-height: 2;
+    text-align: left;
+}
+
+.tableTit{
+    font-weight: bold;
+}
+
+#ft{
+    width: 100%; 
+    height: 350px;
+    background-color: #fff;
+    position: relative;
+    clear: both;
+}
+
+.fnb{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.fnb ul{
+    position: relative;
+    left: 5%;
+}
+.fnb li{
+    float: left;
+    width: 180px;
+    line-height: 100px;
+}
+
+.fnb li a{
+    display: block; 
+    font-size: 0.875em;
+    color: #222;
+    font-weight: bold;
+    line-height: 100px;
+    text-align: center;
+}
+.fnb li a:hover{
+    text-decoration: underline;
+}
+
+#language{
+    width: 180px;
+    height: 50px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    text-transform: uppercase;
+    position: absolute; right: 20%;
+    top: 25%;
+}
+
+.copy p{
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 0.875em;
+    color: #454545;
+}
+     
