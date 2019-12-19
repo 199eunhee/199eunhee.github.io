@@ -729,14 +729,15 @@ height: 280px;}
         #next{position: absolute; top: 5%; right: 5%; cursor: pointer;}
     
 
-    /*푸터*/
-    #ft{
+          /*푸터*/
+ #ft{
         border-top: 1px solid #333;
     }
     .pc_ft{
         display: none;
     }
     .mobile_ft{
+        display: block;
         width: 100%;
         clear: both; 
         height: 280px;
@@ -817,6 +818,8 @@ height: 280px;}
 	text-align: left;
 	left: 3%;
     bottom: 0.625em;}
+
+
 
 }
 
