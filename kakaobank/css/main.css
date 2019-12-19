@@ -7,12 +7,12 @@ clear: both;
     background-position: center center;
 width: 100vw;
 height: 100vh;
-overflow: hidden;}
+ overflow: hidden;}
 
 
 /*페이지1*/
 
-
+video { width: 100%; height: 100%;}
 .btnBox1{
     clear: both;
     position: absolute;
@@ -59,7 +59,9 @@ overflow: hidden;}
     left: 20px;
      top: 23px;
 } 
-
+h3{
+    opacity: 0;
+}
     
 /*페이지2 계좌개설*/
 #page2{
@@ -85,13 +87,14 @@ left: 8%; text-align: left;
     line-height: 30px;
     color: #222;
     font-weight: 500;
-   
+    opacity: 0;
 }
 
 #page2 .pageCom{
      position: absolute; 
     right: 13%;
     top: 50%;
+     
 }
 
 .btn3{
@@ -153,14 +156,16 @@ right: 14%; text-align: left;
 .ico1{
     position: absolute;
     bottom: 0;
-    left: 15%;
+    left: 5%;
     width: 600px;
+    opacity: 0;
 }
 
 .ico2{
        position: absolute;
     bottom: 10%;
-    left: 38%;
+    left: 5%;
+    opacity: 0;
 }
 .ico3{
        position: absolute;
@@ -216,16 +221,21 @@ right: 14%; text-align: left;
     top: 5%;
     left: 27%;
     width: 800px;
+    opacity: 0;
 }
 .txt_img1{ position: absolute;
     top: 40%;
     right: 24%;
 width: 300px;
-height: 380px;}
+height: 380px;
+opacity: 0;
+}
 
 .txt_img2{ position: absolute;
     bottom:20%;
-    right: 37%;}
+    right: 37%;
+opacity: 0;
+}
 
 #page4 .pageCom{
     position: absolute;
@@ -325,7 +335,7 @@ right: 5%; text-align: left;
 }
 
 #page6 h3{
-    display: block;
+  
     font-size: 45px;
     color: #333;
     font-weight: normal;
@@ -339,9 +349,10 @@ left: 25%; text-align: left;
 
 #page6 .ico5{
     position: absolute;
-    right: 0;
+    right: -20%;
     bottom: 0;
     width: 850px;
+    opacity: 0;
 }
 
 #page6 .pageCom{
@@ -376,7 +387,7 @@ left: 25%; text-align: left;
 
 
 #page7{
-    background-color: #ffd95c;
+  
 }
 
 
@@ -418,6 +429,12 @@ right: 6%; text-align: left;
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;  
+}
+.ico6{
+    position: absolute;
+    left: 21%;
+    top: 8%;
+    opacity: 0;
 }
 
 .btn8 .bull1{

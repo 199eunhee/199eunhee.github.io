@@ -1,0 +1,431 @@
+/*고해상도 데스크탑*/
+@media screen and (min-width: 1281px) and (max-width : 1919px){
+       .ra,.toggle,.close{display: none;}
+   .vsFrame li img{
+    position: absolute;
+    width: 100%;}
+	
+    .btn{
+     width: 25%;
+    margin: 20px auto;
+		background-color: aqua;
+}
+
+.btn li{
+   width: 50%;
+    float: left;
+   
+}
+
+.btn li button{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #333;
+    text-align: center; 
+    cursor: pointer;
+    background-color: #dddada;
+} 
+  
+   
+/*푸터*/
+	#ft{
+    clear: both;
+    position: relative;
+    background-color: #eee;
+    width: 100vw;
+    height: 200px;
+}
+.fnb{
+    clear: both;
+    width: 100%;
+}
+.fnb ul{ width: 90%; margin: 0 auto; padding-top: 10px;}
+.fnb li{
+  width: 180px;
+float: left;
+display: block; 
+font-size: 0.875em;
+line-height: 32px;
+margin-right: 10px;
+padding-top: 5px;
+}
+
+.fnb li:after{
+   display: none;
+}
+
+.fnb li a{
+    color: #333;
+    text-align: center;  
+}
+
+.fnb li:nth-child(4) a{
+    font-weight: 600;
+}
+.fnb li a:hover{text-decoration: underline;}
+
+.add{width: 90%;
+padding-top: 130px;
+margin: 0 auto;}
+
+.add p{
+    font-size:0.875em;
+    line-height: 1.5;
+    color: #333;
+}
+	.sns ul{
+    position: absolute; right: 15%;
+    bottom: 20px;
+}
+.sns li{
+    float: left;
+    padding: 10px;  
+    cursor: pointer;
+    display: block;
+}
+    .sns li img{
+        width: 25px;
+        height: 25px;
+        display: block;
+    }  
+
+    
+}
+/*고해상 끝*/
+
+/*저해상도 데스크탑*/
+@media screen and (min-width:768px) and (max-width:1280px){
+	/*헤더_미디어*/
+	.toggle,.close{display: block;}
+	.hd{
+		border-bottom: 1px solid #000;
+	}
+	.hd:hover{
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+}
+	.toggle{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		display: block;
+		right: 5%;
+		top: 0%;
+	}
+	.tnb{
+    width: 350px;
+		height: 1024px;
+		position: fixed;
+		border-left: 1px solid #000;
+		background-color: #fff;
+    right: -350px;
+    top:0%;
+		transition: 0.5s;
+}
+	.tnb .menu{
+		padding-top: 4em;
+	}
+	.tnb .menu > li{
+    float: none;
+    width: 100%;
+		display: block;
+    line-height: 3;
+  
+    text-align: center;
+}
+	.sub1{
+    clear: both;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    right: 0;
+    background-color: #eee;
+    visibility: hidden;
+   transition: 0.5s;
+      height: 100%;
+}
+	.sub1:after{
+   display: none;
+}
+.sub1:before{
+ display: none;
+}
+	.sub1 > li{
+    width: 100%;
+}
+	
+	.tnb .menu > li:hover .sub1{
+	 visibility: visible;
+        opacity: 1;
+		height: 100%;
+}
+ 
+    .year{
+    width: 95%;
+    margin: 0 auto;
+   text-align: left;
+    padding-top: 3em;
+ 
+}
+	.table_tit{
+     width: 130px;
+}
+	
+	.close{
+		display: block;
+		width: 50px;
+		height: 50px;
+		position: absolute; top: 3%; right: 5%;
+	}
+	#ra1:checked ~ .tnb{
+		right: 0%;
+	}
+	#ra2:checked ~ .tnb{
+		right: -350px;
+	}
+
+	  .btn{
+     width: 50%;
+    margin: 20px auto;
+		background-color: aqua;
+}
+    
+    
+    
+ /*푸터*/
+    #ft{
+         height: 200px;
+    }
+    .fnb ul{ width: 100%; margin: 0 auto;}
+.fnb li{
+font-size: 14px;
+line-height: 28px;
+margin-right: 10px;
+}
+
+
+.add{
+    display: block;width: 100%;
+padding-top:125px;
+margin: 0 auto;}
+
+.add p{
+    font-size: 14px;
+    line-height: 28px;
+}
+.sns ul{
+    position: absolute; right: 5%;
+    bottom: 10px;
+}
+    
+    
+    
+    
+}
+/*저해상도끝*/
+
+
+
+/*모바일*/
+
+@media screen and (max-width:767px){
+	/*헤더_미디어*/
+	.toggle,.close{display: block;}
+	.hd{
+		border-bottom: 1px solid #000;
+	}
+	.hd:hover{
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+}
+	.toggle{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		display: block;
+		right: 5%;
+		top: 0%;
+	}
+	.tnb{
+    width: 350px;
+		height: 1024px;
+		position: fixed;
+		border-left: 1px solid #000;
+		background-color: #fff;
+    right: -350px;
+    top:0%;
+		transition: 0.5s;
+}
+	.tnb .menu{
+		padding-top: 4em;
+	}
+	.tnb .menu > li{
+    float: none;
+    width: 100%;
+		display: block;
+    line-height: 3;
+  
+    text-align: center;
+}
+	.sub1{
+    clear: both;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    right: 0;
+    background-color: #eee;
+    visibility: hidden;
+   transition: 0.5s;
+      height: 100%;
+}
+	.sub1:after{
+   display: none;
+}
+.sub1:before{
+ display: none;
+}
+	.sub1 > li{
+    width: 100%;
+}
+	
+	.tnb .menu > li:hover .sub1{
+	 visibility: visible;
+        opacity: 1;
+		height: 100%;
+}
+	
+	.close{
+		display: block;
+		width: 50px;
+		height: 50px;
+		position: absolute; top: 3%; right: 5%;
+	}
+	#ra1:checked ~ .tnb{
+		right: 0%;
+	}
+	#ra2:checked ~ .tnb{
+		right: -350px;
+	}
+	
+
+	
+	/*페이지1*/
+.subTit h2{
+    font-size: 1.25em;
+   padding-top: 2em;
+}
+
+.subTit p{
+    font-size: 1em;
+   padding-top: 4em;
+}
+	
+	.vsFrame li img{
+    position: absolute;
+    width: 100%;
+  height: 100%;
+}
+	/*페이지2*/
+	.year{
+    width: 95%;
+    margin: 0 auto;
+   text-align: left;
+    padding-top: 1.5em;
+ 
+}
+	.year td{
+    line-height: 2;
+}
+.year td:nth-child(2){
+    font-size:0.875em;
+}
+	.table_tit{
+     width: 100px;
+    font-size: 1.25em;
+    line-height: 1.5;
+}
+	
+	#page3 img{
+    display: block;
+  margin: 0 auto;
+		width: 80%;
+
+}
+	.btn{
+     width: 80%;
+}
+.btn li button{
+    width: 140px;
+}
+  
+   /*푸터*/
+#ft{
+    clear: both;
+    position: relative;
+    background-color: #eee;
+    width: 100vw;
+    height: 320px;
+}
+.fnb{
+    clear: both;
+    width: 100%;
+}
+.fnb ul{ width: 70%; margin: 0 auto; padding-top: 10px;}
+.fnb li{
+  width: 120px;
+float: left;
+display: block; 
+font-size: 0.625em;
+line-height: 32px;
+margin-right: 10px;
+padding-top: 5px;
+}
+
+.fnb li:after{
+   display: none;
+}
+
+.fnb li a{
+    color: #333;
+    text-align: center;  
+}
+
+.fnb li:nth-child(4) a{
+    font-weight: 600;
+}
+.fnb li a:hover{text-decoration: underline;}
+
+.add{width: 70%;
+padding-top: 200px;
+margin: 0 auto;}
+
+.add p{
+    font-size: 0.625em;
+    line-height: 1.5;
+    color: #333;
+}
+.sns ul{
+    position: absolute; right: 15%;
+    bottom: 20px;
+}
+.sns li{
+    float: left;
+    padding: 10px;  
+    cursor: pointer;
+    display: block;
+}
+    .sns li img{
+        width: 15px;
+        height: 18px;
+        display: block;
+    }    
+    
+.sns li a{display: block;}
+ 
+    
+
+
+}/*모바일 끝*/

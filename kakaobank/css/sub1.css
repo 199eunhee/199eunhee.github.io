@@ -1,0 +1,188 @@
+@charset "UTF-8";
+body,html{
+    overflow-x: hidden;
+}
+
+.ra,.toggle,.close{display: none;}
+
+.hd{
+    width: 100%;
+    height: 100px;
+    position:relative;
+        top: 0%;
+    background-color:transparent;
+    z-index: 99; 
+    border-bottom: 1px solid #333;
+}
+.hd:hover{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#page1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    clear: both;
+   
+}
+.subTit{
+    width: 100%;
+    height: 50%;
+
+    position: relative;
+}
+.subTit h2{
+    display: block;
+    width: 80%;
+    color: #333;
+    margin: 0 auto;
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+   padding-top: 3em;
+}
+
+.subTit p{
+    display: block;
+    width: 80%;
+    color: #333;
+    margin: 0 auto;
+    font-size: 1.25em;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+   padding-top: 6em;
+}
+
+
+
+
+.sub_vs{
+      width: 100%;
+    height: 50%;
+
+    position: relative;
+    overflow: hidden;
+}
+.vsFrame{
+    width: 300%;
+    overflow: hidden;
+    height: 100%;
+}
+.vsFrame li{
+    width: 33.3333%;
+    float: left;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.vsFrame li.on{
+    opacity: 1;
+}
+.vsFrame li img{
+    position: absolute;
+    width: 100%;
+ 
+    /*모바일에서는 탑 없애면 자동*/
+}
+
+#page2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    clear: both;
+}
+
+.year{
+    width: 60%;
+    margin: 0 auto;
+   text-align: left;
+    padding-top: 3em;
+ 
+}
+
+.year tbody{
+   
+}
+.year td{
+    line-height: 2;
+}
+.year td:nth-child(2){
+    font-size: 1.125em;
+    color: #333;
+    position: relative;
+    display: block;
+}
+
+.table_tit{
+     width: 300px;
+    text-align: center;
+  color: #333;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+#page3{
+    width: 100%;
+    height: 60%;
+    background-color: #fcfcfc;
+    position: relative;
+}
+
+#page3 h2{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 2em;
+    
+}
+#page3 img{
+    display: block;
+  margin: 0 auto;
+
+}
+#page3 h3{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.25em;
+    
+}
+#page3 p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+    
+}
+.btn{
+     width: 20%;
+    margin: 20px auto;
+}
+
+.btn li{
+   width: 50%;
+    float: left;
+   
+}
+
+.btn li button{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #333;
+    text-align: center; 
+    cursor: pointer;
+    background-color: #dddada;
+}
+
+.btn li button:hover{
+    color: #fff;
+    background-color: #969696;
+}

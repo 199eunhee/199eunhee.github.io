@@ -1,23 +1,138 @@
 /*모바일*/
 
 @media screen and (max-width:767px){ 
+	/*헤더_미디어*/
+	.toggle,.close{display: block;}
+	.hd{
+		background-color: #fff;
+		position: relative;
+		border-bottom: 1px solid #000;
+	}
+	.hd:hover{
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+}
+	.toggle{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		display: block;
+		right: 5%;
+		top: 0%;
+	}
+	.tnb{
+    width: 350px;
+		height: 1024px;
+		position: fixed;
+		border-left: 1px solid #000;
+		background-color: #fff;
+    right: -350px;
+    top:0%;
+		transition: 0.5s;
+}
+	.tnb .menu{
+		padding-top: 4em;
+	}
+	.tnb .menu > li{
+    float: none;
+    width: 100%;
+		display: block;
+    line-height: 3;
+  
+    text-align: center;
+}
+	.sub1{
+    clear: both;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    right: 0;
+    background-color: #eee;
+    visibility: hidden;
+   transition: 0.5s;
+      height: 100%;
+}
+	.sub1:after{
+   display: none;
+}
+.sub1:before{
+ display: none;
+}
+	.sub1 > li{
+    width: 100%;
+}
+	
+	.tnb .menu > li:hover .sub1{
+	 visibility: visible;
+        opacity: 1;
+		height: 100%;
+}
+	.close{
+		display: block;
+		width: 50px;
+		height: 50px;
+		position: absolute; top: 3%; right: 5%;
+	}
+	#ra1:checked ~ .tnb{
+		right: 0%;
+	}
+	#ra2:checked ~ .tnb{
+		right: -350px;
+	}
+	
+	
+
+	
     #page1{width: 100%; height: auto;}
-    video { display: inline-block; width: auto\9 !important; /* ie8 */ width: auto !important; max-width: 100%; height: auto !important; }
-    .vid { position: relative; height: 0; padding-top: 30px; padding-bottom: 56.25%; overflow: hidden; } .vid object,.vid embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    video { width: 100%; height: 100%;}
     
-    
+  
     
     .btnBox1{
-    display: none;
+    display: block;
 }
+    .btnBox1 li{
+    float: left;
+    width: 120px;
+    height: 40px;
+    line-height:40px; 
+        text-align: right;
+}
+    
+.btnBox1 li button{
+     color: #fff;
+    font-size:0.875em;
+    font-weight: bold;
+    padding-right: 10px;
+    cursor: pointer;
+}
+    .btnBox1 li img{
+        width: 15px;
+        height: 15px;
+    position: absolute;
+    display: block;
+    
+}
+    .btnBox1 li .google{
+    left: 13px;
+    top:13px;
+} 
+.btnBox1 li .app{
+    left: 20px;
+     top: 15px;
+} 
+
     
     
     /*페이지2*/
     #page2{
-         height: auto;
-           background-image: url(../img/bg2_m.jpg);
+      width: 100%;
+        height: 70%;
+           background-image: url(../img/bg2_m2.png);
+        background-color: #e3e3e5;
       background-size: 100% cover;
-        background-position: center center;
+        background-position: center;
         
     }
     #page2 h3{
@@ -26,8 +141,8 @@
    
     line-height: 30px;
         font-weight: 600;
-    top: 50%;
-left:60%; 
+    top: 5%;
+left:25%; 
 }
 
 #page2 .pageCom{
@@ -35,11 +150,11 @@ left:60%;
 }
     .btn3{
    
-    top: 80%;
-    left: 45%;
+    top: 85%;
+    left: 15%;
     border: 1px solid #eee;
         border-radius: 15px;
-    width: 290px;
+    width: 250px;
     height: 70px;
     background-color: #f1d31b; 
     line-height: 70px;
@@ -49,16 +164,16 @@ left:60%;
 }
 
 .btn3 .bull1{
-    
+     animation: none;
     top: 20px;
-   
+   right: 10px;
 }
     /*페이지3*/
     #page3{
         
     }
     #page3 h3{
-    font-size: 25px;
+    font-size: 20px;
    width: 60%;
     line-height: 30px;
        left: 23%;
@@ -66,42 +181,42 @@ left:60%;
 }
 
 #page3 .pageCom{
-    width: 100%;
+    width: 80%;
     font-size: 12px;
   position: absolute; 
-   left: 5%;
+   left: 15%;
     top:26%;
 }
     .ico1{
-    width: 400px;
+    width: 250px;
 }
 
 
 .ico2{
-       position: absolute;
-    bottom: 10%;
-   left: 67%;
+ display: none;
 }
 .ico3{
  display: none;
 }
     .btn4_frame li{
     background-color: transparent;
-    width: 150px; height: 60px;
+    width: 110px; height: 40px;
 
     float: left;
     position: absolute;
-    top:38%;
+    top:48%;
   
     
 }
+    
+    
 
 .btn4_frame li.btn4_1{
       right: 49%;
 }
 .btn4_frame li button{
-    font-size: 18px;
-     line-height: 60px;
+    font-size:0.875em;
+     line-height: 40px;
     text-indent: 25px;   
  
      
@@ -111,43 +226,313 @@ left:60%;
 }
 
 .btn4 .bull1{
-   
-    top: 28%;
-    right: 20px;
+    width: 10px;
+    height: 10px;
+    top: 35%;
+    right: 15px;
     animation-name: b3;
     animation-duration: 0.7s;
     animation-iteration-count: infinite;
 } 
     @keyframes b3{
-        0%{right: 18px;}
-        100%{right: 22px;}
+        0%{right: 13px;}
+        100%{right: 17px;}
     }
 
     
 
 
 /*페이지4*/
+    #page4 .pageCom{
+        width: 80%;
+    position: absolute;
+        font-size: 0.875em;
+    top: 10%;
+    left: 10%;
+}
 .ico4{
-    /*width: 400px;
-    top: 50%;
-    left: 25%;*/
+    width: 300px;
+    top: 45%;
+    left: 15%;
 }
 
 .txt_img1{
-    /*width: 200px;
-    height: 250px;
-    top: 45%;
-    left: 10%;*/
+    width: 80px;
+    height: 110px;
+top: 70%;
+    right: 5%;
 }
 
 .txt_img2{
-   /*display: none;*/
+    width: 80px;
+    height: 80px;
+ position: absolute;
+    top: 55%;
+    left: 7%;
 }
+    
+    #page4 .btn5{
+  
+    top: 35%;
+    left: 28%;
+    width: 150px;
+    height:40px;
+    line-height: 40px;
+    font-size: 0.875em;
+    font-weight: 500;
+    cursor: pointer; 
+}
+.btn5 .bull1{
+    position: absolute;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    top: 30%;
+    animation: none;
+} 
+    #page5{
+    background-image: url(../img/bg3_m.png);
+        background-color: #566890;
+}
+    #page5 h3{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+    width: 80%;
+    position: absolute;
+    top: 5%;
+left: 10%; text-align: left; 
+}
+    #page5 .pageCom{
+        width: 80%;
+    font-size: 0.875em;
+    position: absolute;
+    top:20%;
+   left: 10%;
+}
+    #page5 .btn6{
+     position: absolute;
+    top: 85%;
+    right: 25%;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+    .niniz{
+    display: block;
+    position: absolute;
+    width: 150px;
+    top: 68%;
+    right: 26%;
+    z-index: 20;
+   
+}
+    .btn6 .bull1{
+        width: 15px;
+        height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    animation: none;
+}
+    #page6{
+    background-image: url(../img/bg4_m.png);
+        background-color: #fcfcfc;
+        background-position: left;
+}
+    
+  #page6 h3{
+    font-size: 20px;
+    font-weight:600;
+    line-height: 1.5;
+    width: 80%;
+    position: absolute;
+    top: 15%;
+left: 10%;
+}  
+    
+   #page6 .pageCom{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+        font-size: 0.875em;
+} 
+    
+   #page6 .ico5{
+    position: absolute;
+    right: -20%;
+    bottom: 0;
+    width: 300px;
+    opacity: 0;
+} 
+    
+   #page6 .btn7{
+    position: absolute;
+    top: 46%;
+    left: 25%;
+    width: 130px;
+    height: 40px;
+    border: 1px solid #000;
+    line-height: 40px;
+    font-size: 0.875em; 
+}
+
+.btn7 .bull1{
+    width: 10px;
+    height: 15px;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+animation: none;
+} 
+    
+ #page8{
+    background-image: url(../img/check_bg_m.png);
+     background-position:left;
+     background-color: #e7ecef;
+}
+    
+    #page8 h3{
+    
+    font-size:1.25em;
+    font-weight: 600;
+    line-height: 1.5;
+    display: block;
+    width: 80%;
+    position: absolute;
+    top: 5%;
+left: 10%; text-align: left; 
+}
+
+#page8 .pageCom{
+    width: 80%;
+    font-size: 0.825em;
+     position: absolute;
+    top: 15%;
+    left: 10%;
+}
+    
+ #page8 .btn8{
+    position: absolute;
+  top: 85%;
+   left: 18%;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    color: #000;
+    font-size:0.875em;
+    font-weight: 500;
+    cursor: pointer;  
+}
+.ico6{
+    width: 180px;
+    position: absolute;
+    left:35%;
+    top: 35%;
+    opacity: 0;
+}
+
+.btn8 .bull1{
+    display: block; position: absolute; right: 10px;
+    top: 15px;
+    width: 15px;
+    height: 20px;
+    animation: none;
+}   
+    
+   /*페이지9*/
+    .wordWrap{
+        display: none;
+    }
+    
+    #page9 .ico7{
+        width: 150px; height: 150px;
+        position: absolute; top: 10%; left: 10%;
+}
+#page9 .ico8{
+     width: 150px; height: 150px;
+    position: absolute; top: 10%; left: 35%;
+} 
+#page9 .ico9{position: absolute; top: 35%; left: 5%;
+width: 350px; opacity: 0;}
+    
+   
+   /*푸터*/
+#ft{
+    clear: both;
+    position: relative;
+    background-color: #eee;
+    width: 100vw;
+    height: 320px;
+}
+.fnb{
+    clear: both;
+    width: 100%;
+}
+.fnb ul{ width: 70%; margin: 0 auto; padding-top: 10px;}
+.fnb li{
+  width: 120px;
+float: left;
+display: block; 
+font-size: 0.625em;
+line-height: 32px;
+margin-right: 10px;
+padding-top: 5px;
+}
+
+.fnb li:after{
+   display: none;
+}
+
+.fnb li a{
+    color: #333;
+    text-align: center;  
+}
+
+.fnb li:nth-child(4) a{
+    font-weight: 600;
+}
+.fnb li a:hover{text-decoration: underline;}
+
+.add{width: 70%;
+padding-top: 200px;
+margin: 0 auto;}
+
+.add p{
+    font-size: 0.625em;
+    line-height: 1.5;
+    color: #333;
+}
+.sns ul{
+    position: absolute; right: 15%;
+    bottom: 20px;
+}
+.sns li{
+    float: left;
+    padding: 10px;  
+    cursor: pointer;
+    display: block;
+}
+    .sns li img{
+        width: 15px;
+        height: 18px;
+        display: block;
+    }    
+    
+.sns li a{display: block;}
+ 
+    
+    
+    
+    
+    
 
 }/*여기가 끝*/
 /*고해상도 데스크탑*/
 @media screen and (min-width: 1281px) and (max-width : 1919px){
-    
+       .ra,.toggle,.close{display: none;}
     
     #page1{width: 100%; height: auto;}
     video { display: inline-block; width: auto\9 !important; /* ie8 */ width: auto !important; max-width: 100%; height: auto !important; }
@@ -322,16 +707,16 @@ left:60%;
      font-size: 35px;
     line-height: 40px;
     width: 40%;
-right: 5%; 
+right: 2%; 
 }
     
     #page8 .pageCom{
     
-    right:18%;
+    right:12%;
 }
     
     #page8 .btn8{
-        right: 15%;
+        right: 13%;
         width: 385px;
     }
     
@@ -343,14 +728,366 @@ right: 5%;
 }
 #page9 .ico8{left: 25%;
 } 
-#page9 .ico9{left: 30%;
-width: 600px; }
-    
+#page9 .ico9{display: none;}
+    .wordWrap{
+       left: 25%; top: 15%;  
+    }
     
     
 }/*여기가 끝*/
     
     /*저해상도 데스크탑*/
 @media screen and (min-width:768px) and (max-width:1280px){
-    
+	
+	/*헤더_미디어*/
+	
+	.toggle,.close{display: block;}
+	.hd{
+		background-color: #fff;
+		position: relative;
+		border-bottom: 1px solid #000;
+	}
+	.hd:hover{
+    background-color: transparent;
+    border-bottom: 1px solid #000;
 }
+	.toggle{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		display: block;
+		right: 5%;
+		top: 0%;
+	}
+	.tnb{
+    width: 350px;
+		height: 1024px;
+		position: fixed;
+		border-left: 1px solid #000;
+		background-color: #fff;
+    right: -350px;
+    top:0%;
+		transition: 0.5s;
+}
+	.tnb .menu{
+		padding-top: 4em;
+	}
+	.tnb .menu > li{
+    float: none;
+    width: 100%;
+		display: block;
+    line-height: 3;
+  
+    text-align: center;
+}
+	.sub1{
+    clear: both;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    right: 0;
+    background-color: #eee;
+    visibility: hidden;
+   transition: 0.5s;
+      height: 100%;
+}
+	.sub1:after{
+   display: none;
+}
+.sub1:before{
+ display: none;
+}
+	.sub1 > li{
+    width: 100%;
+}
+	
+	.tnb .menu > li:hover .sub1{
+	 visibility: visible;
+        opacity: 1;
+		height: 100%;
+}
+	.close{
+		display: block;
+		width: 50px;
+		height: 50px;
+		position: absolute; top: 3%; right: 5%;
+	}
+	#ra1:checked ~ .tnb{
+		right: 0%;
+	}
+	#ra2:checked ~ .tnb{
+		right: -350px;
+	}
+	
+	
+
+	
+    #page1{width: 100%; height: auto;}
+    video { width: 100%; height: 100%;}
+    
+    .btnBox1{
+    right: 10%
+}
+    
+    #page2{ width: 100%; height:60%;
+        background-size: 120% 100%; margin: 0;
+  } 
+#page2 h3{
+   width:40%;
+    font-size: 20px;
+    line-height:30px;
+    left: 6%;
+}
+    #page2 .pageCom{
+        display: none;
+    }
+   
+
+.btn3{
+    width: 230px; 
+    font-size: 14px;
+    left: 65%;
+}
+    
+    .btn3 .bull1{
+    right: 18px; 
+    animation-name: a;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes a{
+    0%{right:20px;}
+    100%{right:16px;}
+}
+
+    /*페이지3*/
+    
+    #page3{
+        width: 100%;
+        height: 70%;
+    }
+    #page3 h3{
+        font-size: 25px;
+         line-height:30px;
+         width: 40%;
+    top: 15%;
+        right: 29%;
+}
+    
+ #page3 .pageCom{
+     position: absolute;
+     width: 20%;
+    right: 8%;
+    top:45%;
+}
+
+    .ico1{
+    left: 15%;
+    width: 400px;
+}
+    .ico2{
+    display: none;
+}
+    
+    .ico3{
+  display: none;
+}
+   
+    .btn4_frame li button{
+     text-indent:50px;
+}
+    .btn4_frame li{
+    width: 180px;
+    top:30%;
+    }
+    .btn4_frame li.btn4_1{
+      right: 55%;
+}
+    
+    .btn4_frame li.btn4_2{
+    right: 30%;
+}
+    
+    .btn4 .bull1{
+    top: 30%;
+    right: 25px;
+    animation-name: b2_2;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+} 
+    @keyframes b2_2{
+        0%{position: absolute; right: 23px;}
+        100%{position: absolute; right: 27px;}
+    }
+    
+    
+    
+    
+    /*페이지4*/
+    
+    #page4{ width: 100%; height: 70%;
+  }    
+    
+    .ico4{
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 400px;
+        z-index: 10;    
+}
+    .txt_img1{
+    top: 43%;
+    right: 8%;
+    width: 180px;
+    height: 250px;}
+    
+    .txt_img2{ position: absolute;
+    bottom:10%;
+    right: 23%;}
+    
+    #page4 .btn5{
+    top: 34%;
+}
+    
+    #page4 .pageCom{
+    position: absolute;
+    top: 14%;
+    left: 8%;
+}
+    #page4 .btn5{
+        position: absolute;
+        top: 28%;
+        left: 8%;
+    }
+    
+    /*페이지5*/
+    #page5{
+     width: 100%; height: 70%;
+         background-size: 110% 100%;
+}
+    
+#page5 h3{
+    font-size: 30px;
+    line-height: 40px;
+    width: 45%;
+    top: 22%;
+    right: 2%;
+}
+    #page5 .pageCom{
+    color: #fff;
+    position: absolute;
+    top: 43%;
+    right: 2%;
+}
+
+   .niniz{
+    width: 180px;
+    top: 56%;
+    right: 15%;
+} 
+    
+#page5 .btn6{
+     width: 230px;
+    top: 70%;
+    right: 15%;
+}
+    
+    /*페이지6*/
+    #page6{
+        width: 100%; height: 60%;
+        background-size: 100% 100%;      
+    }
+    
+    #page6 .ico5{
+    position: absolute;
+    width: 380px;
+}
+    
+    #page6 h3{
+        font-size: 30px;
+        width: 45%;
+    line-height: 40px;
+       left: 5%; 
+         top: 23%;
+    }
+    #page6 .pageCom{
+        left: 5%;  
+    }
+    #page6 .btn7{
+        left: 5%;  
+    }
+    
+    
+    /*페이지7*/
+    
+    /*페이지8*/
+    #page8{
+     
+          width: 100%; height: 60%;
+         background-size: 130% 100%;
+    }
+    #page8 h3{
+     font-size: 30px;
+    line-height: 40px;
+    width: 45%;
+right: 5%; 
+}
+    
+    #page8 .pageCom{
+    
+    right:0%;
+}
+    
+    #page8 .btn8{
+        right: 0%;
+        width: 385px;
+    }
+    
+    .ico6{width: 380px; 
+    top: 16%;
+    left: 10%;}
+      
+    /*페이지9*/
+    #page9{width: 100%; height: 65%;}
+#page9 .ico7{left: 5%; width: 100px; height: 100px;
+}
+#page9 .ico8{left: 15%; width: 100px; height: 100px;
+} 
+#page9 .ico9{display: none;}
+    .wordWrap{
+        width: 550px; height: 250px;
+       left: 3%; top: 5%;  
+    }
+    
+    /*푸터*/
+    #ft{
+         height: 200px;
+    }
+    .fnb ul{ width: 100%; margin: 0 auto;}
+.fnb li{
+font-size: 14px;
+line-height: 28px;
+margin-right: 10px;
+}
+
+
+.add{
+    display: block;width: 100%;
+padding-top:125px;
+margin: 0 auto;}
+
+.add p{
+    font-size: 14px;
+    line-height: 28px;
+}
+.sns ul{
+    position: absolute; right: 5%;
+    bottom: 10px;
+}
+
+    
+    
+}/*여기가 끝*/
