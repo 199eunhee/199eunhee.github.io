@@ -1,0 +1,243 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Normalize */
+
+*{margin: 0;padding: 0;}
+body,html{
+	width: 100%;
+	height: 100%;
+	font-family: 'Roboto','Noto Sans KR', sans-serif;
+}
+body{overflow-x: hidden;}
+
+ul{
+	list-style: none;
+}
+a{text-decoration: none;}
+
+button,label,input,select{
+	border: 0; outline: 0;
+	background-color: transparent;
+}
+
+/* header */
+header{	font-family:NanumGothic; }
+
+.header_toprow{
+	background:#ebebeb;
+	height:40px;
+	overflow:hidden;
+	position:relative;
+}
+.header_toprow .txt_rolling{ position:absolute; left:50%; margin-left:-300px; width:600px; height:40px; line-height:40px; text-align:center; font-size:14px; color:#65656a; }
+.header_toprow .btn_special{ position:absolute; right:0; background:url(../IMG/specialoffers.png); width:220px; height:40px; font-size:0; }
+.header_toprow .btn_special a{ display:inline-block; width:100%; height:100%;}
+
+.gnb{ 
+	width: 100%; height:80px; 
+	overflow:hidden;
+	color:#65656a;
+	padding:0 70px;
+	border-bottom: 1px solid #65656a;
+}
+.gnb h1{
+	float:left;
+	margin:20px 50px 0 0;
+}
+.gnb h1 img{ width:40px; }
+
+.gnb  ul{ margin:33px auto 0 auto; }
+.gnb  ul li{
+	float:left;
+	margin:0 30px 0 0;
+	font-size:0.875em;
+	color:#333;
+	letter-spacing:1px;
+}
+.gnb  ul li a{ padding:0 0 5px 0; color:#222; }
+.col  ul li a.dep1:hover{ border-bottom:1px #d12420 solid; color: #d12420; }
+
+.sub{
+    clear: both;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 121px;left: 0;
+    z-index: 50;
+    opacity: 0;
+    transition: 0.5s;
+    height: 500px;
+    visibility: hidden;
+}
+
+.col .brand1:hover .b{
+    visibility: visible;
+   
+    opacity: 1;
+}
+
+.col .store1:hover .c{
+    visibility: visible;
+    height: 500px;
+    opacity: 1;
+}
+
+.col .location1:hover .l{
+    visibility: visible;
+    height: 500px;
+    opacity: 1;
+}
+
+.col .shop1:hover .e{
+    visibility: visible;
+    height: 500px;
+    opacity: 1;
+}
+.sub ul{
+    position: absolute;
+    left: 20%;
+}
+.sub ul li{
+    float: none;
+    line-height: 2;
+    width: 160px;
+}
+.sub ul li a.dep2{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.sub ul li a.dep2:hover{
+    text-decoration: none;
+}
+.sub ul li a{
+    font-size: 1.2em;
+}
+.sub ul li a:hover{
+    text-decoration: none;
+}
+
+.sub_all ul li{
+  float: none;
+}
+.imgBox{ width: 1000px;clear: both; position: absolute; right: 0; top: -10px;}
+.imgBox li{position: absolute;}
+.imgBox li img{
+    width: 300px;
+    height: 460px;
+}
+.imgBox li.item1{right: 70%;}
+.imgBox li.item2{right: 35%;}
+.imgBox li.item3{right: 0%;}
+
+/*푸터*/
+#ft{
+    width: 100%;
+    clear: both;
+    height: auto;
+    position: relative;
+		background-color: #eee;
+}
+.fnb{
+      width: 100%;
+    background: #eee;
+    border-top: 1px solid #222;
+border-bottom: 1px solid #222;}
+    
+ .fnb_m{
+width: 60%;
+    height: auto;
+    margin: 0 auto;
+
+}
+.fnb_tit{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+     display: -webkit-flex;
+    justify-content: space-between;
+    flex-direction: row;
+     width: 100%;
+}
+.fnb_wrap{
+   width: 100%;
+}
+
+.fnb_tit .title{
+    color: #222;
+    font-weight: bold;
+    font-size: 1em;
+    font-size: 1rem;
+    display: block;
+    line-height: 1.5em;
+}
+
+.fnb_tit .fnb_wrap li{
+    display: block;
+   text-align: left;
+    padding: 3px;
+    margin-left: 2em;
+}
+.fnb_tit li a{
+    color:rgba(0, 0, 0,0.7);
+    font-size: 0.725em;
+    font-size: 0.725rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    
+}
+
+.fnb_tit li a:hover{
+    text-decoration: underline;
+}
+
+.contact{
+	width: 120px;
+	height:50px;
+	border: 1px solid #333;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.contact:hover{
+	background-color: #fff;
+}
+
+
+
+.fnb2{
+    width: 60%;
+    margin: 0 auto;
+    padding: 1em;
+	position: relative;
+	height: 100px;
+
+    
+}
+.fnb2 p{
+    font-size: 0.725em;
+    line-height: 2;
+}
+
+.add{
+   width: 50%;
+	float: left;
+}
+.add li a{
+	color: #333;
+}
+
+.copy{
+	width: 50%;
+	display: block;
+	
+}
+.copy p{
+	display: block;
+	text-align: right;
+	position: absolute;
+	right: 0;
+	bottom: 1em;
+}
+
+ 

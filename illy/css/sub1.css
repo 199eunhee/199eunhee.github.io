@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+.mobile_mode{display: none;}
+
+#page1{
+	width: 100%;
+	height: 50%;
+	position: relative;
+	overflow: hidden;
+}
+#page1 img{
+	width: 100%;
+	height: 100%;
+	display:block;
+}
+
+#page2{
+	width: 100%;
+	height: 60%;
+	position: relative;
+	clear: both;
+}
+
+#page2 .txtBox{
+	width: 70%;
+	margin: 0 auto;
+}
+
+#page2 h3{
+	text-align: center;
+	font-size: 3em;
+	color: #d12420;
+	line-height: 1;
+	padding: 1.5em;
+}
+
+#page2 p{
+	font-size: 1em;
+	padding: 1em;
+	color: #333;
+}
+
+#page3{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	clear: both;
+	overflow: hidden;
+}
+.box1{
+	width: 100%;
+	height: 50%;
+	position: relative;
+	top: 0;
+}
+.boxImg{
+	width: 50%;
+	height: 100%;
+	display: block;
+	float: left;
+}
+
+.boxTit{
+	display: block;
+	position: absolute; right: 36%; top: 20%;
+	font-size: 2.5em;
+	
+	line-height: 1;
+	color: #d12420;
+	
+}
+.box_bar{
+	width: 200px;
+	height: 3px;
+	position: absolute;
+	right: 33%;
+	top: 33%;
+	background-color: #d12420;
+	display: block;
+
+}
+.boxCom{
+	display: block;
+	padding: 2em;
+	width: 42%;
+	position: absolute;
+	right: 0%;
+	top: 30%;
+	line-height: 2;
+	font-size: 1em;
+}
+.box2{
+	width: 100%;
+height: 50%;
+	position: relative;
+	bottom: 0;
+}
+
+.box2 .boxImg{
+	position: absolute;
+	right: 0;
+}
+.box2 .boxTit{
+	position: absolute;
+	left: 5%;
+}
+
+.box2 .boxCom{
+	width: 42%;
+	position: absolute;left: 3%;
+} 
+.box2 .box_bar{
+	position: absolute;
+	left: 5%;
+}
+
+
+#page4{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	clear: both;
+	overflow: hidden;
+}
+
+.numberBox{
+	width: 100%;
+	height: 50%;
+	position: relative; bottom: 0;
+}
+.numberBox h3{
+	display: block;
+	color: #d12420;
+	font-size: 2.5em;
+	text-align: center;
+	font-weight: 500;
+	padding: 1em;
+	
+}
+.numberBox img{
+	width: 1000px;
+	height: 330px;
+	
+	display: block;
+	position: absolute;
+	bottom: 10%; left: 25%;
+}
+
+.mobile_ft{display: none;}
