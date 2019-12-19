@@ -1,0 +1,294 @@
+@charset"UTF-8" ;
+
+#page0{
+    clear: both;
+    width: 100%;
+    height:60%;
+    position: relative; 
+    
+}
+#page0 .subImg{
+    width: 100%;
+    height: 100%;
+}
+#page0 .subImg img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#page1{
+    clear: both; width: 80%; height:100%; 
+margin: 0 auto; position: relative;}
+
+#page1 img{
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+.introBox{
+    width:100%;
+    position: relative;
+}
+.intro1{
+    position: relative;
+    width: 50%;
+}
+
+.intro1 img{
+    display: block;
+    top: 300px;
+    left: 10%;
+    
+}
+.intro2{
+
+    position: relative;
+    width: 50%;
+}
+.intro2 img{
+      display: block;
+left: 25%; top: 100px;
+}
+
+.intro3 {width: 40%; position: absolute;
+top: 300px;right: 5%;}
+
+.intro3 h3{
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #333;
+    display: block;
+}
+
+.intro3 p{
+    padding-top: 2em;
+    padding-right: 2em;
+    font-size: 1.125em;
+    line-height: 1.5;
+    color: #5a5a5a;
+}
+
+
+#page2{
+    width: 100%;
+    height: 100%;
+    position: relative;clear: both;
+    background-image: url(../img2/bg9.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#page2 .txtBox{
+    width: 400px; height: 550px;
+    background-color: #fff;
+    position: absolute; display: block;
+right: 15%; top: 30%;opacity: 0;
+}
+
+#page3{
+    clear: both;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#page3 h3{
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #7e5d36;
+    display: block;
+    position: absolute;
+    top: 37%;
+    left: 10%;
+}
+#page3 p{
+    font-size: 1.125em;
+    line-height: 1.5;
+    color: #7e5d36;
+      position: absolute;
+    top: 45%;
+    left: 10%;
+}
+
+#page3 img{
+    display: block;
+    width: 50%;
+    position: absolute; right: 0; top: 25%;
+    opacity: 0;
+}
+
+
+#page3 span{
+    width: 150px;
+    height: 3px;
+    background-color: #715431;
+    display: block;
+    position: absolute;
+    top: 40%; left: 0;
+}
+
+
+
+
+
+#page4{
+    clear: both;
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+
+
+#page4 h3{
+    display: block;
+    text-align: center;
+    width: 50%;
+    font-size: 2em;
+    font-weight: bold;
+    color: #4e4e4e; 
+    margin:50px auto;
+    
+}
+
+.col4{
+ width: 70%;
+    height: 70%;
+    top: 15%;
+    position: relative;
+    margin: 0 auto;
+    opacity: 0;
+}
+
+.raItem{display: none;}
+
+.tabBtn{
+    background: transparent;
+    display: block;
+    float: left;
+    width: 33.3333%;
+    line-height: 50px;
+    text-align: center;
+    color: #222;
+    font-size: 1.5em;
+    font-weight: 600;
+    position: absolute;
+    top: 0px;
+    border: 0; 
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+#ra1:checked ~ .tabBtnBox .tabBtn.item1{
+	font-size: 2.5em; border-bottom: 3px solid #6a6868;
+    
+}
+#ra2:checked ~ .tabBtnBox .tabBtn.item2{
+	font-size: 2.5em; border-bottom: 3px solid #6a6868;
+}
+
+#ra3:checked ~ .tabBtnBox .tabBtn.item3{
+    font-size: 2.5em; border-bottom: 3px solid #6a6868;
+}
+
+.tabBtn.item1{
+  left: 0;
+}
+.tabBtn.item2{
+   left: 34%;    
+
+}
+
+.tabBtn.item3{
+    right: 0;
+}
+
+
+.tabConBox{
+    width: 100%;
+    height: 90%;
+    background-color: #eee;
+    position: absolute;
+    bottom: 0;
+   
+}
+.tabConBox .tabCon{
+   clear: both;
+    position: absolute;
+    top:20%;
+    display: none;
+    z-index: 0;
+}
+
+#ra1:checked ~ .tabConBox .tabCon.item1{
+    display: block;
+    
+} 
+#ra2:checked ~ .tabConBox .tabCon.item2{
+    display: block;
+} 
+
+#ra3:checked ~ .tabConBox .tabCon.item3{
+    display: block;
+} 
+
+.notice{clear: both; text-align: center;}
+.notice th,.notice td{
+    color: #333;
+    line-height: 20px;
+    font-size: 12px;
+}
+.notice tr th{
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    background-color: #ccc;
+} 
+
+
+.gal{ clear: both; width: 90%; margin: 0 auto;}
+
+.gal li{
+    width: 33.3333%;
+    float: left;
+    display: block;
+}
+.galImg{
+    display: block;
+    width: 70%;
+  
+    margin-left: 2em;
+    
+}
+
+.galTxt{
+    position: relative; left: 0%;
+    width: 80%;
+    display: block;
+    padding: 0.2em;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.galCom{
+    position: relative; left: 0%;
+     width: 80%;
+    display: block;
+    padding: 0.5em;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+    color: #333; font-family: 'Roboto', sans-serif;
+        
+}

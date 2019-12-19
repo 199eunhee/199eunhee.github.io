@@ -1,0 +1,521 @@
+@charset"UTF-8" ;
+ .raItem,.toggle,.close{
+        display: none;
+    }
+
+ /*페이지1*/
+   
+         .vs1{
+            width: 100vw;
+            height: 85vh;
+            position: relative;
+            clear: both;
+             background-color: #292929;
+             overflow: hidden;
+        }
+        .vs_lst{
+            width: 400%;
+            height: 85vh;
+        }
+        .vs_lst li{
+            width: 25%;
+            float: left;
+            height: 85vh;
+            background-repeat: no-repeat;
+            background-size: 100% 85%;
+            background-position: center center;
+        }
+        
+        .vs_lst li.on {opacity: 1;}
+        .vs_lst li.item1{
+            background-image: url(../img/jbl4.jpg);
+        }
+        .vs_lst li.item2{
+            background-image: url(../img/vs4.jpg);
+        }
+
+
+        .vs_lst li.item3{
+            background-image: url(../img/vs6.jpg);
+        }
+        
+        
+        
+        
+        /*페이지 1의 텍스트 박스*/
+        .vs_lst li.on .vs_tit{padding-top:12rem; opacity: 1;}
+        .vs_lst li.on .vs_com{padding-top: 2.8rem; opacity: 1;}
+
+        .vs_lst li.on .vs_more{margin-top: 3rem; opacity: 1;}
+.vs_lst li.on .vsImg{
+	padding-top: 3em;
+	opacity: 1;
+}
+        .vs_tit{font-size: 1em; color: #fff; padding-top: 20em;padding-left: 7em;transition: 0.5s;opacity: 0;}
+.vs_tit:after{
+	content: "";
+	width: 200px;
+	height: 2px;
+	display: block;
+	background-color: #fff;
+	margin-top: 1em;
+}
+
+        .vs_com{font-size: 1.2em;color: #fff; padding-top: 2em; font-weight: bold;padding-left: 5.5em;transition: 0.5s;opacity: 0;}/*글씨가 위에서 위로 올라오는 것처럼 만드려고 초기값은 좀 아래에 내려오게 만드는것*/
+.vsImg{display: block;width: 250px; padding-top: 3em;padding-left: 6em; opacity: 0;} 
+        .vs_more{display: block; font-size: 1em; color: #fff; margin-top: 12em; margin-left: 106px; text-align: center;
+        border: 2px solid #fff; width: 150px;padding: 0.5em 1em;border-radius: 50px; position: relative;opacity: 0;}
+        /*마진 안 먹으면 디스플레이 블럭 주기, position:relative주는 이유: 화살표만들어서 이동시키려고/ 화살표 가 둥둥떠다니는 효과를 주려고 */
+
+
+/*두번째 장 글씨 검정색*/
+.vs_lst li.item2 .vs_tit{color: #333;}
+.vs_lst li.item2 .vs_tit:after{
+	background-color: #333;
+}
+.vs_lst li.item2 .vs_com{color: #333;}
+.vs_lst li.item2 .vs_more{color: #333; border: 2px solid #333}
+
+/*세번째 장 수정*/
+.vs_lst li.item3 .vsImg{
+    width: 350px;padding-left: 7em;
+}
+     
+         .btn_box1{width: 200px; height: 24px;position: absolute; z-index: 25; left: calc(50% - 30px);bottom: 120px;}
+        .btn_box1 li{width: 60px; height: 20px;position: absolute; }
+        .btn_box1 li.item1{left: 0;}
+        .btn_box1 li.item2{left: 70px;}
+        .btn_box1 li.item3{left: 140px;}
+        .btn_box1 li .btn{width: 60px; height: 10px; border: 2px solid #fff; border-radius: 6px; display: block; margin: 0 auto; cursor: pointer; box-sizing: border-box; background: transparent;}
+        
+        .btn_box1 li.on .btn{background: #fff;}
+
+
+
+/*페이지2*/
+#page2{
+
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow-x: hidden;
+    
+    
+}
+.banFrame{
+    width: 500%;
+  
+}
+
+.banFrame li{
+    width: 20%;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    position: relative;
+  
+}
+
+.banFrame li img{
+    width: 100%;
+    height: auto;
+}
+
+.vs2_more{
+    clear: both;
+    position: absolute;
+    display: block;
+    width: 160px; height: 50px;
+    color: #fff;
+    border: 2px solid #fff;
+    bottom: 26%; left: 25%;
+    font-size: 1em;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn_box2{
+   position:absolute; top:44%; z-index:10; width:100%; 
+}
+.btn_box2 li button{
+    display: block;
+    cursor: pointer;
+}
+
+.prevBtn{
+    position: absolute;left: 0;
+}
+
+.nextBtn{
+    position: absolute; right: 0;
+}
+
+/*page3*/
+#page3{
+    clear: both;
+width: 100%;
+	height: 200%;
+}
+#container{ 
+    clear: both;
+    width: 60%; margin: 0 auto;
+    height:200%;
+    position: relative;
+    top: -5%;  
+   
+}
+
+
+
+    .hideme{ opacity:0;
+            position: relative;
+         width: 50%;height:25%; margin-bottom: 20px;
+           position: absolute;
+        transition: 0.1s; 
+        }
+        .hideme img{
+            display: block;
+  width: 100%;
+            height:100%;
+        }
+        
+        
+        .pro0{
+            position: absolute;
+            top: 5%;
+            left: 0;
+        }
+         .pro0 .h_tit{ font-size: 1.258em; display: block;
+        font-weight: 600; color: #776754; line-height: 2; padding-top: 8em;}
+        .pro0 img{
+            width: 350px; height: 50px;
+        }
+        .pro0 .h_com{ font-size: 1em; font-weight: 500; color: #7b7777; line-height: 1.5;padding-top: 1em; }
+        
+        .pro1{
+            top: 12%;
+            right: 0;
+          
+        }
+        
+       
+        .pro2{
+            top: 23%;
+            left: 0;
+        }
+        .pro3{
+            top: 37%;
+            right: 0;
+        }
+         .pro4{
+            top: 48%;
+            left: 0;
+        }
+         .pro5{
+            top: 62%;
+            right: 0;
+        }
+        .pro6{
+              top: 73%;
+            left: 0; 
+        }
+        .hideme:hover .hoverBox{
+            visibility: visible;
+            opacity: 1; transition: 0.2s;
+        }
+
+.hideme:hover .Tit{
+    padding-top: 4em;
+    transition: 0.2s;
+}
+
+        .hoverBox{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;left: 0;
+            background-color: rgba(0,0,0,0.3);
+            visibility: hidden;
+            opacity: 0;
+        }
+        .Tit{
+          
+            color: #fff;
+            font-size: 2em;
+            font-weight: bold;
+            padding-top: 3em;
+            text-align: center;
+        }
+        .plus{
+            display: block;
+            border: 0;
+            background-color: transparent;
+            outline: 0;
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            cursor: pointer;
+        }
+        .plus:hover{
+            background-color: rgba(255,255,255,0.8);
+            color: #333;
+            border: none;
+            transition: 0.5s;
+        }
+
+#page4{
+    width: 100%;
+    height: 70%;
+    clear: both;
+    position: relative;
+    background-color: #292929;
+}
+.promoteBox{
+width: 100%;
+	height: 100%;
+    position: relative;
+    top: 0%;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+.promoteBox img{
+width: 100%;
+    height: 100%;
+}
+.promote1{
+    width: 50%;
+	height: 100%;
+    position: absolute;
+    left: 0;
+}
+.promote2{
+    width: 50%;
+	height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.proTIt{
+    display: block;
+    position: absolute;
+    top: 20%; left: 10%;
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #fff;
+}
+.proCom{
+    display: block;
+    position: absolute;
+    color: #fff;
+    top: 40%; left: 10%;
+    font-size: 1.122em;
+    font-weight: 500;
+    
+}
+
+.proMore{
+    position: absolute;
+    display: block;
+    top: 55%; left: 10%;
+    color: #fff;
+    width: 120px;
+    height: 50px;
+    font-size: 0.875em;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+.promote1 .proMore:hover{
+    color: #333;
+    background-color: #fff;
+}
+.promote2 .proTIt{
+    color: #333;
+}
+.promote2 .proCom{
+    color: #333;
+}
+.promote2 .proMore{
+    color: #333;
+    border: 1px solid #333;
+}
+.promote2 .proMore:hover{
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#page5{
+    clear: both;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+#page5 h3{
+    width: 15%;
+	text-align: center;
+    margin: 50px auto;
+   
+    padding-top: 3em;
+    display: block;
+   
+    font-size: 3em;
+    font-weight: bold;line-height: 1;
+    color: #9f8b74;
+}
+
+#page5 p{
+   width: 15%;
+	text-align: center;
+    margin: 0 auto;
+    display: block;
+  
+    font-size: 1.5em;
+    font-weight: bold;line-height: 2;
+    color: #9f8b74;
+}
+#page5 .snsPic{
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+    
+    
+}
+#page5 .snsPic li{
+    width: 20%;
+	height: auto;
+    float: left;
+     overflow: hidden;
+}
+#page5 .snsPic li img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+#page5 .snsPic li img:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+#page5 .sns_icoBox{
+    clear: both;
+    position: absolute;
+    bottom: 10%; left: 45%;
+    width: 150px;
+   
+}
+
+#page5 .sns_icoBox li{
+    float: left;
+    width: 30px;
+    margin-left: 20px;
+}
+
+#page5 .sns_icoBox li img{
+    display: block;
+    width: 30px; height: 30px;
+}
+
+/*페이지6*/
+#page6{
+      clear: both;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.content2{ 
+    clear: both;
+    width: 90%; margin: 0 auto;
+    position: relative;    
+    padding-top: 10em;
+}
+
+.fade.item1 .more2{
+    width: 170px;
+    height: 50px;
+    position: absolute;
+    bottom: 20%; right: 38%;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    
+}
+.fade.item1 .more2:hover{
+    background-color: #fff;
+    color: #222;
+}
+.fade.item2 .more2,.fade.item4 .more2,.fade.item3 .more2,.fade.item5 .more2{
+    width: 170px;
+    height: 50px;
+    position: absolute;
+    bottom: 20%; right: 38%;
+    border: 1px solid #222;
+    color: #222;
+    font-size: 1em;
+    cursor: pointer;
+    
+}
+.fade.item2 .more2:hover,.fade.item4 .more2:hover,.fade.item3 .more2:hover,.fade.item5 .more2:hover{
+    background-color: #222;
+    color: #fff;
+}
+.fade.item3 .more2,.fade.item5 .more2{
+    left: 10%;
+}
+
+
+
+    .fade{ 
+        opacity: 0;
+        width: 100%;
+        position: relative;
+      
+        }
+.fade.item1,.fade.item3,.fade.item5{
+    left: -110%;
+}
+.fade.item2,.fade.item4{
+    right: -110%;
+}
+
+        .fade img{
+  width: 100%; display: block;
+        }
+        
+   #page6 h3{
+    position: absolute;
+    display: block;
+    top: 2%; left: 40%;
+    font-size: 3em;
+    font-weight: bold;line-height: 1;
+    color: #9f8b74;
+     
+}
+
+#page6 p{
+    position: absolute;
+    display: block;
+    top: 5%; left: 35%;
+    font-size: 1.2em;
+    font-weight: 600;line-height: 2;
+    color: #9f8b74;
+}     
+      
+ 
+

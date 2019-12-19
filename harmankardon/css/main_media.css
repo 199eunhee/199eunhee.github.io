@@ -1,0 +1,705 @@
+@media screen and (min-width: 1281px) and (max-width : 1919px){
+          /*고해상 태블릿 피씨 사이즈*/
+    #gnb .main li{
+	width:150px;
+}
+    #gnb .main li a.dep1{
+	color: #fff;
+	display: block; 
+	font-size: 0.875em;
+	margin-right: 1em;
+	text-align: center;
+}
+     /*page4, 홍보*/
+    #page4{
+    width: 100%;
+    height: 40%;
+    clear: both;
+    position: relative;
+    background-color: #292929;
+}
+    .proCom{
+    top: 50%;
+}
+    .proMore{
+        top: 60%;
+    }
+    
+    /*page5, 에스엔에스*/
+    
+    #page5{
+    height: 90%; 
+}
+   #page5 h3{
+	
+}
+    
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1280px){
+    /*저해상 태블릿 피씨 사이즈*/
+    .logo{
+	left: 40%;
+}
+    
+    
+    .raItem{
+        display: none;
+    }
+    #gnb{
+        width: 350px;
+        height: 1024px;
+        background-color: #222;
+        float: none; 
+        position: absolute;
+        left: -350px;
+        top: 0%;
+        transition: 0.6s;
+        
+    }
+    #gnb .main {
+        padding-top: 5em;
+    }
+    #gnb .main li{
+      
+        width: 100%;
+	float: none; 
+}
+    #gnb .main li a.dep1{
+	color: #fff;
+	display: block; 
+	font-size: 1.25em;
+	margin-left: 2em;
+	text-align: left;
+}
+    .icoBox{
+	float: right;
+	width: 30%;
+	position: absolute;
+	top:30%;
+    right: 0%;
+}
+    .icoBox li{width: 40px;
+    height: 40px;
+    margin-right: 1em;
+	display: block;
+}
+    .icoBox li img{
+        width: 40px;
+        height: 40px;
+    }
+    .toggle{
+        display: block;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        top: 10%;
+        left: 5%;
+        cursor: pointer;
+    }
+    .close{
+        display: block;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 5%;
+        right: 5%;
+        cursor: pointer;
+    }
+    
+    #ra1:checked ~ #gnb{
+        left: 0;
+    }
+    #ra2:checked ~ #gnb{
+        left: -350px;
+    }
+    
+     /*페이지1*/
+    .vs1{
+            width: 100vw;
+            height: 75vh;
+        }
+    .vs_lst li{
+        height: 80vh;
+        background-size: 100% 80%;
+    }
+     
+.vsImg{display: block;width: 180px; padding-top: 3em;padding-left: 6em; opacity: 0;} 
+        .vs_more{display: block; font-size: 1em; color: #fff; margin-top: 12em; margin-left: 106px; text-align: center;
+        border: 2px solid #fff; width: 120px;padding: 0.5em 1em;border-radius: 50px; position: relative;opacity: 0;}
+
+/*페이지2*/
+    .vs2_more{
+    width: 110px; height: 40px;
+    bottom: 12%; left: 20%;
+    font-size: 0.875em;
+    line-height: 40px;
+}
+    #page3{
+    clear: both;
+width: 100%;
+    height: 170%;
+ 
+}
+    /*page3*/
+    #container{ 
+    clear: both;
+    width: 90%; margin: 0 auto;
+    height: 170%;
+    position: relative;
+    top: 0%;
+         
+}
+     .hideme{ height:20%; 
+        }
+         .hideme img{
+             display: block;
+
+        }
+    .pro0{
+          
+        top: 0%;
+
+        }
+      .pro1{
+            top: 18%;
+            right: 0;
+            
+        }
+    .pro2{
+            top: 24%;
+            left: 0;
+        }
+     .pro3{
+            top: 38%;
+            right: 0;
+        }
+       .pro4{
+            top: 44%;
+            left: 0;
+        }
+         .pro5{
+            top: 58%;
+            right: 0;
+        }
+        .pro6{
+              top: 64%;
+            left: 0; 
+        }
+     
+    .hideme:hover .Tit{
+    padding-top: 2em;
+    transition: 0.5s;
+}
+    /*page4*/
+    #page4{
+    width: 100%;
+    height: 50%;
+    clear: both;
+    position: relative;
+    background-color: #292929;
+}
+    .proTIt{
+    top: 15%; left: 10%;
+    font-size: 1.25em;
+}
+ .proCom{
+    top: 42%; 
+    font-size: 0.875em; 
+}   
+    .proMore{
+
+    width: 100px;
+    height: 40px;
+    font-size: 0.875em;
+    line-height: 40px;
+}
+    /*page5*/
+    #page5{
+    clear: both;
+    width: 100%;
+    height: 170%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+  #page5 h3{
+    width: 40%;
+       margin: 20px auto;
+}
+    #page5 p{
+   width: 40%;
+}
+    #page5 .snsPic{
+    width: 100%;
+    position: absolute;
+    bottom: 15%;
+    
+    
+}
+    #page5 .snsPic li{
+    width: 50%;
+    float: left;
+     overflow: hidden;
+}
+   .fade.item1 .more2,.fade.item2 .more2,.fade.item4 .more2,.fade.item3 .more2,.fade.item5 .more2{
+    width: 120px;
+    height: 30px;
+       line-height: 30px;
+       font-size: 0.875em;
+}
+    .fade.item1 .more2{
+    right: 31%;
+    
+}
+    .fade.item2 .more2,.fade.item4 .more2,.fade.item3 .more2,.fade.item5 .more2{
+   right: 31%;
+    
+}
+    
+       #page6 h3{
+  left: 30%;
+     
+}
+
+#page6 p{
+    top: 10%; left: 15%;
+}     
+     
+    
+    /*푸터*/
+    
+   .fnb3{
+    width: 100%;
+    height: 60px;
+    background-color: #3b3b3b;
+}
+.fnb3 ul{
+     width: 95%;
+    margin: 0 auto;
+    
+}
+
+.fnb3 select{
+    width: 140px;
+}
+
+    
+}
+
+
+@media screen and (max-width:767px){
+    /*모바일 사이즈*/
+   .logo{
+	   width: 90px;
+	left: 40%;
+}
+	.logo img{
+		width: 90px;
+		height: 80px;
+	} 
+    
+    .raItem{
+        display: none;
+    }
+    #gnb{
+		z-index: 99;
+        width: 350px;
+        height: 1024px;
+        background-color: #222;
+        float: none; 
+        position: absolute;
+        left: -350px;
+        top: 0%;
+        transition: 0.6s;
+        
+    }
+    #gnb .main {
+        padding-top: 5em;
+    }
+    #gnb .main li{
+      
+        width: 100%;
+	float: none; 
+}
+    #gnb .main li a.dep1{
+	color: #fff;
+	display: block; 
+	font-size: 1.25em;
+	margin-left: 2em;
+	text-align: left;
+}
+    .icoBox{
+	float: right;
+	width: 30%;
+	position: absolute;
+	top:30%;
+    right: 0%;
+}
+    .icoBox li{width: 20px;
+    height: 20px;
+    margin-right: 1em;
+	display: block;
+}
+    .icoBox li img{
+        width: 25px;
+        height: 25px;
+    }
+    .toggle{
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 25%;
+        left: 5%;
+        cursor: pointer;
+    }
+    .close{
+        display: block;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 5%;
+        right: 5%;
+        cursor: pointer;
+    }
+    
+    #ra1:checked ~ #gnb{
+        left: 0;
+    }
+    #ra2:checked ~ #gnb{
+        left: -350px;
+    }
+	
+	/*페이지1*/
+	 .vs1{
+            width: 100vw;
+            height: 100vh;
+        }
+	 .vs_lst{
+            width: 400%;
+            height: 100vh;
+        }
+	  .vs_lst li{
+            width: 25%;
+            height: 100vh;
+            background-size: 100% 100%;
+            background-position: left;
+        }
+     .vs_lst li.item1{
+            background-image: url(../img/vs7.jpg);
+        }
+        .vs_lst li.item2{
+            background-image: url(../img/vs3.jpg);
+        }
+
+
+        .vs_lst li.item3{
+            background-image: url(../img/vs5.jpg);
+        }
+  
+	    .vs_tit{font-size: 0.875em; padding-left: 2em;}
+	        .vs_com{font-size: 1em;padding-left: 2em;}
+	.vsImg{width: 140px; padding-left: 1em;} 
+	
+	.vs_more{
+		width: 100px;
+		font-size: 0.875em;
+		margin-left: 20px;
+	}
+	     /*페이지 1의 텍스트 박스*/
+        .vs_lst li.on .vs_tit{padding-top:12rem; opacity: 1;}
+        .vs_lst li.on .vs_com{padding-top: 1.5rem; opacity: 1;}
+
+        .vs_lst li.on .vs_more{margin-top: 1rem; opacity: 1;}
+.vs_lst li.on .vsImg{
+	padding-top: 1em;
+	opacity: 1;
+}
+
+	.vs_lst li.item3 .vsImg{
+    width: 250px;padding-left: 2em;
+}
+	
+	  .btn_box1{width: 150px; height: 24px;position: absolute; z-index: 0; left: calc(50% - 70px);bottom: 120px;}
+	 .btn_box1 li{width: 40px; height: 20px;position: absolute; }
+	.btn_box1 li.item1{left: 10px;}
+        .btn_box1 li.item2{left: 60px;}
+        .btn_box1 li.item3{left: 110px;}
+        .btn_box1 li .btn{width: 40px;}
+	
+/*페이지2*/
+	#page2{
+
+    width: 100%;
+    height: 100%;
+		background-color: #292929;
+    position: relative;
+    overflow-x: hidden;
+    
+    
+}
+	.banFrame{
+    width: 500%;
+		height: 100%;
+  
+}
+	.banFrame li{
+    width: 20%;
+    height: 100%;
+		background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center center;
+}
+	  .banFrame li.item1{
+            background-image: url(../img/lexion1_m.jpg);
+        }
+        .banFrame li.item2{
+            background-image: url(../img/lecord1_m.jpg);
+        }
+
+
+        .banFrame li.item3{
+            background-image: url(../img/jbl_m.jpg);
+        }
+	
+	 .banFrame li.item4{
+            background-image: url(../img/acam_m.jpg);
+        }
+	.banFrame li.item5{
+            background-image: url(../img/vs1_m.jpg);
+        }
+	.banFrame li img{
+		display: none;
+}
+	.vs2_more{
+		display: none;
+	}
+	.btn_box2{
+   position:absolute; top:44%; z-index:10; width:100%; 
+}
+	.btn_box2 li button img{
+		width: 80px;
+	}
+    .prevBtn{
+    position: absolute;left: -10%;
+}
+
+.nextBtn{
+    position: absolute; right: -10%;
+}
+	
+	/*page3*/
+	#page3{
+    clear: both;
+width: 100%;
+	height: 150%;
+}
+	#container{
+		width: 100%;
+		 height:150%;
+		top: 0;
+	}
+	.hideme{
+		height: 20%;
+	}
+	.pro0{
+		width: 90%; 
+            position: absolute;
+            top: 0%;
+            left: 10%;
+        }
+	.pro0 .h_tit{ font-size: 1em;padding-top: 6em;}
+        .pro0 img{
+            width: 300px; height:40px;
+        }
+        .pro0 .h_com{ font-size: 0.875em; }
+	 .pro1{
+            top: 27%;
+            right: 0;
+          
+        }
+        
+       
+        .pro2{
+            top: 30%;
+            left: 0;
+        }
+        .pro3{
+            top: 47%;
+            right: 0;
+        }
+         .pro4{
+            top: 50%;
+            left: 0;
+        }
+         .pro5{
+            top: 67%;
+            right: 0;
+        }
+        .pro6{
+              top: 70%;
+            left: 0; 
+        }
+	 .Tit{
+          
+            color: #fff;
+            font-size: 1em;
+            font-weight: bold;
+            padding-top: 4em;
+            text-align: center;
+        }
+	.hideme:hover .Tit{
+    padding-top: 3em;
+    transition: 0.2s;
+}
+	.plus{
+		width: 30px;
+		height: 30px;
+		line-height: 30px;   left: 40%;
+		 border: 1px solid #fff;
+		font-size: 25px;
+	}
+	#page4{
+    width: 100%;
+    height: 100%;
+
+}
+	.promoteBox{
+width: 100%;
+	height: 100%;
+}
+	.promote1{
+    width: 100%;
+	height: 50%;
+    position: absolute;
+    top: 0;
+}
+.promote2{
+    width: 100%;
+	height: 50%;
+    position: absolute;
+   bottom: 0;
+}
+	
+.proTIt{
+
+    font-size: 1.25em;
+}
+.proCom{
+  font-size: 0.875em;   
+}
+	.proMore{
+    width: 90px;
+    height: 30px;
+    font-size: 0.625em;
+    line-height: 30px;
+}
+    
+     /*page5*/
+    #page5{
+    clear: both;
+    width: 100%;
+    height: 130%;
+    overflow: hidden;
+    position: relative;
+
+}
+  #page5 h3{
+    width: 40%;
+       margin: 0px auto;
+      font-size: 2em;
+       padding-top: 2em;
+}
+ #page5 p{
+   width: 35%;
+    font-size: 1em;
+    font-weight: bold;line-height: 1;
+     padding-top: 2em;
+}
+    #page5 .snsPic{
+    width: 100%;
+    position: absolute;
+    bottom: 15%;
+    
+    
+}
+    #page5 .snsPic li{
+    width: 50%;
+    float: left;
+     overflow: hidden;
+}
+	
+	#page5 .sns_icoBox{
+  left: 35%; 
+}
+#page6{
+      clear: both;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.content2{ 
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;    
+    padding-top: 10em;
+}
+
+.more2{
+   display: none;   
+}
+    
+      #page6 h3{
+left: 25%;
+          top: 5%;
+    font-size: 2em;
+  
+}
+
+#page6 p{
+  top: 10%; left: 8%;
+    font-size: 0.875em;
+    font-weight: 600;line-height: 1.5;
+} 
+        /*푸터*/
+    .fnb_m{
+        display: none;
+    }
+    .sns_ft{display: block;}
+
+
+.fnb3{
+    width: 100%;
+    height: 150px;
+    background-color: #3b3b3b;
+}
+.fnb3 ul{
+     width: 95%;
+    margin: 0 auto;
+    
+}
+.fnb3 ul li{
+    float: left;
+    line-height: 50px;
+    margin-right: 20px;
+}
+.fnb3 ul li a{
+    display: block;
+    color: #fff;
+    font-size: 0.625em;
+}
+
+.fnb3 select{
+    width: 150px;
+    height: 30px;
+}
+.sns_ft img{
+	width: 30px;height: 30px;
+}
+
+}/*모바일끝*/
