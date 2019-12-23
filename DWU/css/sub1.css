@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+#container{background: #e4e4e4; border: 1px solid #bdbdbd;padding-left: 10px; position: relative;
+padding-bottom: 100px; width: 100%; height: 100%;}
+		#aside{margin-top: 10px; height: auto;background: #fff; border: 1px solid #bcbcbc; text-align: center; clear: both;}
+		#content{text-align: center;margin-top: 10px;height: auto;background: #fff; border: 1px solid #bdbdbd;}
+
+#content .s_title{ color: #fff;}
+
+ /*컨테이너 영역의 단 설정 */
+		   #container{zoom:1;padding-right: 200px;}
+
+		/*컨테이너에 가상 선택자 사용, 절대 폭 지정안함*/
+		   #container:after{content: ""; display: block; clear: both;}
+
+		/*왼쪽 박스 폭 100%로 지정,  오른쪽 마진 -(음수값)으로 원하는 만큼 설정*/
+		 #aside{width: 15%; position: relative; left: 100px; float: left; }
+        #content{width: 80%;float: right; position: relative; left: 50px;}
+
+
+/*사이드바 */
+#aside ul li img{
+    width: 15px;
+    height: 15px;
+    padding-left: 35px;
+
+}
+
+
+#aside .s_title{
+    display: block;
+    color: #94073f;
+    font-size: 25px;
+    line-height: 2;
+    text-align: left;
+   padding: 20px;
+}
+    
+
+
+.nav2{
+    width: 100%;
+padding-bottom: 20px;}
+
+
+.nav2 .sub_item{
+    text-align: left;
+    font-size: 20px;
+    line-height: 2;
+    padding: 10px 10px 0 10px;
+    
+}
+
+.nav2 .sub_item a:hover{
+    background-color: #94073f;
+    color: #fff;
+    padding: 5px;
+}
+
+
+.nav2 .sub_item a{
+    color: #333;
+    display: block;
+}
+
+.nav2 .sub2 li{
+    font-size: 15px;
+    background-color: #eee;
+} 
+.nav2 .sub2 li a{
+    display: block;
+    padding: 5px;
+}
+
+.nav2 .sub2 li a:hover{
+    background: none;
+    color: #333;
+    text-decoration: underline;
+}
+
+
+.sub2{
+    width: 100%;
+    display: none;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.sub_item:hover .sub2{
+    display: block;
+}
+
+/*콘텐츠 공지사항*/
+
+
+#content .c_sns li img{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+#content .s_title{
+    width: 100%;
+      display: block;
+    color: #333;
+    font-size: 25px;
+    line-height: 2;
+    text-align: left;
+    padding: 20px;
+}
+
+#content .c_sns{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+} 
+.c_sns li{
+    display: block;
+    padding: 10px 0 10px 10px;
+}
+.c_sns li:last-child{
+    padding-right: 10px;
+}
+
+
+.content_section_sub {  
+    padding: 10px;
+    
+}
+.row_sub2{
+    width: 100%;
+    clear: both;
+}
+.table2{
+    width: 90%;
+    margin: 0 auto;
+}
+.table2 caption{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.table2 thead,.table2 tbody{
+    font-size: 0.875em;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.table2 tbody{
+    font-size: 0.875em;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.table2 tbody td a:hover{
+    transform: none;
+    text-decoration: underline;
+}
+
+.table2 thead{
+    color: #333;
+    background: #fff;
+}
+
+.table2 tbody,.table2 tbody a{
+    color: #333;
+}
+
+.table2 thead tr th:before{
+    content:"";
+    width: 100%;
+    height: 3px;
+    background-color: #707070;
+    display: block;
+    
+    margin: 15px auto;
+}
+
+.table2 thead tr th{
+    padding: 10px 0;
+}
+
+.table2 tbody tr td{
+       padding: 10px 0;
+}
+
+.table2 tbody tr:nth-child(odd){
+    background: #f6f6f6;
+}
+
+/*페이지 이동 버튼*/
+
+.row_sub3 {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+}
+
+.row_sub3 span {
+    width: 28px;
+    width: 1.750rem;
+    height: 28px;
+    width: 1.750rem;
+    text-indent: -9999px;
+}
+
+.row_sub3 span.list_prev_btn {
+    margin-right: 10px;
+    margin-right: 0.625rem;
+    background: #aaa;
+    background-image: url(../img/list_prev_btn.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.row_sub3 span.list_next_btn {
+    margin-left: 10px;
+    margin-left: 0.625rem;
+    background: #aaa;
+    background-image: url(../img/list_next_btn.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.row_sub3 a {
+    width: 26px;
+    width: 1.625rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+    font-size: 0.813em;
+    font-size: 0.813rem;
+    border: 1px solid #aaa;
+    color: #aaa;
+    transition: all 0.2s;
+    text-align: center;
+    margin: 0 3px;
+  
+}
+
+
+
+.row_sub3 a:hover {
+    background: #aaa;
+    color: #fff;
+}
+
+
+/*푸터 가장 밑 */
+
+.ft_bottom{
+    width: 100%;
+    height:
+    background: #1b1b1b;
+}
+
+.ft_bottom ul{
+    display: flex;
+     display: -webkit-flex;
+    width:70%;
+    margin: 0 auto;
+}
+
