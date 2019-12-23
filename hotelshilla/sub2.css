@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+.login_hd {
+	width: 100%;
+	clear: both;
+
+}
+
+.login_hd ul {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.login_hd ul li {
+
+	height: 43px;
+	display: block;
+	float: left;
+	padding: 10px 0;
+	
+	position: relative;
+	background-color: #3245a4; 
+}
+
+
+
+.login_hd .login_hd2 {
+	width: 20px;
+	margin-left: 10px;
+}
+
+.login_hd .login_hd3 {
+	color: #fff;
+	font-size: 30px;
+	position: absolute;
+	left: 100px;
+}
+
+.log_hd{
+	width: 100%;
+	clear: both;	 
+}
+.loghdBox{
+	width: 80%;
+	margin: 0 auto;
+	
+}
+.loghdBox li{
+	float: left;
+	margin: 20px 25px;
+	
+}
+.loghdBox li a{
+	display: block;
+	color: #333;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 10px
+	
+}
+.loghdBox li a:hover{
+	border-bottom: 8px solid #3245a4;
+	color: #3245a4;
+	transition: 0.5s;
+}
+
+
+#page8 {
+	width: 100%;
+	clear: both;
+	margin-top: 6em;
+}
+
+ .log_box{background: white;}
+     
+.log_txt2{width: 100%; text-align: left; font-size: 1.1em; padding: 0 3em;
+} 
+        .frm1{margin-top: 10%;}
+        .m_id{}
+        .m_pw{}
+        .in_frm{display: block; width: 80%; margin: 10px auto; line-height: 36px; clear: both; background-color: #eeeeee; text-indent: 1em;}
+.btn_fr{
+			border: none;}
+.btn_fr ul{
+	width: 80%;
+	margin: 0 auto;
+}
+.btn_fr ul li{
+	float: left;
+	display: block;
+}
+
+.btn_fr ul li a{
+	color: #333;
+	font-size: 15px;
+	margin: 0 15px;
+}
+        .btn_frm{ display: block; float: left; width: 80%; margin: 5% 10%; line-height: 45px; background: #3245a4; color: white;}
+.logtxtBox{
+	width: 100%;
+	clear: both;
+	border: none;
+	position: relative;
+}
+.logtxtBox input{
+	position: absolute;
+	left: 50px;
+	top: 15px;
+}
+
+.logtxtBox label img{
+	display: block;
+	position: absolute;
+	left: 50px;
+	top: 10px;
+}
+
+#ck3:checked ~ label img{
+	display: block;
+	content: url(img/checkbox_over_black_btn.png); 
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+        .log_txt{padding: 5px; text-align: center; font-size: 1em;position: absolute;
+left: 70px;}
+
+.log_info{
+    clear: both;
+	position: relative;
+	width: 90%;
+	margin: 30px auto;
+}
+.log_info img{
+	width: 100%;
+}
+    
+.log_info1{width: 60%;
+	clear: both;
+	margin: 0 auto;
+	position: absolute;
+	top: 150px;
+	left: 80px
+}
+
+.log_info1 a{display: block;
+    padding: 5px;
+    font-weight: 700;
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background: #3245a4;
+    background-size: 23px 10px;
+    text-indent: -5%;
+}
+
+.log_info2 a{display: block;
+    padding: 5px;
+    font-weight: 700;
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    border: 2px solid #a0a0a0;
+    background-size: 23px 10px;
+    text-indent: -5%;
+}
+.log_info2{width: 60%;
+clear: both;
+	margin: 0 auto;
+position: absolute;
+bottom: 30px;
+left: 80px;}

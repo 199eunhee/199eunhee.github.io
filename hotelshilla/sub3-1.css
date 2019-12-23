@@ -1,0 +1,113 @@
+@charset "UTF-8" ;
+
+
+
+.option{
+    clear: both;
+    width: 100%;
+}
+.p_option{
+    clear: both;
+    height: auto;
+}
+.page11{
+    clear: both;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.page11 ul{
+    width: 95%;
+    margin: 10px auto;
+}
+.page11_1{
+    display: block;
+    padding: 5px 0;
+}
+.page11_2 li{
+    float: left;
+    padding-top: 5px;
+}
+
+.page11 ul li p{
+    display: block;
+    color: #333;
+    font-size: 20px;
+    line-height: 25px;
+}
+.page11_2 input{
+    width: 250px;
+    height: 25px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 2px solid #3245a4;
+}
+
+.page12{
+    clear: both;
+    width: 100%;
+}
+.page12_1{
+    width: 95%;
+    margin: 0 auto;
+    background: #e5e5e5;
+}
+
+.page12_1 p{
+    font-size: 13px;
+    line-height: 2;
+    color: #333;
+}
+
+.page13{
+    clear: both;
+}
+
+
+.page13 textarea{
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin: 5px auto;
+    color: #333;
+    font-size: 13px;
+    line-height: 2;
+    text-indent: 10px;
+    border: 1px solid #a0a0a0;
+}
+
+.page14:before{
+    content: "";
+    display: block;
+    height: 100px;
+}
+
+
+
+
+.page14{
+    clear: both;
+    width: 100%;
+}
+.page14 .p_box{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid #a0a0a0;
+    
+}
+.p_box h3{
+    color: #333;
+    font-size: 18px;
+    display: block;
+    padding: 5px;
+}
+.p_box p{
+    color: #333;
+    font-size: 13px;
+    display: block;
+    line-height: 1.8;
+    padding: 5px 0;
+}
+
+   

@@ -1,0 +1,316 @@
+@charset "utf-8";
+/*호텔예약*/
+
+#page0{
+	width: 100%;
+	clear: both;
+}
+
+#page0 nav{
+	width:100%;
+}
+
+#page0 nav .select1{
+	width:75%;
+	height: 50px;
+	font-size: 20px;
+	color: #a7a8ac;
+	border: none;
+	font-weight: 500;
+	border-bottom: 1px solid #a7a8ac; 
+	display: block;
+	margin: 0 auto;	
+}
+
+
+.page0_1{
+	clear: both;
+	width: 100%;
+}
+.page0_1 ul{
+	width: 80%;
+	margin: 0 auto;	
+}
+.page0_1 ul li{
+	width: 35%;
+	margin: 10px 40px 10px 12px;
+	display: block;
+	float: left;
+	padding: 5px 0;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	color: #a7a8ac;
+	font-weight: 500;	
+}
+
+
+.page0_1 ul li input{
+	width: 190px;
+	font-size: 18px;
+	text-align: center;
+	color: #a7a8ac;
+	font-weight: 500;
+	border-bottom: 1px solid #a7a8ac;
+}
+.page0_1 ul li input:before{
+	content: url(img/calender_01_ico.png);
+	display: block;
+	
+}
+.page0_2{
+	clear: both;
+	width: 100%;
+}
+
+.page0_2 ul{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.page0_2 ul li{
+	width: 20%;
+	display: block;
+	float: left;
+	margin: 0 40px 0 10px;
+	padding: 5px 0;
+	font-size:18px;
+	text-align: center;
+	color: #a7a8ac;
+	font-weight: 500;	
+	
+}
+
+.page0_2 ul li input{
+	width: 70px;
+	height: 90px;
+	text-align: center;
+	font-size: 25px;
+	color: #333;
+	
+}
+.search {
+    width: 70%;
+    clear: both;
+    margin: 0 auto;
+
+}
+
+.search a {
+    display: block;
+    padding: 5px;
+    font-weight: 700;
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background: #3245a4;
+    background-size: 23px 10px;
+    text-indent: -5%;
+
+
+}
+
+/*콘텐츠 영역*/
+
+#content {
+    height: 100%;
+    clear: both;
+}
+
+#content .title1 {
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.page {
+    width: 100%;
+    clear: both;
+    padding-top: 40px;
+}
+
+#images {
+    width: 400%;
+}
+
+#images li {
+    float: left;
+    width: 25%;
+}
+
+.pageVs {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+
+#btnGroup {
+    width: 100%;
+    clear: both;
+
+}
+
+#btnGroup li {
+    float: left;
+    padding: 10px;
+}
+
+#page1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* overflow: hidden;*/
+}
+
+.conFrame {
+    clear: both;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#btnGroup label {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, 0.4);
+    position: absolute;
+    top: 65%;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 80;
+}
+
+#btnGroup label.leftBtn {
+    background-image: url(img/leftBtn.png);
+    left: 10px;
+}
+
+#btnGroup label.rightBtn {
+    background-image: url(img/rightBtn.png);
+    right: 10px;
+}
+
+/*리워즈혜택 영역*/
+
+
+#page2 {
+    clear: both;
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.rewards img {
+    width: 100%;
+}
+
+.reJoin {
+    width: 70%;
+    height: auto;
+    clear: both;
+    margin: 0 auto;
+    z-index: 99;
+
+}
+
+.reJoin a {
+    display: block;
+    padding: 10px;
+    font-weight: 500;
+    line-height: 40px;
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+    border: 3px solid #3245a4;
+    text-indent: 5px;
+    position: absolute;
+    bottom: 30px;
+
+}
+
+
+.membership {
+    clear: both;
+    width: 90%;
+    position: relative;
+
+
+}
+
+.membership a {
+    display: block;
+    color: #333;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+
+    margin: 0 auto;
+}
+
+.membership a:after {
+    content: url(img/bullet_01_btn.png);
+    position: absolute;
+    top: 37px;
+    margin-left: 5px;
+
+}
+
+/*갤러리*/
+#page3 {
+    width: 100%;
+    clear: both;
+    padding-top: 50px;
+}
+
+#page3 h2 {
+    display: block;
+    color: #333;
+    text-align: center;
+    margin: 20px;
+}
+
+#page3 .gal {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#page3 .gal2 {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 40px;
+}
+
+#page3 .gal:after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background: #b5b5b5;
+    margin: 10px auto;
+}
+
+#page3 iframe {
+    width: 95%;
+
+    display: block;
+    margin: 0 auto;
+}
+
+/*인스타그램 홍보*/
+#page4 {
+    clear: both;
+}
+
+#page4 .insta {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+}
+

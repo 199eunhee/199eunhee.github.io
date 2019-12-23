@@ -1,0 +1,289 @@
+@charset "UTF-8" ;
+.rev_hd {
+	width: 100%;
+	clear: both;
+
+}
+
+.rev_hd ul {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.rev_hd ul li {
+
+	height: 43px;
+	display: block;
+	float: left;
+	padding: 10px 0;
+	border-bottom: 1px solid #a8a9ac;
+	position: relative;
+	background-color: #fff; 
+}
+
+
+
+.rev_hd .rev_hd2 {
+	width: 20px;
+	margin-left: 10px;
+}
+
+.rev_hd .rev_hd3 {
+	color: #333;
+	font-size: 30px;
+	position: absolute;
+	left: 100px;
+    
+}
+
+.reseve_hd{
+	width: 100%;
+	clear: both; 
+}
+
+
+.resevehdBox{
+	width:100%;   
+	margin: 0 auto;
+     height: 75px;
+    border-bottom: 8px solid #a8a9ac;
+
+}
+.resevehdBox li{
+    display: block;
+	float: left;
+    height: 35px;
+    
+	margin-left:  40px;
+    margin-top: 20px;
+    
+	
+}
+
+
+.resevehdBox li a{
+	display: block;
+	color: #333;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 35px;
+	padding: 10px;
+       	
+}
+.resevehdBox li a:hover{
+	border-bottom: 8px solid #3245a4;
+	color: #3245a4;
+	transition: 0.5s;
+    font-size: 20px;
+}
+
+#page10{
+    clear: both;
+    width: 100%;
+    border-top: 1px solid #a8a9ac;
+    margin-top: 40px;
+}
+
+#page10 .revBox{
+width:90%;
+    height: 30px;
+    margin: 0 auto;
+    background: #e5e5e5;
+    border: 1px solid #a0a0a0;
+    margin-top: 20px;
+    
+}
+#page10 .revBox li{
+    float: left;
+    margin:8px 8px;  
+    height: 30px;
+    width: 29.5%;
+ display: block;
+    
+
+}
+
+#page10 .revBox li a{
+    display: block;
+    text-align: center;
+    color: #b1b1b1;
+    font-size: 15px;
+    text-indent: 10px;
+    line-height: 10px;
+}
+
+.package{
+    margin-top: 40px;
+    clear: both;
+}
+
+.pac_box{
+    width: 95%;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    background-color: #e5e5e5;
+    position: relative;
+}
+.pac_box p{
+     color: #333;
+     display: block;
+    text-indent: 10px;
+    line-height: 30px;
+    
+}
+.pac_box .package1{
+    font-size: 15px;
+  
+}
+.pac_box .package2{
+    font-size: 12px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-weight: 600;
+}
+
+.package3{
+     color: #333;
+     display: block;
+    text-indent: 10px;
+    line-height: 30px;
+    font-size: 13px;
+    margin: 1em;
+    font-weight: 600;
+}
+
+.room{
+    margin-top: 10px;
+    width: 100%;
+    clear: both;
+    position: relative;
+}
+
+.room h2{
+    font-size: 25px;
+    font-weight: 600;
+    display: block;
+    
+    padding: 15px;
+}
+
+.room img{
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+
+.room ul{
+position: absolute;
+right: 15px;
+padding-top: 15px}
+
+.room ul li{
+    display: block;
+    float: left;
+    margin: 0 3px;
+    color: #333;
+    line-height: 25px;   
+}
+
+#btnBox2{
+    clear: both;
+    margin-top: 30px;
+    width: 100%;
+}
+
+#btnBox2 ul{
+    width: 75%;
+    margin: 0 auto;
+    
+}
+
+#btnBox2 ul li{
+   
+    float: left;
+    width: 150px;
+    height: 30px;
+    margin: 1em 1em;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+}
+     
+
+#btnBox2 ul .btnBox2_1{
+   border: 1px solid #333;
+    color: #333;
+   
+}
+
+#btnBox2 ul .btnBox2_1 img{
+    width: 15px;
+    height: 15px;
+}
+   
+#btnBox2 ul .btnBox2_2{
+    background-color: #3245a4;
+}
+
+#btnBox2 img{
+    width: 20px;
+    height: auto;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.btnBox2_2 label{
+    background-image: url(img/bullet_10_btn.png);
+    background-repeat: no-repeat;
+     width: 20px;
+    height: 15px;
+    background-position: center center;
+   
+}
+
+.rev_ck {
+    width: 100%;
+    clear: both;
+    position: relative;
+}
+
+.rev_ck h2{
+    display: block;
+   line-height: 40px;
+    width: 95%;
+    margin: 10px auto;
+    background: #e5e5e5;
+    font-size: 25px;
+    text-indent: 10px;
+    font-weight: 500;
+    border-bottom: 2px solid #333;
+    border-top: 2px solid #333;
+}
+
+.rev_ck li{
+    float: left;
+    display: block;
+    line-height: 30px;
+}
+
+.rev_ck input{
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    left: 10px;
+    bottom: -35px;
+    
+}
+.rev_ck{
+    display: none;
+}
+#ck5:checked ~ .rev_ck{
+    display: block;
+}
+#ck5:checked ~ #btnBox2 label{
+    background-image: url(img/bullet_09_btn.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}

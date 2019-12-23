@@ -1,0 +1,129 @@
+@charset "utf-8";
+/*푸터영역*/
+
+.ft {
+    clear: both;
+    
+    color: #333;
+    padding: 1em;
+    padding-bottom: 1.5em;
+}
+
+.fnb {
+    width: 100%;
+    margin: 0 auto;
+	border-bottom: 2px solid 
+		#3245a4;
+	border-top: 2px solid 
+		#3245a4;
+
+}
+
+.fnb ul {
+    width: 60%;
+    overflow: hidden;
+	margin: 0 auto;
+}
+
+.fnb li {
+    float: left;
+    width: 50%;
+	height: 40px;
+	
+    
+}
+
+.fnb li img{
+	display: block;
+	width: 130px;
+	height: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+
+.copyright {
+    clear: both;
+    text-align: center;
+}
+
+.snb{
+	width: 100%;
+	margin: 0 auto;
+}
+.snb ul{
+	width: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.snb ul li{
+	float: left;
+	padding: 10px 5px;
+}
+
+.snb li img{
+	display: block;
+	height: 30px;
+}
+
+
+.mnb{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.mnb ul{
+	width: 60%;
+	
+	margin: 0 auto;
+}
+.mnb ul li{
+	float: left;
+	padding: 15px 10px;
+}
+.mnb ul li a{
+	text-decoration: none;
+	color: #333;
+	font-size: 16px;
+}
+.mnb ul li a:hover{
+	text-decoration: underline;
+}
+.mnb ul .it2{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.copyright{
+	width: 100%;
+	text-align: left;
+	display: block;
+	padding: 5px
+}
+.copyright p{
+	padding: 5px;
+	font-size: 15px;
+	color: #333;
+}
+
+.lang{
+	width: 100%;
+}
+.lang ul{
+	width: 100%;
+	overflow: hidden;
+}
+.lang li{
+	float: left;
+	padding: 10px 5px;
+}
+.lang li img{
+	width: 25px;
+	height: 25px;
+}
+#select2{
+	font-size: 15px;
+	padding: 3px;
+	color: #333;
+}
