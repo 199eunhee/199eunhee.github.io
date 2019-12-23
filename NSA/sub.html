@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="title" content="국립중앙과학관">
+    <meta name="keywords" content="국립,과학관,대전,science,museum,국립중앙과학관">
+    <meta name="auther" content="national science museum">
+    <meta name="description" content="우리나라 대표 중심 과학관, 국립중앙과학관에 오신 것을 환영합니다.">
+
+    <meta property="og:title" content="국립중앙과학관">
+    <!--해당사이트의 제목 -->
+    <meta property="og:url" content="./index.html">
+    <!--URL링크 -->
+    <meta property="og:description" content="우리나라 대표 중심 과학관, 국립중앙과학관에 오신 것을 환영합니다.">
+    <!--설명, 제목 아래에 설명글-->
+
+    <title>국립중앙과학관</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./js/main.js">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="img/symbol.gif">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/symbol.gif">
+    <style>
+        .hd {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .sub_con{
+            clear: both;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        .sub_con .sub_vs{
+         width: 100%;
+            position: relative;
+            clear: both;
+        }
+        .sub_con .sub_vs h2{
+            display: block;
+            color: #fff;
+            position: absolute;
+            font-size: 35px;
+            top: 80%; left: 42%;
+        }
+        .map_tit {
+            width: 70%;
+            margin: 30px auto;
+            
+            position: relative;
+        }
+        
+        .map_tit h3{
+            font-size: 28px;
+            line-height: 3;
+            text-align: center;
+            display: block;
+        }
+        .map_tit .map_ico{
+            position: absolute;
+            right: 50px;
+            top: 20px;
+        }
+        .map_ico li{
+            float: left;
+            display: block;
+        }
+        .map_ico li i{
+            display: block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid #333;
+            border-radius: 30px;
+            margin: 5px;
+        }
+        .map_bg{
+            width: 100%;
+        }
+        .map {
+            width:70%;
+            position: relative;
+            top: -150px;
+            margin: 0 auto;
+            display: block;
+            height: auto;
+            border: 1px solid #333
+        }
+        
+        .map_com{
+            clear: both;
+            position: relative;
+            top: -80px;
+            width: 70%;
+            margin: 0 auto;
+             
+        }
+        
+        .map_com p{
+            font-size: 16px;
+            font-weight: 600;
+            display: block;
+            padding: 5px;
+            color: #333;
+            
+        }
+        
+        .map_list{
+            position: relative;
+            top: -70px;
+             width: 70%;
+            height:300px;
+            margin:0px auto;
+            border-top: 2px solid #333;
+            border-bottom: 2px solid #333;
+       }
+        .map_list ul{
+            width: 100%;
+        }
+        
+         .map_list li{
+             width: 33.3333%;
+             float: left;
+             height: 50px;
+             padding-top: 10px;
+           
+        }
+        
+        .map_list li .num{
+            margin-top: 10px;
+            display: block;width: 30px; height: 30px; box-sizing: border-box; line-height: 30px; text-indent: 5px; border-radius: 20px; font-size: 16px;
+            color: #fff; font-weight: bold;
+            background-color: #5376b7;
+        }
+        
+        .map_list li a{
+            color: #333;
+            line-height: 2;
+            font-size: 18px;
+            position: relative; left: 10%;
+            top: -30px;
+        }
+        .map_list li:hover{
+            font-weight: bold;
+        }
+        .map_list li .type{
+            color: #3030a2
+        }
+        .map_list li .sr-only{
+            color: #e82a2a;
+        }
+        
+        
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function() {
+            var ck1 = true,
+                ck2 = true; //true라는 값을 ck1이라는 변수에 저장하세요.
+
+            //토글버튼 클릭 시 펼침메뉴 열기/닫기  $("선택자").메소드(function(){}) 
+            $(".lst_btn").click(function() {
+
+                if (ck1) {
+                    $(".collap").addClass("on");
+                    $(".lst_btn").addClass("on"); //x자 모양
+                } else {
+                    $(".collap").removeClass("on");
+                    $(".lst_btn").removeClass("on");
+
+                }
+                ck1 = !ck1; //true=false
+            });
+
+            //언어 선택메뉴, 한국어박스상자를 클릭하면 en,jp가 hright0 에서 64로
+            $(".this_lang").click(function() {
+                if (ck2) {
+                    $(".lang_list").addClass("on");
+                    $(".lang").addClass("on"); //h:106
+                    $(".this_lang").addClass("on");
+                } else {
+                    $(".lang_list").removeClass("on");
+                    $(".lang").removeClass("on");
+                    $(".this_lang").removeClass("on");
+                }
+                ck2 = !ck2;
+            });
+        });
+        //스크롤시 메인메뉴 모션//
+        $(window).scroll(function() {
+            var sc_top = parseInt($("body, html").scrollTop());
+            if (sc_top >= 500 && sc_top < 1200) { //스크롤양이 500px - 1199
+                $(".hd").addClass("on");
+                $(".hd").removeClass("off");
+            } else if (sc_top >= 1200) { //스크롤양이 1200px 이상 일 때
+                $(".hd").removeClass("on");
+                $(".hd").addClass("off");
+            } else { //스크롤위치 0-499px
+                $(".hd").removeClass("on");
+                $(".hd").removeClass("off");
+            }
+        });
+        $(document).ready(function() {
+
+            //2.9초 마다 ani()함수를 실행
+            var intv = setInterval(function() {
+                ani();
+            }, 2900);
+
+            //ani 함수 작성
+            function ani() {
+                $(".conBox").animate({
+                    "margin-right": "-1920px"
+                }, 800, function() { //콜백함수
+                    $(".conBox li").eq(0).appendTo($(".conBox"));
+                    $(".conBox").css("margin-right", "0px");
+                })
+            };
+
+        });
+
+
+
+
+        //두 번째 슬라이더
+    </script>
+
+</head>
+
+<body>
+
+    <nav class="collap">
+        <a href="index.html" class="logo"><img src="./img/logo_01.png" alt="로고"></a>
+
+        <ul class="main_menu">
+            <li><a href="" class="dep1">전시관</a>
+                <ul class="dep2">
+                    <li><a href="">전시관소개 </a></li>
+                    <li><a href="">추천코스</a></li>
+                    <li><a href="">미래기술관</a></li>
+                    <li><a href="">과학기술관</a></li>
+                    <li><a href="">꿈아띠체험관</a></li>
+                    <li><a href="">인류관</a></li>
+                    <li><a href="">자연사관</a></li>
+                    <li><a href="">창의나래관</a></li>
+                    <li><a href="">자기부상열차 체험관</a></li>
+                    <li><a href="">생물탐구관</a></li>
+                    <li><a href="">야외전시장</a></li>
+                </ul>
+            </li>
+            <li><a href="" class="dep1">특별전·행사</a>
+                <ul class="dep2">
+                    <li><a href="">사이언스데이 </a></li>
+                    <li><a href="">수학 체험전</a></li>
+                    <li><a href="">발명품경진대회</a></li>
+                    <li><a href="">전국과학전람회</a></li>
+                    <li><a href="">특별전시회</a></li>
+                    <li><a href="">전시품개발센터 쇼룸</a></li>
+                    <li><a href="">자연사관</a></li>
+
+                </ul>
+            </li>
+            <li><a href="" class="dep1">교육</a>
+                <ul class="dep2">
+                    <li><a href="">교육프로그램안내 </a></li>
+                    <li><a href="">교육시설</a></li>
+                    <li><a href="">무한상상실</a></li>
+                    <li><a href="">교육자료실</a></li>
+                    <li><a href="">외부과학교육프로그램</a></li>
+
+                </ul>
+            </li>
+            <li><a href="" class="dep1">예약</a>
+                <ul class="dep2">
+                    <li><a href="">예약안내 </a></li>
+                    <li><a href="">전시관예약</a></li>
+                    <li><a href="">교육예약</a></li>
+                    <li><a href="">방학과학캠프예약</a></li>
+                    <li><a href="">공연·행사예약</a></li>
+                    <li><a href="">성인자연탐사체험</a></li>
+                    <li><a href="">진로특강</a></li>
+                    <li><a href="">남문주차장예약</a></li>
+                    <li><a href="">예약정보 조회</a></li>
+
+                </ul>
+            </li>
+            <li><a href="" class="dep1">과학관소개</a>
+                <ul class="dep2">
+                    <li><a href="">관람안내 </a></li>
+                    <li><a href="">기관안내</a></li>
+                    <li><a href="">편의·식음 시설안내</a></li>
+                    <li><a href="">기증·기탁 및 소장품 공유안내 </a></li>
+                    <li><a href="">국가중요과학기술자료</a></li>
+                    <li><a href="">주변정보</a></li>
+                    <li><a href="">찾아오시는 길 </a></li>
+                    <li><a href="">관련 사이트 </a></li>
+
+                </ul>
+            </li>
+            <li><a href="" class="dep1">소통마당</a>
+                <ul class="dep2">
+                    <li><a href="">공지사항 </a></li>
+                    <li><a href="">채용정보</a></li>
+                    <li><a href="">사업 공고및 평가결과</a></li>
+                    <li><a href="">고객서비스 </a></li>
+                    <li><a href="">안전관리방</a></li>
+                    <li><a href="">홍보자료</a></li>
+                    <li><a href="">자료실 </a></li>
+                    <li><a href="">110수화(화상)·채팅상담 </a></li>
+                    <li><a href="">국민 생각함</a></li>
+                    <li><a href="">자주 묻는 질문</a></li>
+                    <li><a href="">자원봉사자 안내 </a></li>
+
+                </ul>
+            </li>
+            <li><a href="" class="dep1">정보공개</a>
+                <ul class="dep2">
+                    <li><a href="">정보공개 제도 안내 </a></li>
+                    <li><a href="">사전정보공표 </a></li>
+                    <li><a href="">정보공개목록</a></li>
+                    <li><a href="">공공데이터 개방 </a></li>
+
+                </ul>
+            </li>
+            <li><a href="" class="dep1">회원서비스</a>
+                <ul class="dep2">
+                    <li><a href="">회원가입 </a></li>
+                    <li><a href="">로그인 </a></li>
+                    <li><a href="">아이디찾기</a></li>
+                    <li><a href="">비밀번호 찾기</a></li>
+                    <li><a href="">유료회원안내 </a></li>
+                    <li><a href="">이용약관 </a></li>
+                    <li><a href="">개인정보 처리방침</a></li>
+                    <li><a href="">영상정보 처리기기 운영방침</a></li>
+
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+    <haeder class="hd">
+        <a href="index.html" class="logo"><img src="./img/main_logo.png" alt="로고"></a>
+        <nav class="gnb">
+            <ul class="main_menu">
+                <li><a href="" class="dep3">전시관</a>
+                    <ul class="sub">
+                        <li><a href="">전시관소개 </a></li>
+                        <li><a href="">추천코스</a></li>
+                        <li><a href="">미래기술관</a></li>
+                        <li><a href="">과학기술관</a></li>
+                        <li><a href="">꿈아띠체험관</a></li>
+                        <li><a href="">인류관</a></li>
+                        <li><a href="">자연사관</a></li>
+                        <li><a href="">창의나래관</a></li>
+                        <li><a href="">자기부상열차 체험관</a></li>
+                        <li><a href="">생물탐구관</a></li>
+                        <li><a href="">야외전시장</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="dep3">특별전·행사</a>
+                    <ul class="sub">
+                        <li><a href="">사이언스데이 </a></li>
+                        <li><a href="">수학 체험전</a></li>
+                        <li><a href="">발명품경진대회</a></li>
+                        <li><a href="">전국과학전람회</a></li>
+                        <li><a href="">특별전시회</a></li>
+                        <li><a href="">전시품개발센터 쇼룸</a></li>
+
+
+                    </ul>
+                </li>
+                <li><a href="" class="dep3">교육</a>
+                    <ul class="sub">
+                        <li><a href="">교육프로그램안내 </a></li>
+                        <li><a href="">교육시설</a></li>
+                        <li><a href="">무한상상실</a></li>
+                        <li><a href="">교육자료실</a></li>
+                        <li><a href="">외부과학교육프로그램</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="" class="dep3">예약</a>
+                    <ul class="sub">
+                        <li><a href="">예약안내 </a></li>
+                        <li><a href="">전시관예약</a></li>
+                        <li><a href="">교육예약</a></li>
+                        <li><a href="">방학과학캠프예약</a></li>
+                        <li><a href="">공연·행사예약</a></li>
+                        <li><a href="">성인자연탐사체험</a></li>
+                        <li><a href="">진로특강</a></li>
+                        <li><a href="">남문주차장예약</a></li>
+                        <li><a href="">예약정보 조회</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="" class="dep3">과학관소개</a>
+                    <ul class="sub">
+                        <li><a href="">관람안내 </a></li>
+                        <li><a href="">기관안내</a></li>
+                        <li><a href="">편의·식음 시설안내</a></li>
+                        <li><a href="" style="font-size: 14px;">기증·기탁·소장품 공유안내 </a></li>
+                        <li><a href="">국가중요과학기술자료</a></li>
+                        <li><a href="">주변정보</a></li>
+                        <li><a href="">찾아오시는 길 </a></li>
+                        <li><a href="">관련 사이트 </a></li>
+
+                    </ul>
+                </li>
+                <li><a href="" class="dep3">소통마당</a>
+                    <ul class="sub">
+                        <li><a href="">공지사항 </a></li>
+                        <li><a href="">채용정보</a></li>
+                        <li><a href="">사업 공고및 평가결과</a></li>
+                        <li><a href="">고객서비스 </a></li>
+                        <li><a href="">안전관리방</a></li>
+                        <li><a href="">홍보자료</a></li>
+                        <li><a href="">자료실 </a></li>
+                        <li><a href="">110수화(화상)·채팅상담 </a></li>
+                        <li><a href="">국민 생각함</a></li>
+                        <li><a href="">자주 묻는 질문</a></li>
+                        <li><a href="">자원봉사자 안내 </a></li>
+
+                    </ul>
+                </li>
+                <li><a href="" class="dep3">정보공개</a>
+                    <ul class="sub">
+                        <li><a href="">정보공개 제도 안내 </a></li>
+                        <li><a href="">사전정보공표 </a></li>
+                        <li><a href="">정보공개목록</a></li>
+                        <li><a href="">정보공개창구</a></li>
+                        <li><a href="">공공데이터 개방 </a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+
+
+        </nav>
+        <div class="lang">
+            <button class="this_lang">한국어</button>
+            <ul class="lang_list">
+                <li class="item1"><a href="index_en.html">English</a></li>
+                <li class="item2"><a href="index_jp.html">Japan</a></li>
+                <li class="item3"><a href="index_hk.html">China</a></li>
+            </ul>
+        </div>
+        <div class="lst_btn">
+            <span class="line item1"></span>
+            <span class="line item2"></span>
+            <span class="line item3"></span>
+        </div>
+
+    </haeder>
+
+    <section class="sub_con">
+
+        <div class="sub_vs">
+            <h2> 전시관 | 전시관 소개</h2>
+            <img src="img/sub_img.jpg" alt="서브배경">
+        </div>
+        <div class="map_tit">
+          <h3> 전시관 소개 | 전시관 가이드맵</h3>
+           <ul class="map_ico">
+               <li ><i class="xi-share-alt-o"></i></li>
+               <li><i class="xi-print"></i></li>
+           </ul>
+            
+            
+        </div>
+        
+        <div class="map_bg">
+            <img src="img/map_bg.jpg" alt="지도 배경">
+           
+            <img src="img/map.jpg" alt="지도" class="map">
+    
+        </div>
+        
+        
+        
+        
+        <div class="map_com">
+        <p><i class="xi-warning">과학관 전체를 한눈에 보실 수 있습니다. 아래 전시관을 클릭하시면 상세하게 안내해드립니다.(※ 공통이용시설 : 여럿이 함께 이용할 수 있는 시설을 의미합니다.)</i></p> </div>
+
+<div class="map_list">
+        <ul>
+           
+            <li><span class="num">1</span> <a href="/board?menuId=MENU00671">사이언스홀 <span class="type">공통이용시설</span></a> <a href="/board?menuId=MENU00460">(시설대관 가능) <i class="xi-arrow-right"></i></a></li>
+            <li><span class="num">2</span> <a href="/board?menuId=MENU00350">자연사관</a></li>
+            <li><span class="num">3</span> <a href="/board?menuId=MENU00744">인류관</a></li>
+            <li><span class="num">4</span> <a href="/board?menuId=MENU00352">창의나래관 <i class="xi-won"></i><span class="sr-only">유료관</span></a> <a href="/board?menuId=MENU00460">(나래홀 시설대관 가능) <i class="xi-arrow-right"></i></a></li>
+            <li><span class="num">5</span> <a href="/board?menuId=MENU00692">야외놀이터 <span class="type">공통이용시설</span></a></li>
+            <li><span class="num">6</span> <a href="/board?menuId=MENU00763">사이언스 캠핌장<span class="type">공통이용시설</span></a></li>
+            <li><span class="num">7</span> <a href="/board?menuId=MENU00339">과학기술관 </a></li>
+            <li><span class="num"> 8</span> <a href="/board?menuId=MENU00348">꿈아띠체험관 <i class="xi-won"></i><span class="sr-only">유료관</span></a></li>
+            <li><span class="num">9</span> <a href="/board?menuId=MENU00361">천체관 <i class="xi-won"></i><span class="sr-only">유료관</span></a></li>
+            <li><span class="num">10</span> <a href="/board?menuId=MENU00356">자기부상열차 <i class="xi-won"></i><span class="sr-only">유료관</span></a></li>
+            <li><span class="num">11</span> <a href="/board?menuId=MENU00400">과학캠프관 <span class="type">공통이용시설</span></a> <a href="/board?menuId=MENU00460">(시설대관 가능) <i class="xi-arrow-right"></i></a></li>
+            <li><span class="num">12</span> <a href="/board?menuId=MENU00400">과학교육관 <span class="type">공통이용시설</span></a> <a href="/board?menuId=MENU00460">(시설대관 가능) <i class="xi-arrow-right"></i></a></li>
+            <li><span class="num">13</span> <a href="/board?menuId=MENU00359">생물탐구관</a></li>
+            <li><span class="num">14</span> <a href="/board?menuId=MENU00312">미래기술관</a> <a href="/board?menuId=MENU00460">(3층 특별전시실 시설대관 가능) <i class="xi-arrow-right"></i></a></li>
+        </ul>
+       </div>
+        
+        
+
+
+
+    </section>
+
+
+    <footer id="ft">
+        <div class="ft_tit">
+            <img src="img/logo_01.png" alt="푸터로고" class="ft_logo">
+            <p> 국립중앙과학관은 과학 원리와 기술을 전시, 교육하며 첨단과학기술의 혁신으로 다가오는 4차 산업혁명시대에 발 맞추어 <br> 정보를 수집·보존·연구하여 우리나라 과학문화발전에 기여할 수 있는 과학관이 되도록 최선을 다하겠습니다.</p>
+        </div>
+        <nav class="fnb">
+            <ul class="menu">
+                <li><a href="" class="item1">개인정보 취급방침</a></li>
+                <li><a href="" class="item2">이메일주소 무단 수집 거부</a></li>
+                <li><a href="" class="item3">오시는 길</a></li>
+                <li><a href="" class="item4">이용약관</a></li>
+            </ul>
+            <p class="add">34143 대전광역시 유성구 대덕대로 481 (구성동32-2) 국립중앙과학관 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARS 042-601-7979</p>
+            <p class="copy">Copyright 2019 National Science Museum All Rights Reserved.</p>
+
+            <select name="select" id="selBox">
+                <option value="option1">관계기관</option>
+                <option value="option2"><a href="">과학기술정보통신부</a></option>
+
+                <option value="option31"><a href="">국립과천과학관</a></option>
+                <option value="option4"><a href="">국립부산과학관</a></option>
+                <option value="option5"><a href="">국립대구과학관</a></option>
+                <option value="option6"><a href="">국립광주과학관</a></option>
+                <option value="option7"><a href="">한국과학관협회</a></option>
+
+                <option value="option8"><a href="">한국과학창의재단</a></option>
+
+                <option value="option9"><a href="">국민재난안전포털</a></option>
+
+
+            </select>
+
+            <div class="ft_img">
+                <ul>
+                    <li class="img1"><img src="img/wa_mark.png" alt="과학기기술정보통신부"></li>
+                    <li class="img2"><img src="img/good_content.png" alt="굿콘텐츠서비스"></li>
+                </ul>
+            </div>
+
+
+        </nav>
+
+
+
+    </footer>
+
+
+</body></html>
