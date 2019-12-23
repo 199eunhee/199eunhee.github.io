@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="title" content="LUSH KOREA">
+    <meta name="keywords" content="LUSH KOREA,러쉬,lush, 배쓰밤, 향기">
+    <meta name="auther" content="LUSH KOREA">
+    <meta name="description" content="나만 알고싶은 향기, 러쉬">
+
+    <meta property="og:title" content="LUSH KOREA">
+    <!--해당사이트의 제목 -->
+    <meta property="og:url" content="./index.html">
+    <!--URL링크 -->
+    <meta property="og:description" content="나만 알고싶은 향기, 러쉬">
+    <!--설명, 제목 아래에 설명글-->
+    <title>LUSH KOREA</title>
+
+    <script src="js/modernizr.custom.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    
+    <link rel="stylesheet" href="css/common.css">
+     <link rel="stylesheet" href="css/sub1.css">
+</head>
+<style>
+    @media screen and (min-width:768px) and (max-width:1280px){
+            /*저해상 태블릿 피씨 사이즈*/
+        .toggle{display: block; z-index: 80;}
+    #gnb {
+    width: 300px;
+    height: 1080px;
+    background-color: #222;
+    float: left;
+             display: none;
+}
+        .g_close{display: block;}
+        
+        #gnb ul li {
+    float: none;;
+    width: 300px;
+    line-height: 2;
+            text-indent: 10px;
+}
+        #gnb .main .sub:before {
+ display: none;
+
+}
+#gnb .main li:hover .sub{
+    visibility: visible;
+    height: 350px;
+    opacity: 1;
+}
+#gnb .main .sub:after {
+   display: none;
+}
+        .product{width: 70%;}
+            .product .col{width: 50%;}
+            .proTit{line-height: 1.5; font-size: 1em;}
+        .mini_ban{top: 58%; left: 40%; }
+        } 
+      /*푸터*/
+#ft{
+    height: 300px;
+}
+.telBox{
+    width: 30%;
+    height: 300px;
+    float: left;
+    position: relative;
+}
+.ftlogo{
+    display: block; position: absolute;
+    top: 10%; right: 28%;
+}
+
+.telBox .pBox{
+    font-size: 0.875rem;
+    line-height: 2;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    right: 5%;
+    top: 25%;
+}
+.fnbBox{
+    width: 70%;
+    float: right;
+    height: 300px;
+    position: relative;
+}
+
+.fnb ul li a{
+    font-size: 0.775rem;
+    line-height: 1.5;
+}
+.subscribe2{
+ display: none;
+}
+
+.add{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    bottom: -15%;
+}
+
+.add p{
+    font-size: 0.875rem;
+}
+
+    @media screen and (min-width: 1281px) and (max-width : 1919px){
+        
+        /*고해상 태블릿 피씨 사이즈*/
+        .toggle{display: block; z-index: 80;}
+    #gnb {
+    width: 300px;
+    height: 1080px;
+    background-color: #222;
+    float: left;
+             display: none;
+}
+        .g_close{display: block;}
+        
+        #gnb ul li {
+    float: none;;
+    width: 300px;
+    line-height: 2;
+            text-indent: 10px;
+}
+        #gnb .main .sub:before {
+ display: none;
+
+}
+#gnb .main:hover .sub{
+    visibility: visible;
+    height: 350px;
+    opacity: 1;
+}
+#gnb .main .sub:after {
+   display: none;
+}
+         .product{width: 70%;}
+        .product .col{width: 25%;}
+            .proTit{line-height: 2; font-size: 2em;}
+    }
+
+@media screen and (max-width:767px){
+    /*모바일 사이즈*/
+   .toggle{display: block; z-index: 80;}
+    #gnb {
+    width: 300px;
+    height: 1080px;
+    background-color: #222;
+    float: left;
+             display: none;
+}
+        .g_close{display: block;}
+        
+        #gnb ul li {
+    float: none;;
+    width: 300px;
+    line-height: 2;
+            text-indent: 10px;
+}
+        #gnb .main .sub:before {
+ display: none;
+
+}
+#gnb .main li:hover .sub{
+    visibility: visible;
+    height: 350px;
+    opacity: 1;
+}
+#gnb .main .sub:after {
+   display: none;
+}
+    .icoBox{
+        position: absolute;
+        right: 1%;
+    }
+    .product{width: 50%;}
+        .product .col{float: left; width: 100%; position: relative;}
+       
+      
+        .proTit{line-height: 1.5; color: #333; font-size: 0.875rem; }   
+    .mini_ban{top: 60%; left: 35%;}
+    #ft{
+    height: 300px;
+}
+.telBox{
+    display: none;
+}
+
+
+.fnbBox{
+    width: 100%;
+    float: none;
+    height: 300px;
+    position: relative;
+    left: 0%;
+}
+    .fnb ul li{
+        width: 50%;
+        position: relative;
+        left: 15%;
+        
+    }
+.fnb ul li a{
+    font-size: 0.575rem;
+    line-height: 1.5;
+}
+.subscribe2{
+ display: none;
+}
+
+.add{
+    clear: both;
+    width: 90%;
+    position: relative;
+    bottom: -15%;
+    text-align: left;
+}
+
+.add p{
+    font-size: 10px;
+    
+}
+  
+}
+    
+    
+    
+    
+    </style>
+
+<body>
+   <header id="hd">
+        <a href="index.html" class="logo"><img src="img/mainlogo.png" alt=""></a>
+       
+        <ul class="icoBox">
+            <li ><button style="background-color: transparent;" class="searchBtn"></button></li>
+            <li class="cart"><button style="background-color: transparent;"><img src="img/cart.png" alt=""></button></li>
+            <li class="login"><button style="background-color: transparent;"><img src="img/login.png" alt=""></button></li>
+        </ul>
+        
+         <div class="searchBox">
+            <input type="text" name="textfield" placeholder="검색어를 입력하세요.">
+            <button class="search">검색</button>
+            <button class="s_close">X</button>
+        </div>
+        <button class="toggle"><img src="img/toggle.png" alt=""></button>
+        
+        <nav id="gnb">
+            <ul class="main">
+                <li><a href="sub1.html" class="dep1">PRODUCTS</a>
+                    <ul class="sub">
+                        <img src="img/Marketing-mix-of-Lush-3.jpg" alt="" class="m_img">
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">베쓰</a></li>
+                        <li><a href="#">샤워</a></li>
+                        <li><a href="#">보디</a></li>
+                        <li><a href="#">페이스</a></li>
+                        <li><a href="#">헤어</a></li>
+                        <li><a href="#">메이크업</a></li>
+                        <li><a href="#">퍼퓸</a></li>
+                        <li><a href="#">기프트</a></li>
+                        <li><a href="#">프로모션</a></li>
+                        <li><a href="#">크리스마스</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="dep1">BRAND</a>
+                    <ul class="sub">
+                        <li><a href="#">러쉬</a></li>
+                        <li><a href="#">채러티 팟</a></li>
+                        <li><a href="#">캠페인</a></li>
+                        <li><a href="#">원재료</a></li>
+                        <li><a href="#">아티클</a></li>
+                        <li><a href="#">젤러쉬</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="dep1">SHOPS</a>
+                    <ul class="sub">
+                        <li><a href="#"></a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#" class="dep1">SPA</a>
+                    <ul class="sub">
+                        <li><a href="#"></a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#" class="dep1">EVENT</a>
+                    <ul class="sub">
+                        <li><a href="#"></a></li>
+
+                    </ul>
+                </li>
+                <button class="g_close">X</button>
+            </ul>
+            <button class="g_close">X</button>
+        </nav>
+       
+       
+     
+        
+       
+
+    </header>
+    <section class="sub_vs">
+        <img src="img2/subtit.jpg" alt="">
+    </section>
+    <section class="content">
+        
+        <h2 class="pageTit">베스트</h2>
+        <ul class="list">
+            <li><a href="">전체(53)</a></li>
+            <li><a href="">주간베스트(25)</a></li>
+            <li><a href="">별 다섯개 후기(14)</a></li>
+            <li><a href="">기프트 베스트(14)</a></li>
+        </ul>
+        <ul class="product">
+            <li class="col"><a href="">
+                  
+                    <img src="img2/pro1.png" alt="" class="img">
+                    
+                    
+                    <h3 class="proTit">대디-오 100g/250g/500g</h3>
+                    
+                    <p class="proCom">
+                        <span class="com">#오래머무는잔향#온종일좋은향</span>
+                         <span class="price">\19,000</span>
+                          
+                    </p>
+                </a></li>
+            <li class="col"><a href="">
+                    <img src="img2/pro2.jpg" alt="" class="img">
+                    
+                    <h3 class="proTit">더 컴포터</h3>
+                    <p class="proCom">
+                        <span class="com">#영화속주인공처럼#거품입욕로망</span>
+                         <span class="price">\18,000</span>
+                    </p>
+                </a></li>
+            <li class="col"><a href="">
+                    <img src="img2/pro3.jpg" alt=""class="img">
+                    
+                    <h3 class="proTit">섹스 밤</h3>
+                    <p class="proCom">
+                        <span class="com">#로맨틱#섹시하게</span>
+                         <span class="price">\12,000</span>
+                    </p>
+                </a></li>
+            <li class="col"><a href="">
+                    <img src="img2/pro4.jpg" alt=""class="img">
+                    <img src="img2/c2.jpg" alt="" class="mini_ban">
+                    <h3 class="proTit">카타스트로피 코스메틱</h3>
+                    <p class="proCom">
+                        <span class="com">#블루베리팩#슈퍼푸드블루베리</span>
+                         <span class="price">\25,000</span>
+                    </p>
+                </a></li>
+          <li class="col"><a href="">
+                    <img src="img2/pro5.jpg" alt=""class="img">
+                    <img src="img2/c2.jpg" alt="" class="mini_ban">
+                    <h3 class="proTit">코스메틱 워리어</h3>
+                    <p class="proCom">
+                        <span class="com">#피부야달래줄게#입소문템#에그프리</span>
+                         <span class="price">\25,000</span>
+                    </p>
+                </a></li>
+            <li class="col"><a href="">
+                    <img src="img2/pro6.jpg" alt=""class="img">
+                    <img src="img2/c2.jpg" alt="" class="mini_ban">
+                    <h3 class="proTit">콜페이스</h3>
+                    <p class="proCom">
+                        <span class="com">#유명한숯비누#바로그제품</span>
+                         <span class="price">\18,000</span>
+                    </p>
+                </a></li>
+           <li class="col"><a href="">
+                    <img src="img2/pro7.jpg" alt=""class="img">
+                    <img src="img2/c2.jpg" alt="" class="mini_ban">
+                    <h3 class="proTit">마스크 오브 매그너민티 125g/315g</h3>
+                    <p class="proCom">
+                        <span class="com">#데일리팩#디데이전날</span>
+                         <span class="price">\20,000</span>
+                    </p>
+                </a></li>
+           <li class="col"><a href="">
+                    <img src="img2/pro8.jpg" alt=""class="img">
+                    <img src="img2/c2.jpg" alt="" class="mini_ban">
+                    <h3 class="proTit">렛 더 굿 타임즈 롤 100g/250g</h3>
+                    <p class="proCom">
+                        <span class="com">#프레쉬클렌저#군침도는팝콘의진한고소함</span>
+                         <span class="price">\22,000</span>
+                    </p>
+                </a></li>
+           <li class="col"><a href="">
+                    <img src="img2/pro9.png" alt=""class="img">
+                    
+                    <h3 class="proTit">티 트리 워터</h3>
+                    <p class="proCom">
+                        <span class="com">#착한티트리#순한토너</span>
+                         <span class="price">\14,000</span>
+                    </p>
+                </a></li>
+           <li class="col"><a href="">
+                    <img src="img2/pro10.png" alt=""class="img">
+                  
+                    <h3 class="proTit">뉴</h3>
+                    <p class="proCom">
+                        <span class="com">#모두에게착한샴푸#내가찾던고체샴푸</span>
+                         <span class="price">\18,000</span>
+                    </p>
+                </a></li>
+                <li class="col"><a href="">
+                    <img src="img2/pro11.png" alt=""class="img">
+                   
+                    <h3 class="proTit">파이팅 애니멀 테스팅 백</h3>
+                    <p class="proCom">
+                        <span class="com">#캔버스백#동물실험반대</span>
+                         <span class="price">\22,000</span>
+                    </p>
+                </a></li>
+               <li class="col"><a href="">
+                    <img src="img2/pro12.jpg" alt=""class="img">
+                  
+                    <h3 class="proTit">더티 보디 스프레이</h3>
+                    <p class="proCom">
+                        <span class="com">#궁금했던그향기#뒤돌아맡은향기</span>
+                         <span class="price">\50,000</span>
+                    </p>
+                </a></li>
+               <li class="col"><a href="">
+                    <img src="img2/pro13.jpg" alt=""class="img">
+                    
+                    <h3 class="proTit">더 올리브 브랜치 100g/250g/500g</h3>
+                    <p class="proCom">
+                        <span class="com">#지중해바다를품은향기#인기있는이유</span>
+                         <span class="price">\17,000</span>
+                    </p>
+                </a></li>
+                <li class="col"><a href="">
+                    <img src="img2/pro14.png" alt=""class="img">
+                  
+                    <h3 class="proTit">릴렉스</h3>
+                    <p class="proCom">
+                        <span class="com">#기프트#마음을편안하게해주는라벤더향기</span>
+                         <span class="price">\49,000</span>
+                    </p>
+                </a></li>
+                <li class="col"><a href="">
+                    <img src="img2/pro15.jpg" alt=""class="img">
+                    <img src="img2/c1.jpg" alt="" class="mini_ban">
+                    <h3 class="proTit">루돌프</h3>
+                    <p class="proCom">
+                        <span class="com">#배쓰밤#썰매를끌어줘</span>
+                         <span class="price">\15,000</span>
+                    </p>
+                </a></li>
+                <li class="col"><a href="">
+                    <img src="img2/pro16.jpg" alt=""class="img">
+                    <img src="img2/c1.jpg" alt="" class="mini_ban">
+                    <h3 class="proTit">원스 어폰 어 타임100g/225g</h3>
+                    <p class="proCom">
+                        <span class="com">#보디로션#사과같은나</span>
+                         <span class="price">\27,000</span>
+                    </p>
+                </a></li>
+                <li class="col"><a href="">
+                    <img src="img2/pro17.jpg" alt=""class="img">
+                    <img src="img2/c1.jpg" alt="" class="mini_ban">
+                    <h3 class="proTit">해피 100g/250g/500g</h3>
+                    <p class="proCom">
+                        <span class="com">#샤워젤#해피크리스마스</span>
+                         <span class="price">\18,000</span>
+                    </p>
+                </a></li>
+               <li class="col"><a href="">
+                    <img src="img2/pro18.jpg" alt=""class="img">
+                    <img src="img2/c1.jpg" alt="" class="mini_ban">
+                    <h3 class="proTit">스노우페어리</h3>
+                    <p class="proCom">
+                        <span class="com">#바디스프레이#풍선껌향기</span>
+                         <span class="price">\55,000</span>
+                    </p>
+                </a></li>
+              <li class="col"><a href="">
+                    <img src="img2/pro19.jpg" alt=""class="img">
+                    <img src="img2/c1.jpg" alt="" class="mini_ban">
+                    <h3 class="proTit">음 아</h3>
+                    <p class="proCom">
+                        <span class="com">#기프트#달콤한선물</span>
+                         <span class="price">\30,000</span>
+                    </p>
+                </a></li>
+                <li class="col"><a href="">
+                    <img src="img2/pro21.jpg" alt=""class="img">
+                    <img src="img2/c1.jpg" alt="" class="mini_ban">
+                    <h3 class="proTit">리틀 스노우 페어리</h3>
+                    <p class="proCom">
+                        <span class="com">#기프트#달콤한요정</span>
+                         <span class="price">\36,000</span>
+                    </p>
+                </a></li>
+                
+        </ul>
+        
+        
+    </section>
+    <section>
+    <div class="row_sub3">
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+			</div>
+    </section>
+    
+    <footer id="ft">
+        <div class="telBox">
+            <a href="" class="ftlogo"><img src="img/mainlogo.png" alt=""></a>
+            <div class="pBox">
+            <p>고객센터</p>
+            <p>Tel : 1644-2375</p>
+            <p>Fax : 02-795-7526</p>
+            <p>월~금 10:00 ~ 17:00 <br>(점심시간 12:00 ~ 13:00)</p>
+            <p>문의메일: <br> webmaster@lush.co.kr</p></div>
+        </div>
+        <div class="fnbBox">
+            <div class="fnb">
+                <ul>
+                    <li><a href="">스카우트</a></li>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="" style="font-weight: bold;">개인정보처리방침</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">고객센터</a></li>
+                </ul>
+            </div>
+             <div class="subscribe2">
+           <img src="img/txt1.png" alt="">
+           <input type="text" name="textfield" placeholder="이메일을 입력하세요.">
+           <button class="subBtn2">구독하기</button>
+          
+       </div>
+       <div class="add">
+           <p>서울특별시 서초구 서운로 138(서초동아타워) 6층 &nbsp;| &nbsp;사이트운영자 : 러쉬코리아&nbsp; | &nbsp;대표이사:우미령</p>
+           <p>사업자 등록번호 : 201-81-77964 사업자 정보확인&nbsp; | &nbsp;통신판매업 신고번호 : 2012-서울서초-0647&nbsp; | &nbsp;개인정보보호책임자 : 우승용</p>
+           <p class="copy">Copyright &copy; LUSHKOREA co, Ltd.ALL rights reversed.</p>
+       </div>
+        </div>
+    </footer>
+   
+
+    
+</body>
+</html>
