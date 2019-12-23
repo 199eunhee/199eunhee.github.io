@@ -1,0 +1,263 @@
+ @media screen and (min-width:768px) and (max-width:1280px){
+            /*/태블릿사이즈*/
+          
+       
+             .toggle{display: block;position: absolute; top: 40%; right: 11%;}
+            .toggle img{
+                width: 30px;
+                height: 30px;
+                display: block;
+            }
+            
+            #nav{display: none;}
+           
+           
+     
+     
+            #page1{
+     width: 100vw;
+    height: 70vh;
+                background-color: lavender;
+}
+     
+                           .banFrame li{
+     width: 100vw;
+    height: 100vh;
+   
+}
+            .banFrame li img{
+   width: 100vw;
+    height: 100vh;
+    display: block;
+}
+     
+     
+     
+            .banFrame li p{
+    font-size: 1em;
+                left: 10%;
+}
+
+            #page2{
+    clear: both;
+    width: 100vh;
+    height: 170vh;
+}
+.conBox{
+    width:  100%;
+    height: 100%;
+    margin: 0 auto; 
+    margin-top: 1.25em;
+    position: relative;
+    top: 10%;
+}
+     
+            .apt{
+    width: 50%;
+    height: 550px;
+    padding-top: 10px;
+   
+    left: 2%;
+}
+            .apt h2,.apt h3{
+                font-size: 1em;
+            }
+            .apt img{
+width: 300px; height: 300px;}
+            .btnFrame li button{
+     width: 100px; 
+   
+}
+         .thum_lst li{width: 100%;height:25%;float: none;
+ border-bottom: 1px solid #fff;}
+             .thum_lst li .pic_box{  width:200px; height: 200px; top: 15%; left: calc(20% - 110px);}
+            .thum_tit{
+                top: 35%;
+            }
+            .more{
+                left: 65%; top: 35%;
+            }
+            
+            
+            #page4{
+    width: 100vw;
+    height: 90vh;
+ }
+            .snsCom{
+                left: 10%;
+            }
+            .sns_ico{
+                right: 10%;
+            }
+            .mall{
+                width: 280px;
+                height: 220px;
+                top: 30%;
+                right: 0%;
+            }
+            .customer_list{height: 180px;}
+         
+            .customer_list ul li a{
+    font-size: 1em; margin-left: 30px;
+ 
+}
+            .footer_container .footer_logo {
+                background-size: 276px 180px;
+            }
+            .fnb{
+            left: 25%;
+            }
+            .fnb dl{display: none;}
+            
+        }
+        @media screen and (max-width:767px){
+            /*모바일 사이즈*/
+             #nav{display: none;}
+              .toggle{display: block;position: absolute; top: 40%; right: 11%;}
+            .toggle img{
+                width: 30px;
+                height: 30px;
+                display: block;
+            }
+            
+            #ra1:checked ~ #nav{
+                right: 0;
+            }
+            
+            #ra2:checked ~ #nav{
+                right: -300px;
+            }
+            
+            .g_close{display: block; position: absolute; top: 2%;right: 5%;
+            z-index: 10; width: 30px;height: 30px; border: 1px solid #333; text-align: center; font-size: 1.2em; line-height: 1.5;
+            border-radius: 50%; cursor: pointer;}
+            #hd:hover{background-color:transparent;}
+            
+            #tnb{top: 2%; left: 10%;}
+            #nav{width: 300px; height: 1080px;position: absolute; background-color: #c6b7ad; right: -300px; transition: 0.5s;}
+             #main_nav ul{width: 300px; height: auto; margin: 0 auto;  overflow: hidden; float: right; margin-top: 2em;}
+             #main_nav ul li{width: 160px; float: none;}
+            #main_nav ul li a{color: #222; text-align: justify; text-indent: 1.25em;}
+            #sub{width: 350px; position: absolute; top: 90px; left: 0; background-color: rgba(255,255,255,1); border-bottom: 1px solid #ccc;}
+            #sub_menu .menu{float: none; width: 160px;}
+            #main_nav ul li a:hover #sub{
+                display: block;
+            }
+            
+            .log{
+                top: 5%; left: 35%;
+            }
+            .fInput{
+           width: 100%;
+            }
+            .fBtn{
+            width: 90px; margin-left: 15%; margin-top: 5%;
+            }
+            .close{
+                right: 10%;
+            }
+             #page1{
+                 clear: both;
+    width: 100vw;
+    height: 100vh;
+               
+}
+                       .banFrame li{
+     width: 100vw;
+    height: 100vh;
+   
+}
+            .banFrame li img{
+   width: 100vw;
+    height: 100vh;
+    display: block;
+}
+                     .banFrame li p{
+                         width: 40%;
+    font-size: 1em;
+}
+            
+                        #page2{
+    width: 100vw;
+    height: 350vh;
+}
+            
+.conBox{
+}
+            .apt{
+    width: 100%;
+    height: 450px;
+    float: left;
+    padding-top: 10px;
+    overflow: hidden;
+    position: relative;
+    left: 10%
+}
+            
+                .apt h2,.apt h3{
+                font-size: 0.875em;
+            }
+            .apt img{
+width: 250px; height: 250px;}
+            .btnFrame li button{
+     width: 100px; height: 28px;
+   
+}
+             .thum_lst li{width: 100%;height:25%;float: none;
+ border-bottom: 1px solid #fff;}
+             .thum_lst li .pic_box{  width:150px; height: 150px; top: 15%; left: 10%;}
+             .thum_tit{
+                top: 25%; font-size: 1.25em; left:50%;
+            }
+            .more{
+                left: 60%; bottom: 10%;
+            }
+              .snsCom{
+                left: 10%; bottom: 40%; font-size: 1.25em;
+            }
+            .sns_ico{
+                right: 10%;
+            }
+            .mall{
+                width: 100%;
+                height:100%;
+                top: 0%;
+                right: -40%;
+                opacity: 0.5;
+                z-index: -10;
+            }
+            .lo_tit{
+                font-size: 1em;
+                 top: 15%;
+            }
+            .m_logo{
+            bottom: 30%;
+            }
+                .customer_list{height: 100px; bottom: 0; position: absolute;}
+            .customer_list ul li{
+    float: left; width: 70px; position: relative; left: 0%;
+}
+         
+            .customer_list ul li a{
+    font-size: 0.75em; margin-left: 0px; text-align: center;
+ 
+}
+            .customer_list ul li img{
+    display: block; width: 30px; height: 30px;
+    position: absolute; top: 10%; left: 15%;
+}
+         
+            .footer_container .footer_logo {
+                display: none;
+            }
+            .fnb{
+            left: 10%;
+            }
+            .fnb dl{display: none;}
+           
+            .fnb .footer_link li a { font-size: 0.75em;}
+        .footer_container .copyright { font-size:  0.55em; }
+        }
+        
+        
+    
