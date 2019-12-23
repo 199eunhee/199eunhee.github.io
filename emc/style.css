@@ -1,0 +1,424 @@
+
+/**********************************************
+* 공통 스타일 
+**********************************************/
+*{margin:0; padding:0;}
+body,html{width: 100%; height: 100%; font-family: "나눔고딕","Nanum Gothic",sans-serif;}
+img{border: 0; vertical-align: middle; }
+ul li{list-style: none;}
+a{text-decoration: none;}
+
+.fl{ float: left;}
+.fr{ float: right; }
+.tl{ text-align: left; }
+.tr{ text-align: right; }
+.tc{ text-align: center; }
+
+#warp{ width: 100%; position: relative; }
+#top{ width: 100%; height: 70px; background: #fff; }
+
+/***** toggle *****/
+#toggle_menu {  }
+.toggle_menu{ 
+	width: 200px; height: 100%; 
+	background: #192c39; border-right: 2px solid #11a0a4;
+	position: absolute; top: 0; left: 0; z-index: 9999999; 
+}
+dl#accordion{ border-bottom: 1px solid #11a0a4; }
+.toggle_menu dt.nav{ 
+	padding: 0 15px 0 15px; 
+	line-height: 40px; border-top: 1px solid #192c39;
+	font-size: 100%; 
+}
+.toggle_menu dt.nav a{ color: #fff; font-size: 80%; font-weight: bold; }
+.toggle_menu dt.nav img{ right: 15px; padding-top: 18px; position: absolute; }
+
+.toggle_menu dd.nav_lv2{ padding: 5px 0 10px 30px; height: auto !important; }
+.toggle_menu dd.nav_lv2 ul li{ line-height: 1.5; }
+.toggle_menu dd.nav_lv2 ul li a{ color: #fff; font-size: 80%; }
+.toggle_menu dd.nav_lv2 ul li a:hover{ color: #11a0a4; letter-spacing: 0;}
+
+#toggle_close{width:80px; height:30px;float:right;}
+#toggle_close h1{font-size:15px; text-align:center; line-height:30px; cursor:pointer; color:#11a0a4;}
+/***** top *****/
+/* 플래시 메뉴 */
+#myInfo1011{ display: none; }
+#myInfo_640{ display: none; }
+.top1011{ display: none; }
+.top480{ width: 100%; position: relative; height: 70px; }
+.top480 .toggle{ position: absolute; top: 17px; left: 17px; }
+.top480 .logo{ text-align: center; height: 70px; line-height: 70px; }
+.top480 .info{ position: absolute; top: 17px; right: 17px; }
+
+/***** 이벤트 배너 *****/
+#ban_ev480{ 
+	display: block;
+	background-color: #004493;
+	padding: 0 20px 0 0;
+}
+#ban_ev480 a{ 
+	display: block;
+    background: url("img2/quick_ico.png") no-repeat 100% 50% #004493;
+    padding: 8px 0;
+    height: 34px;
+    text-indent: -1000em;
+    overflow: hidden;
+}
+#ban_ev1011{ display: none;}/* 후원신청 */
+
+
+/* 메인 전체페이지 */
+#contents{ overflow: hidden; }
+#main_section{ width: 100%; clear: both; }
+#aside{ width: 100%; clear: both; }
+
+/* main_banner */
+#main_contents .main_ban{ position: relative; height: auto; }
+#main_contents .main_ban .play_box{ 
+	position: absolute; bottom: 0; z-index: 100; overflow: hidden; 
+	/*모양*/
+	background: rgba(0, 0, 0, 0.4); padding: 10px 13px 5px 10px;
+}
+#main_contents .main_ban .play_box .btn_con{ float: left; }
+#main_contents .main_ban .play_box .btn_con input{width: 24px;}
+/*button*/
+#main_contents .main_ban .play_box .btn_cl{ 
+	float: left;
+	padding: 0 0 0 10px; margin: 0 0 0 10px;
+	border-left: 2px solid #E2D5CF; 
+}
+#main_contents .main_ban .play_box .btn_cl a{
+	display: inline-block;
+	width: 12px; height: 12px;
+	background: #fff; 
+	border: 1px solid #333; border-radius: 50%; 
+}
+
+/* main_banner의 스크립트 처리 css */
+#container li.banner{ position: absolute; width: 100%; }
+#container li.banner img{width: 100%;    }
+
+/* 이벤트 메뉴 */
+#main_contents .even_menu{ height: 54px; width: 100%; background: url("img2/sub_bg_01.gif") repeat; }
+#main_contents .even_menu ul{ overflow: hidden; }
+#main_contents .even_menu ul li{ width: 33.3%; font-size: 94%; border-right: 1px solid #fff; box-sizing: border-box; padding: 0 15px; }
+#main_contents .even_menu ul li:last-child{ border-right: none; padding: 0 8px; }
+#main_contents .even_menu ul li a{ overflow: hidden; }
+#main_contents .even_menu ul li a span{ 
+	display: block; 
+	height: 54px; line-height: 54px;
+	color: #fff; font-weight: bold;
+}
+#main_contents .even_menu ul li a img{ display: block; padding-top: 13.5px; width: 30px; height: 30px;}
+
+/****** CONTENTS_BOX ******/
+#main_contents .contentsBox{ padding: 5%; overflow: hidden; }
+#main_contents .box{ border: 1px solid #E1E1E1; box-sizing: border-box; margin-bottom: 5%; width: 100%;  overflow: hidden; }
+#main_contents .box .box_img{width:100%; height: 190px; }
+#main_contents .box .box_img img{width:100%; height: 180px;}
+#main_contents .box_text{ padding: 0 5% 5% 5%; }
+#main_contents .box_text .title{ 
+	overflow: hidden;
+	border-bottom: 3px solid #6c6c6c;
+	padding-bottom: 10px;
+	color: #222; font-size: 95%;
+}
+#main_contents .box_text .title h3{ float: left; }
+#main_contents .box_text .title input{ display: block; float: right; }
+#main_contents .box_text .text{ margin-top: 10px; }
+#main_contents .box_text .text iframe{width: 100%; border: 0;}
+#main_contents .box_text .text h4{ 
+	color: #222; font-size: 95%; margin-bottom: 5px; 
+	
+	/* ...처리를 위한 방법 */
+	width: 100%;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#main_contents .box_text .text span{ color: #a4a4a4; font-size: 80%; }
+#main_contents .box_text .text p{ 
+	color: #222; font-size: 80%; 
+	height: 149px; overflow: hidden;
+	margin-top: 5px; 
+}
+
+
+/*박스 중 슬라이드*/
+.banFrame{
+	width: 500%;
+height: 100%;
+	overflow: hidden;
+}
+.banFrame li{
+		display: block;
+	height: 100%;
+ width: 20%;
+	float: left;
+
+	overflow: hidden;
+	opacity: 0;
+	transition: 0.5s;
+}
+.banFrame li.on{opacity: 1;}
+
+.banFrame li img{
+	width: 100%;	
+	height: 450px; display: block;
+	
+}
+
+/*찾아오는길, 자주하는 질문*/
+.map{
+position: relative;
+}
+.map img{
+	width: 100%;
+	height:225px;
+	display: block;
+}
+
+/****** 기부 적립금 ******/
+#amount_list_sec{ border-top: 2px solid #ff8500; margin: 0 5% 5% 5%; }
+ul.amount_list{ overflow: hidden; }
+ul.amount_list li{ overflow: hidden; width: 96%; padding: 0 2%; border-bottom: 1px dotted #C4C4C4; height: 45px; line-height: 45px; }
+ul.amount_list li span.title{ font-size: 75%; color: #787878; font-weight: bold; }
+ul.amount_list li span.count{ font-size: 150%; color: #FF8500; }
+
+#aside{ overflow: hidden; }
+#amount_list_asi{ display: none; }
+
+/***** 후원정보 ******/
+#acountInfo_ban{ /*padding: 0 5% 5% 5%;*/ width: 100%; overflow: hidden; position: relative; }
+/*#acountInfo_ban .btn{ padding: 3.5% 0 0 4%; width: 10%; position: absolute; z-index: 9999; }*/
+/*#before { top: 0; left: 0;}
+#next { top: 0; right: 0;}*/
+#acountInfo_ban .banner_image{ width: 100%; padding: 0; position: absolute;height: 100%; }
+#acountInfo_ban .banner_image img{ width:100%; display: block; height: 100%;padding:0; }
+
+/***** 후원 계좌 정보 *****/
+#acountInfo{ width: 90%; padding: 0 5% 5% 5%; }
+#acountInfo ul{ overflow: hidden; }
+#acountInfo ul li{ width: 40%; padding: 15px 5%; font-size: 100%; font-weight: bold; }
+#acountInfo ul li.li_1{ background: #009fb9; }
+#acountInfo ul li.li_1 a{ color: #fff; }
+#acountInfo ul li.li_2{ background: #84c230; }
+#acountInfo ul li.li_2 a{ color: #fff; }
+#acountInfo ul li.li_2 span{ font-size: 90%; }
+#acountInfo ul li.li_3{ width: 100%;}
+#acountInfo ul li.li_3 img{
+	width: 90%;
+	height: 100%;display: block;
+	padding: 10px;
+}
+
+/***** 나눔기업 *****/
+#spon{ position: relative; background-color: #fff; border-top: 1px solid #ddd; padding: 5px 0; height: 40px; }
+#spon h3{ position: absolute; top: 15px; left: 15px; font-size: 80%; color: #4c4c4c; letter-spacing: -1px; }
+#spon ul{ height: 40px; overflow: hidden; padding: 0 40px 0 80px; }
+#spon ul li{ float: left; width: 50%; }
+#spon ul li a{ display: block; text-align: center; height: 40px; line-height: 40px; }
+#spon .btn_spon{ position: absolute; top: 0; right: 0;} 
+
+/***** footer *****/
+#sns_1011{ display: none; }
+#footer1011{ display: none; }
+#footer{ padding: 30px 30px 12px 30px; background-color: #fff; border-top:1px solid #ddd; position: relative; font-size: 12px; }
+#footer .sns{ position: absolute; right: 20px; top: 20px; }
+#footer .sns ul{ overflow: hidden; }
+#footer .sns ul li{ float: left; padding: 5px 5px; }
+#footer .add{ font-size: 95%; letter-spacing: -1px; line-height: 2; padding: 0; }
+#footer .add address{ font-style: normal; color: #333; }
+#footer .add address span{ display: inline-block; padding:0 5px 0 8px; }
+#footer .add p{ display: block; color: #333; }
+
+.family_site{
+	position: absolute; right: 10%;top: 50%; 
+}
+
+
+
+/*******************************************************************************
+/* 400 ~ 480 보드1개
+/*******************************************************************************/
+@media (max-width: 480px) {
+
+	/* 이벤트 메뉴 */
+	#main_contents .even_menu{ height: 46px; }
+	#main_contents .even_menu ul li{ font-size: 90%; }
+	#main_contents .even_menu ul li a span{ height: 46px; line-height: 46px; float: none; padding-left: 0; }
+	#main_contents .even_menu ul li a img{ display: none; float: none; }
+}
+
+/**** 481 ~ 639 보드2개 ****/
+@media (min-width: 481px) and (max-width: 639px) {
+	
+	/* CONTENTS_BOX */
+	#main_contents .box{ width: 48%; }
+	#main_contents .box:nth-child(2n+1){ margin-right: 4%; }
+}
+
+/**** 640 ~ 1010 보드3개 ****/	
+@media (min-width: 640px) and (max-width: 1010px) {
+	/* top */
+	#myInfo_640{ display: block; position: absolute; top: 25px; right: 100px; }
+	#myInfo_640 a{ color: #dbdad6; font-size: 70%; padding-right: 15px; }
+
+	/* 이벤트메뉴 */
+	#main_contents .even_menu ul li{ padding: 0 40px; }
+	#main_contents .even_menu ul li:last-child{ padding: 0 30px; }
+
+	/* CONTENTS_BOX */
+	#main_contents .contentsBox{ padding: 2% 0 5% 2%; }
+	#main_contents .box{ width: 31%; margin-right: 2.33%; }
+
+	/* 기부 적립금 */
+	#amount_list_sec{ display: none; }
+	#aside{ overflow: hidden; }
+	#amount_list_asi{ display: none; border-top: 2px solid #00a7aa; margin: 0 5% 5% 5%; width: 43%; }
+	ul.amount_list li{ height: 57px; line-height: 57px; }
+	ul.amount_list li span.title{ font-size: 100%; }
+
+	/* 후원정보 */
+	#acountInfo_ban .banner_image ul li{ width: 21%; padding: 1% 2%; }
+	#acountInfo_ban .btn{ padding: 2% 0 0 5%; width: 8%;}
+
+	/* 나눔기업 */
+	#spon ul li{ width: 25%; }
+}
+
+/**** 1011 ~  전체 ****/
+@media (min-width: 1011px) {
+	/* 전체 페이지 */
+	#myInfo1011 > .myInfo1011, #top > .top1011, #contents, #spon, #footer{ width: 980px; margin: 0 auto; }
+	#contents{ background: #eaeaea; border-right: 1px solid #dcdcdc; }
+	#main_section{ 
+		clear: none;
+		width: 798px; 
+		background: #FFF;
+		border-right: 1px solid #dcdcdc; box-sizing: border-box; 
+	}
+	#aside{ width: 182px; clear: none; }
+
+	/* top */
+	/*** myInfo1011 ***/
+	#myInfo1011{ display: block; width: 100%; height: 30px; background: #eee; }
+	#myInfo1011 .myInfo{ width: 980px; margin: 0 auto; overflow: hidden;}
+	#myInfo1011 .myInfo ul{ overflow: hidden; float: right; }
+	#myInfo1011 .myInfo ul li{ float: left; font-size: 70%; margin-top: 8px; }
+	#myInfo1011 .myInfo ul li.bar{ padding: 0 10px; font-size: 50%; color: #333;}
+	#myInfo1011 .myInfo ul li.search{ overflow: hidden; margin: 0 0 0 20px; }
+	#myInfo1011 .myInfo ul li.search input{ display: block; }
+	#myInfo1011 .myInfo ul li.search input[type="text"] { 
+		height: 18px; padding: 6px 10px; float: left; background-color: #ddd; border: none; outline: 0;
+	}
+	#myInfo1011 .myInfo ul li a{ color: #333; }
+
+	/* top1011 */
+	#top{ height: 85px; }
+	#top .top1011{ overflow: hidden; }
+	#top .top1011 h1{ 
+		width: 30%; height: 85px; float: left; 
+		background: url("img2/logo.png") no-repeat 10px 50%; text-indent: -1000em;
+	}
+	#top .top1011 .menu{ float: right; }
+	#top .top1011 .menu ul{ overflow: hidden; }
+	#top .top1011 .menu ul li{ float: left; }
+	
+	#top .top1011 .inner_menu{ 
+		display: none;
+		width: 57%; height: 200px;
+		position: absolute; top: 115px; left: 0; z-index: 99999999;
+		overflow: hidden;
+		background: #fff;
+		opacity: 0.9;
+		border-bottom: 3px solid #00a7aa; 
+	    padding: 20px 0 0 43%;
+	}
+	#top .top1011 .inner_menu ul{ width:110px; position: relative; left: 10%;}
+	#top .top1011 .inner_menu ul li { width:100px; margin-left: 0px; }
+	#top .top1011 .inner_menu ul li a{ font-size: 12px; color: #333; margin-left:0px;}
+	#top .top1011 .inner_menu ul li a:hover{ color: #00a7aa;  }
+	#top .top1011 .inner_menu ul li a.small{ margin-left: 6px; font-size: 10px; }
+
+	/* 후원신청 버튼 */
+	#top .top480{ display: none; }
+	#ban_ev480{ display: none; }
+
+	#top .top1011{ display: block; }
+	#ban_ev1011{ display: block; width: 100%; }
+	#ban_ev1011 a{
+		display: block;
+		background: url("img2/sub_ico_06.png") no-repeat 10px 60% #338ac9;
+		padding: 45px 0;
+		height: 63px;
+		text-indent: -1000em;
+		overflow: hidden;
+	}
+	
+	
+	/* #main_section */
+
+	/*main 상단 배너 이미지 컨트롤*/
+	#main_contents .main_ban ul li a img{ height: 390px; }
+
+	/* 이베트 메뉴 */
+	#main_contents .even_menu{ height: 63px; }
+	#main_contents .even_menu ul li{ font-size: 100%; padding: 0 40px; }
+	#main_contents .even_menu ul li:last-child{ padding: 0 40px; }
+	#main_contents .even_menu ul li a span{ height: 63px; line-height: 63px; }
+	#main_contents .even_menu ul li a img{ padding-top: 18px; }
+
+	/* CONTENTS_BOX */
+	#main_contents .contentsBox{ padding: 1% 0; }
+	#main_contents .box{ width: 32.3%; margin-right: 1%; }
+
+	/* 기부 적립금 */
+	#amount_list_asi{ display: none; }
+	#aside{ overflow: hidden; }
+	#amount_list_sec{ margin: 0 1%; }
+	ul.amount_list li{ padding: 0 3%; float: left; border-bottom: none; }
+	ul.amount_list li:nth-child(1), ul.amount_list li:nth-child(2){ width: 21%;}
+	ul.amount_list li:nth-child(3){ width: 40%;}
+	ul.amount_list li span.count{ font-size: 200%; }
+
+	/* 후원 계좌 정보 */
+	#acountInfo{ width: 100%; padding: 0; }
+	#acountInfo ul li{ 
+		clear: both; 
+		padding: 15px 0; width: 100%; 
+		font-size: 110%; text-align: center; 
+	}
+	#acountInfo ul li.li_3{ width: 100%; padding: 15px 0; }
+	#acountInfo ul li.li_3 .title{ width: 70%; margin: 0 15%; font-size: 100%; } 
+
+	/* spon */
+	#acountInfo_ban .btn{ display: none; }
+	#acountInfo_ban{ width: 100%; height: 170px; }
+	#acountInfo_ban .banner_image{ width:100%; padding: 0; }
+	#acountInfo_ban .banner_image ul li{ width:100%; border-bottom: 1px solid #dcdcdc; }
+	#spon ul li{ width: 25%; }
+
+	/* footer */
+	#sns_all{ display: none; }
+	#sns_1011{ display: block; overflow: hidden; padding: 10% 10% 0 10%; }
+	#sns_1011 ul li{ float: left; margin-left: 12%;}
+
+	#footer{ padding: 0; background-color: #ffffff; }
+	#footer1011{ display: block; overflow: hidden; padding: 20px 40px 0 0; }
+	#footer1011 .pri_policy{ float: left; }
+	#footer1011 .family_site{ float: right; overflow: hidden; }
+
+	#footer1011 ul{ overflow: hidden; }
+	#footer1011 ul li{ float: left; font-size: 95%; }
+	#footer1011 ul li.point_ora a{ color: #11a0a4; font-weight: bold;}
+	#footer1011 ul li.bar{ padding: 0 8px; font-size: 80%; color: #333; }
+	#footer1011 ul li a{ color: #333; }
+	#footer1011 ul li input{ margin-top: 2px; }
+
+	#footer1011 .family_site select{ display: block; float: left; width: 150px; height: 22px; margin-right: 5px; }
+	#footer1011 .family_site input{ display: block; float: left; }
+
+	#footer .add{ font-size: 100%; padding: 10px 0 10px 0; }
+}
