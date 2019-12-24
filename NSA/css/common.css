@@ -10,7 +10,7 @@ body,
             position: fixed;
             top: -110%;
             right: 0;
-            z-index:55;
+            z-index: 15;
             background-color: #004c97;
                 width: 100vw;
             height: 100vh;
@@ -90,7 +90,7 @@ body,
             position: fixed;
             top: 0;
             left: 0;
-            z-index: 50;
+            z-index: 15;
             width: 100%;
             height: 90px;
             background-color: transparent;
@@ -121,7 +121,7 @@ body,
          position: absolute;
          top: 20px;
          left:15%;
-         z-index: 50;
+        z-index: 0;
    
       }
       .gnb li{
@@ -141,16 +141,6 @@ body,
           font-size: 18px;
           
       }
-      
-.gnb li a.dep3:hover{
-    border-bottom:  3px solid #0b4177;
-}
-     
-      
-      .gnb li:hover a.dep3{
-         background: transparent;
-         color: #fff;
-      }
      .gnb ul.sub{
          clear: both;
          width: 100%;
@@ -168,10 +158,8 @@ body,
           
           transition: 0.5s;
       }
-.gnb ul.sub:hover{
-    background: rgba(51, 51, 51,1);
-}
-.gnb ul.sub:hover li{
+
+.gnb ul li:hover .sub {
     background: rgba(51, 51, 51,1);
 }
       .gnb .sub li:hover a{
@@ -243,9 +231,9 @@ body,
         .lang_list a{display: block; color: #fff; width: 130px;}
 
 
-.lst_btn{
+.lst_btn{ clear: both;
             position: absolute; right: 3%; top: 2em; width: 48px; height: 48px; background: #3639ba; border-radius: 30px; cursor: pointer;
-            z-index: 999; box-sizing: border-box;
+            z-index: 9999; box-sizing: border-box;
         }
 
     .lst_btn .line{display: block; background-color: white;height: 2px;position: absolute; right: 10px; transition: 0.4s;z-index: 99;transform: rotate(0deg);}
