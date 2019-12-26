@@ -371,7 +371,7 @@ width: 100%;
      }
       .box6{left: 36%;}
      .box7{right: 0%;}
-     
+ 
       .mobile_ft{display: none;}
 }
      
@@ -391,6 +391,13 @@ width: 100%;
         position: relative;
         z-index: 10;
     }
+    
+     .header_toprow .btn_special{ position:absolute; right:0; background:url(../IMG/specialoffers_m.png);
+        background-repeat: no-repeat; top: 0%;
+        background-color: #d12521;
+        background-position: center; display: block;
+        background-size: 100px 20px; width:100px; height:40px; font-size:0; }
+   
     .logo{
         display: block;
         width: 52px;
@@ -469,7 +476,7 @@ width: 100%;
         position: absolute;
         right: 5%;
         top: 2%;
-        width: 50px;
+        width: 50px; 
         height: 50px;
         font-size: 30px;
         line-height: 50px;
