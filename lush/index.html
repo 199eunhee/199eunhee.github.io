@@ -18,6 +18,38 @@
     <!--URL링크 -->
     <meta property="og:description" content="나만 알고싶은 향기, 러쉬">
     <!--설명, 제목 아래에 설명글-->
+    
+    
+      <!-- 파비콘 및 메타포 아이콘 적용 -->
+    <!-- 가장 작은 형태EX12.의 16x16 크기의 ico -->
+    <link rel="shortcut icon" href="img/favi32.png">
+    <!-- 가장 작은 형태의 16x16 크기의 png -->
+    <link rel="shortcut icon" href="img/favi16.png" type="image/x-icon">
+    <!-- 일반 앱형태의 아이콘 설정 -->
+    <link rel="icon" href="img/favi.32.png">
+    <link rel="icon" href="img/favi.16.png" sizes="16x16">
+    <link rel="icon" href="img/favi.32.png" sizes="32x32">
+    <link rel="icon" href="img/favi.48.png" sizes="48x48">
+    <link rel="icon" href="img/favi.72.png" sizes="72x72">
+    <link rel="icon" href="img/favi.128.png" sizes="128x128">
+    <!-- 아이폰 고해상도용 파비콘 152x152 -->
+    <link rel="apple-touch-icon-precomposed" href="img/favi.32.png">
+    <!-- 인터넷 익스플로러용 타일 아이콘 144x144 -->
+
+
+    <!--모바일/태블릿 메타포 아이콘-->
+    <link rel="apple-touch-icon" href="img/favi.128.png" sizes="128x128">
+    <link rel="apple-touch-icon" href="img/favi.152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="img/favi.144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="img/favi.96.png" sizes="96x96">
+    <link rel="apple-touch-icon" href="img/favi.72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="img/favi.32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="img/favi.16.png" sizes="16x16">
+
+    
+    <!--데스크탑 파비콘 설정-->
+    <link rel="shortcut icon" href="img/favi.152.png">
+
     <title>LUSH KOREA</title>
     
     
@@ -73,23 +105,28 @@
     position: relative;
     overflow: hidden;
     width: 100%; 
-   height: 70vh;
+   height: 100vh;
    
 }
-        .banFrame{width: 5120px;}
-        .banFrame li {width: 1024px;}
-        .banFrame li img{ 
-            width: 80%; height: 100%;
-}
-        
-     
-        .btnFrame{display: none;}
-        .numBtn{
-            position:absolute; left: calc(-50% - 250px);bottom:10%; 
+        .banFrame{width: 500%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;}
+        .banFrame li {float: left; background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        overflow: hidden;}
+         .banFrame li.item1 {background-image: url(img/main_visual_06_m.jpg);}
+         .banFrame li.item2 {background-image: url(img/main_visual_05_m.jpg);}
+         .banFrame li.item3 {background-image: url(img/main_visual_03_m.jpg);}
+         .banFrame li.item4 {background-image: url(img/main_visual_02_m.jpg);}
+        .banFrame li.item5 {background-image: url(img/main_visual_01.jpg);}
+        .banFrame li img{
+            width: 100%;
+            height: 100%;
         }
-        .more1,.more2,.more3,.more4,.more5{
-    display: none;
-}
+     
+       
 
         /*페이지2*/
         #page2{
@@ -272,7 +309,7 @@ right: 3%; top: 40%;
         
         /*푸터*/
 #ft{
-    height: 300px;
+    height: 320px;
 }
 .telBox{
     width: 30%;
@@ -297,27 +334,35 @@ right: 3%; top: 40%;
 .fnbBox{
     width: 70%;
     float: right;
-    height: 300px;
+    height: 280px;
     position: relative;
 }
-
+.fnb ul li{
+    float:left;
+    width: 120px;
+    
+}
 .fnb ul li a{
-    font-size: 0.775rem;
-    line-height: 1.5;
+    font-size: 0.875rem;
+    line-height: 2;
 }
 .subscribe2{
  display: none;
 }
 
 .add{
-    width: 70%;
+    width: 80%;
+    clear: both;
     margin: 0 auto;
     position: relative;
-    bottom: -15%;
+    top: 10%;
+   
 }
 
 .add p{
+    
     font-size: 0.875rem;
+    text-align: left;
 }
 
         
@@ -372,25 +417,31 @@ right: 3%; top: 40%;
         /*페이지1*/
 #page1 {
     position: relative;
-   
     overflow: hidden;
-    width: 100%;
-    height: 70vh;
- 
+    width: 100%; 
+   height: 80vh;
+   
 }
-.banFrame{width: 3835px;}
-        .banFrame li {width: 767px;}
-        .banFrame li img{ 
-            width: 60%; height:70%;
-}
-
-        .btnFrame{display: none;}
-        .numBtn{
-           display: none;
+        .banFrame{width: 500%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;}
+        .banFrame li {float: left; background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        overflow: hidden;}
+         .banFrame li.item1 {background-image: url(img/main_visual_06_m.jpg);}
+         .banFrame li.item2 {background-image: url(img/main_visual_05_m.jpg);}
+         .banFrame li.item3 {background-image: url(img/main_visual_03_m.jpg);}
+         .banFrame li.item4 {background-image: url(img/main_visual_02_m.jpg);}
+        .banFrame li.item5 {background-image: url(img/main_visual_01.jpg);}
+        .banFrame li img{
+            width: 100%;
+            height: 100%;
         }
-        .more1,.more2,.more3,.more4,.more5{
-    display: none;
-}
+    .numBtn li button { display:block; margin:0 auto; width: 15px; 
+height: 15px;  border:2px solid #fff; border-radius:9px; background:transparent; 
+cursor:pointer; }
         /*페이지2*/
         #page2{
     width: 100%;
@@ -633,9 +684,8 @@ left: 15%;
         
         <nav id="gnb">
             <ul class="main">
-                <li><a href="sub1.html" class="dep1">PRODUCTS</a>
-                    <ul class="sub">
-                        <img src="img/Marketing-mix-of-Lush-3.jpg" alt="" class="m_img">
+                <li><a href="sub1.html" class="dep1 p1">PRODUCTS</a>
+                          <ul class="sub p1_1">
                         <li><a href="#">베스트</a></li>
                         <li><a href="#">베쓰</a></li>
                         <li><a href="#">샤워</a></li>
@@ -648,9 +698,10 @@ left: 15%;
                         <li><a href="#">프로모션</a></li>
                         <li><a href="#">크리스마스</a></li>
                     </ul>
+                   
                 </li>
-                <li><a href="#" class="dep1">BRAND</a>
-                    <ul class="sub">
+                <li><a href="#" class="dep1 b1">BRAND</a>
+                   <ul class="sub b1_1">
                         <li><a href="#">러쉬</a></li>
                         <li><a href="#">채러티 팟</a></li>
                         <li><a href="#">캠페인</a></li>
@@ -658,75 +709,38 @@ left: 15%;
                         <li><a href="#">아티클</a></li>
                         <li><a href="#">젤러쉬</a></li>
                     </ul>
+                    
                 </li>
                 <li><a href="#" class="dep1">SHOPS</a>
-                    <ul class="sub">
-                        <li><a href="#"></a></li>
-
+                   <ul class="sub">
+                       
                     </ul>
                 </li>
                 <li><a href="#" class="dep1">SPA</a>
-                    <ul class="sub">
-                        <li><a href="#"></a></li>
-
+                  <ul class="sub">
+                       
                     </ul>
                 </li>
                 <li><a href="#" class="dep1">EVENT</a>
-                    <ul class="sub">
-                        <li><a href="#"></a></li>
-
+                  <ul class="sub">
+                       
                     </ul>
                 </li>
                 <button class="g_close">X</button>
             </ul>
-          
         </nav>
-       
-
     </header>
     <section id="page1" class="work-section">
-        <div class="slide">
-            <ul class="banFrame" style="margin-left: 0px;">
-
+        
+            <ul class="banFrame">
                 <li class="item1">
-                    <a href="#">
-                       <img src="/img/main_visual_06.jpg" alt="">
-                        <button class="more1">자세히보기</button>
-                    </a>
-                </li>
-                <li class="item2">
-                    <a href="#">
-                        <img src="/img/main_visual_05.jpg" alt="">
-                        <button class="more2">자세히보기</button>
-                    </a>
-                </li>
-                <li class="item3">
-                    <a href="#">
-                        <img src="/img/main_visual_03.jpg" alt="">
-                        <button class="more3">자세히보기</button>
-                    </a>
-                </li>
-                <li class="item4">
-                    <a href="#">
-                       <img src="/img/main_visual_02.jpg" alt="">
-                        <button class="more4">자세히보기</button>
-                    </a>
-                </li>
-                <li class="item5">
-                    <a href="#">
-                        <img src="/img/main_visual_01.jpg" alt="">
-                        <button class="more5">자세히보기</button>
-                    </a>
-                </li>
+               </li>
+                <li class="item2"></li>
+                <li class="item3"></li>
+                <li class="item4"></li>
+                <li class="item5"></li>
             </ul>
-            <ul class="btnFrame">
-                <li class="left">
-                    <button class="banBtn prevBtn">&lt;</button>
-                </li>
-                <li class="right">
-                    <button class="banBtn nextBtn">&gt;</button>
-                </li>
-            </ul>
+         
             <ul class="numBtn">
 
                 <li class="item1 on"><button></button></li>
@@ -735,7 +749,7 @@ left: 15%;
                 <li class="item4"><button></button></li>
                 <li class="item5"><button></button></li>
             </ul>
-        </div>
+     
     </section>
     <section id="page2">
         <div class="wrap">

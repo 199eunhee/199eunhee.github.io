@@ -7,7 +7,14 @@
 body,html{
     font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
 }
-.sub_vs img{width: 100%; position: relative;}
+.sub_vs{
+    width: 100%;
+    height: 40%;
+    position: relative;
+    clear: both;
+    
+}
+.sub_vs img{width: 100%; height: 100%;position: relative;}
          
 .content{width: 100%; clear: both;  }
 .pageTit{width: 70%; margin: 0 auto; padding: 2.5rem;

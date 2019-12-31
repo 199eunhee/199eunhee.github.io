@@ -18,6 +18,40 @@
     <!--URL링크 -->
     <meta property="og:description" content="나만 알고싶은 향기, 러쉬">
     <!--설명, 제목 아래에 설명글-->
+    
+    
+      <!-- 파비콘 및 메타포 아이콘 적용 -->
+    <!-- 가장 작은 형태EX12.의 16x16 크기의 ico -->
+    <link rel="shortcut icon" href="img/favi32.png">
+    <!-- 가장 작은 형태의 16x16 크기의 png -->
+    <link rel="shortcut icon" href="img/favi16.png" type="image/x-icon">
+    <!-- 일반 앱형태의 아이콘 설정 -->
+    <link rel="icon" href="img/favi.32.png">
+    <link rel="icon" href="img/favi.16.png" sizes="16x16">
+    <link rel="icon" href="img/favi.32.png" sizes="32x32">
+    <link rel="icon" href="img/favi.48.png" sizes="48x48">
+    <link rel="icon" href="img/favi.72.png" sizes="72x72">
+    <link rel="icon" href="img/favi.128.png" sizes="128x128">
+    <!-- 아이폰 고해상도용 파비콘 152x152 -->
+    <link rel="apple-touch-icon-precomposed" href="img/favi.32.png">
+    <!-- 인터넷 익스플로러용 타일 아이콘 144x144 -->
+
+
+    <!--모바일/태블릿 메타포 아이콘-->
+    <link rel="apple-touch-icon" href="img/favi.128.png" sizes="128x128">
+    <link rel="apple-touch-icon" href="img/favi.152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="img/favi.144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="img/favi.96.png" sizes="96x96">
+    <link rel="apple-touch-icon" href="img/favi.72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="img/favi.32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="img/favi.16.png" sizes="16x16">
+
+    
+    <!--데스크탑 파비콘 설정-->
+    <link rel="shortcut icon" href="img/favi.152.png">
+
+    
+    
     <title>LUSH KOREA</title>
 
     <script src="js/modernizr.custom.min.js"></script>
@@ -60,6 +94,17 @@
 #gnb .main .sub:after {
    display: none;
 }
+        
+        .sub_vs{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    clear: both;
+    
+}
+        
+        
+        
         .product{width: 70%;}
             .product .col{width: 50%;}
             .proTit{line-height: 1.5; font-size: 1em;}
@@ -181,6 +226,18 @@
 #gnb .main .sub:after {
    display: none;
 }
+    
+    
+         .sub_vs{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    clear: both;
+    
+}
+        
+     
+    
     .icoBox{
         position: absolute;
         right: 1%;
@@ -241,7 +298,7 @@
     </style>
 
 <body>
-   <header id="hd">
+ <header id="hd">
         <a href="index.html" class="logo"><img src="img/mainlogo.png" alt=""></a>
        
         <ul class="icoBox">
@@ -259,9 +316,8 @@
         
         <nav id="gnb">
             <ul class="main">
-                <li><a href="sub1.html" class="dep1">PRODUCTS</a>
-                    <ul class="sub">
-                        <img src="img/Marketing-mix-of-Lush-3.jpg" alt="" class="m_img">
+                <li><a href="sub1.html" class="dep1 p1">PRODUCTS</a>
+                          <ul class="sub p1_1">
                         <li><a href="#">베스트</a></li>
                         <li><a href="#">베쓰</a></li>
                         <li><a href="#">샤워</a></li>
@@ -274,9 +330,10 @@
                         <li><a href="#">프로모션</a></li>
                         <li><a href="#">크리스마스</a></li>
                     </ul>
+                   
                 </li>
-                <li><a href="#" class="dep1">BRAND</a>
-                    <ul class="sub">
+                <li><a href="#" class="dep1 b1">BRAND</a>
+                   <ul class="sub b1_1">
                         <li><a href="#">러쉬</a></li>
                         <li><a href="#">채러티 팟</a></li>
                         <li><a href="#">캠페인</a></li>
@@ -284,35 +341,26 @@
                         <li><a href="#">아티클</a></li>
                         <li><a href="#">젤러쉬</a></li>
                     </ul>
+                    
                 </li>
                 <li><a href="#" class="dep1">SHOPS</a>
-                    <ul class="sub">
-                        <li><a href="#"></a></li>
-
+                   <ul class="sub">
+                       
                     </ul>
                 </li>
                 <li><a href="#" class="dep1">SPA</a>
-                    <ul class="sub">
-                        <li><a href="#"></a></li>
-
+                  <ul class="sub">
+                       
                     </ul>
                 </li>
                 <li><a href="#" class="dep1">EVENT</a>
-                    <ul class="sub">
-                        <li><a href="#"></a></li>
-
+                  <ul class="sub">
+                       
                     </ul>
                 </li>
                 <button class="g_close">X</button>
             </ul>
-            <button class="g_close">X</button>
         </nav>
-       
-       
-     
-        
-       
-
     </header>
     <section class="sub_vs">
         <img src="img2/subtit.jpg" alt="">
