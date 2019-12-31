@@ -612,7 +612,7 @@
 
     }
 .page_1{
-	width:50%;
+	width:100%;
 	height: 100%;
 	
 	position: absolute;
@@ -626,7 +626,7 @@
 }
 .tem {
     position: absolute;
-    width: 50%;
+    width:25%;
     height: 50%;
     box-sizing: border-box;
     padding: 0px;
@@ -635,7 +635,7 @@
 
 .tem.cate1 {
     top: 0;
-    left: 0%;
+    right: 25%;
     background-image: url(../img/history_01.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -653,7 +653,7 @@
 
 .tem.cate3 {
     bottom: 0;
-    left: 0%;
+    right: 25%;
     border-bottom: 1px solid #ccc;
     background-image: url(../img/history_03.jpg);
     background-position: center center;
@@ -681,20 +681,20 @@
     background-size: 100% 100%;
 }
 
-.tem.cate1:hover ~ .thum {
+.cate1:hover ~ .thum {
     background-image: url(../img/history_05.jpg);
 }
 
-.tem.cate2:hover ~ .thum {
+.cate2:hover ~ .thum {
     background-image: url(../img/history_06.jpg);
 }
 
-.tem.cate3:hover ~ .thum {
+.cate3:hover ~ .thum {
 	display: block;
     background-image: url(../img/history_07.jpg);
 }
 
-.tem.cate4:hover ~ .thum {
+.cate4:hover ~ .thum {
 	display: block;
     background-image: url(../img/history_08.jpg);
 }
