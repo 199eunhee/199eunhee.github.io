@@ -6,6 +6,10 @@
              position: relative;
              overflow: hidden;
          clear: both;
+             background-image: url(img/fwshow.gif);
+             background-size: 100% 120%;
+             background-repeat: no-repeat;
+             background-position: left;
         }
          
          .vs_lst{
@@ -43,7 +47,7 @@
          
          .vs_lst li.item2 .vs_tit {
              display: block;
-             padding-top: 5em;
+             padding-top: 3em;
              padding-left: 30%;
              font-size: 2.5em;
              margin: 0 auto;
@@ -105,7 +109,7 @@
          }
          .vs_lst li.item4 .vs_more{
              position: absolute;
-             top: 50% ; left: 2%;
+             top: 60% ; left: 10%;
          }
          .vs_lst li.item4 img{
             display: block;
@@ -146,8 +150,8 @@
          }
          
          .vs_lst li.item5 .vs_more{
-                position: absolute; top: 50%; 
-             right: 13%; 
+                  position: absolute; top: 60%; 
+             right: 15%; 
          }
         
          
@@ -179,6 +183,10 @@
              height: 100%;
              position: relative;
              clear: both;
+             background-image: url(img/nylon.gif);
+             background-size: 100% 120%;
+             background-repeat: no-repeat;
+             background-position: left;
              
          }
          .vs_lst2 li.item1 video {
