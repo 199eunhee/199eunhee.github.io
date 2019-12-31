@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    font-family: 'Nanum Square', sans-serif;
+    font-size: 14px;
+    overflow-y: auto; /*세로가 넘어가면 자동으로 스크롤 생성*/
+    -ms-overflow-style:none;
+}
+
+::-webkit-scrollbar{display: none;}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+a,
+img {
+    outline: 0;
+    border: 0;
+    background-image: none;
+    background-color: transparent;
+}
+
+.page{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+ body,
+        html {
+            clear: both;
+            position: relative;
+           
+        }
+         .collap{
+             position: fixed;
+             top: -110%; 
+             z-index: 80;
+             width: 100vw;
+             height: 100vh;
+             padding-top: 50px;
+             padding-left: 90px;
+             background-color: rgba(255,255,255,0.6);
+              box-sizing: border-box;
+            transition: 0.7s;
+             
+         }
+         
+         .collap.on {top: 0;}
+         
+          .collap li {clear: both;
+        position: relative;}
+         
+         .collap li a{display: block; height: 30px;}
+         .collap li a.dep1{
+             color: #222;
+             line-height: 3;
+             font-size: 1.2rem;
+             font-weight: bold;
+             margin-top: 1.5rem;
+             
+         }
+      
+          .collap li a.dep1:after{
+            content: "▼";
+            position: absolute;
+            left: 15%;
+           
+        }
+         .collap li.on a.dep1:after{
+            content: "▲";
+        }
+         
+         .collap li ul.dep2{
+             opacity: 1;
+             width: 100%;
+             height: auto; background: transparent;
+             position: static;
+             display: none;
+         }
+         .collap li.on ul.dep2{display: block;}
+        
+        .collap li ul.dep2 li{
+            line-height: 3;
+        }
+        
+        .collap li ul.dep2 li a{
+            color: #333;
+            font-size: 1rem;
+        }
+
+
+      /*검색창*/
+  .snb{
+             position: fixed;
+             top: -110%; 
+             z-index: 80;
+             width: 100vw;
+             height:100vh;
+            margin-top: 80px;
+             padding-left: 90px;
+             /*background-color: rgba(255,255,255,0.7);*/
+              box-sizing: border-box;
+            transition: 0.7s;
+             
+         }
+         
+#ck1:checked ~ .snb{
+    top: 0;
+} 
+.ck_btn{display: none;}
+
+
+#ck1:checked ~ .search_btn label{
+    background-image: url(img/close_02_btn.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+
+         
+          .snb li {clear: both;
+        position: relative;}
+         
+         .snb li a{display: block; height: 30px;}
+
+        #frm1{width: 400px; height: 70px; margin: 0px auto;background-color: rgba(255,255,255,0.7); position: absolute; right: 0;}
+        #keyword{display: block; width: 300px; height: 50px; float: left; margin: 10px; text-indent: 24px; font-size: 18px; transition: 0.5s; opacity: 1; color: #fff;
+background-color: #222;}
+
+        #search{display: block; width: 50px; height: 50px; float: right; margin: 10px; background-color: #5a5a5a;
+        background-image: url(img/search_02_ico.png);background-position: center center; background-repeat: no-repeat;text-indent: -9999px; background-size: 30px 30px; opacity: 0.9; transition: 0.5s;
+border: 1px solid #000; cursor: pointer;}
+        
+        #keyword:focus{opacity: 1;}
+  
+.search_btn{
+    display: block;
+    position: absolute; right: 8%; top: 1.2em; width:40px; height: 40px; cursor: pointer;
+            z-index: 99; box-sizing: border-box; display: block;
+    transition: 0.5s;
+}
+
+.search_btn label{
+    display: block;
+     background-image: url(img/search_02_ico.png);
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size: 30px 30px;
+    display: block; 
+    text-indent: -9999px;
+    line-height: 40px;
+    cursor: pointer;
+}
+         /*헤더*/
+         
+         .hd{
+            clear: both;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 90;
+            width: 100%;
+            height: 70px;
+            background-color: transparent;
+            transition: 0.5s; 
+         }
+         
+         .hd.on{
+             background-color: transparent;
+     
+         }
+         .hd.on .logo{
+             background-image: url(img/ipad_logo_nero.png);
+         }
+         .hd.on .lst_btn .line{
+             background-color: #333;
+         }
+         
+         .hd.on .lst_btn:before{  
+             color: #333;
+         }
+         .hd.off{
+             top: -120px;
+         }
+ .hd.on .gnb li a.dep1{color: #333;}
+        .hd.on .gnb li:hover a.dep1{background-color: rgba(0, 0, 0,0.3); color: #fff}
+
+ .hd.on .lst_btn:before{
+                         color: #333;
+                   }
+           .hd.on .lst_btn .line{background-color: #333;}
+
+
+         
+         .logo{
+             display: block;
+             padding-left: 3em;
+             padding-top: 1em;
+             background-image: url(img/ipad_logo_bianco.png);
+             background-size: 220px 40px;
+             background-repeat: no-repeat;
+             background-position: center center;
+             position: absolute;
+            width: 20%;
+             height:60px;
+             text-indent: -9999px;
+         }
+         
+         /*헤더메뉴*/
+          .gnb{float: left; padding-left: 25em; z-index: 50;}
+         .gnb li{float: left; width: 190px;position: relative;}
+        .gnb li a{text-align: center; display: block; padding: 1em;line-height: 2.2; font-size: 1.2em;}
+        .gnb li a.dep1{color: #fff; background-color: transparent;}
+        .gnb li:hover a.dep1{background-color: rgba(255, 255, 255,0.3); color: #333}
+        
+        .dep2{ width: 100%; height: 0; visibility: hidden;opacity: 0; position: absolute;background-color: #fff;}
+         
+         .gnb li:hover .dep2{visibility: visible; opacity: 1; height: auto;}
+        .dep2 li{clear: both;background-color: #fff;}
+        .dep2 li a{color: #fff; padding: 0.5em; background-color: #222; font-size: 0.9em;}
+        .dep2 li a:hover{background-color:#fff; color: #222;text-decoration: underline;}
+         
+   
+
+
+            
+         /*토글*/
+         
+         .lst_btn:before{
+             content: "MENU";
+             display: block;
+             position: absolute;
+             left: -160%;
+             color: #fff;
+             font-size: 1.2em;
+             line-height: 2;
+             
+         }
+         .lst_btn{
+            position: absolute; right: 1%; top: 1.2em; width:40px; height: 40px; cursor: pointer;
+            z-index: 99; box-sizing: border-box; display: block;
+        }
+        .lst_btn .line{display: block; background-color: white;height: 2px;position: absolute; right: 0.25em;transition: 0.4s;z-index: 99;transform: rotate(0deg);}
+        .lst_btn .item1{width: 30px;top: 0.5em;}
+        .lst_btn .item2{width: 30px;top: 1em;}
+         .lst_btn .item3{width: 30px;top: 1.5em;}
+        .lst_btn:hover .item1{width: 30px;}
+        .lst_btn:hover .item2{width: 20px;}
+         .lst_btn:hover .item3{width: 30px;}
+        
+        .lst_btn.on .item1{width: 30px; transform: rotate(45deg);top: 18px;}
+        .lst_btn.on .item2{width: 30px; transform: rotate(-45deg);top: 18px;}
+         .lst_btn.on .item3{display: none;}
+
+
+         /*footer 영역*/
+        .ft{clear: both; background-color: #222; padding: 3rem 0rem; z-index: 90;}
+          .company{clear: both; width: 90%; margin: 0 auto; padding-top: 1rem; word-break: break-all;}
+        .company li{color: #fff; padding-right: 2rem; }
+        .company li.it1{clear: none;  padding-right: 2rem;}
+        
+        .com_lst{ }
+        .com_lst li{ line-height: 2; font-size: 0.85rem;}
+         
+         .company .it2{
+             cursor: pointer;
+         }
+         .company .it2 li:hover {
+             text-decoration:  underline;
+         }
+         
+         .company .it3{
+             padding: 1.5rem; 
+             cursor: pointer;
+         }
+         .company .it3 li:hover {
+             text-decoration:  underline;
+         }
+        
+        .copyright{clear: both; color: #fff; padding-left: 5%; padding-top: 1em;}
+        
+         
+
