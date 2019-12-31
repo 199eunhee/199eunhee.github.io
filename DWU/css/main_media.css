@@ -405,20 +405,66 @@
 
 
 /*페이지6 역사 부분*/
+    #page6{
+        height: 100%;width: 100%;
+        background-color: lavender;
+    }
  .pageWrap{
-        width: 95%;
+        width: 80%;
 	 height: 100%;
       margin: 0 auto; position: relative;
-	 top: 0%;
+	 top: 5%;
 
     }
 	.page_1{
-	width:100%;
+	width:80%;
 	height: 50%;
-	
-	position: absolute;
+	margin: 0 auto;
+	position: relative;
 	bottom: 0;
 }
+    .pageTitle1 {
+    position: relative;
+	top: 20%;
+    font-size: 1em;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.pageTitle2 {
+	top: 30%;
+    position: relative;
+    font-size: 0.875em;
+    font-size: 0.875rem;
+    color: #fff;
+
+}
+
+    .tem {
+        
+    position: absolute;
+    width:50%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 0px;
+    text-align: center;
+}
+    .tem.cate1{
+        top: 50%;
+        left: 0;
+    }
+    .tem.cate2{
+        top: 50%;
+        right: 0;
+    }
+    .tem.cate3{
+        top: 100%;
+        left: 0;
+    }
+    .tem.cate4{
+        top: 100%;
+        right: 0;
+    }
 	
 	.thum {
     width:100%;
@@ -887,12 +933,14 @@
 
 
     /*페이지6 역사 부분*/
-	#page6 {}
+	#page6 {
+        height: 70%;
+    }
 .pageWrap{
         width: 90%;
 	 height: 50%;
       margin: 0 auto; position: relative;
-	 top: 15%;
+	 top: 20%;
 
     }
 
