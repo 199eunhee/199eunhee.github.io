@@ -85,7 +85,7 @@
      
  /*sns*/
 
-          $('.insta_img').css('width',200*$('.insta_img img').size()+'px');//150*7+px == 총 넓이 1050px
+    /*      $('.insta_img').css('width',200*$('.insta_img img').size()+'px');//150*7+px == 총 넓이 1050px
          
          $('.insta_img img:last').prependTo('.insta_img');
          //A prependTo B : B의 앞에 A를 추가해라
@@ -112,7 +112,7 @@
             $('#next').trigger('click') 
          },1500);
      
-     
+     */
       });
      
             
