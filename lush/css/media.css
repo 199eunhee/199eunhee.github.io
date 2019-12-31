@@ -109,14 +109,14 @@
 }
 
 .subscribe img{
-    width: 200px;
+    width: 150px;
 }
 .subscribe input{
     top: 40%;
     left: 40%;
-    width: 250px;
+    width: 200px;
     height: 50px;
-    font-size: 1rem;
+    font-size:0.875rem;
     
 }
 
