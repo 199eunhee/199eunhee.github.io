@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="title" content="차이 모바일 웹앱">
+    <meta name="keywords" content="차이, CHAI, 모바일 결제, 모바일 페이">
+    <meta name="auther" content="CHAI">
+    <meta name="description" content="매일매일 차이나는 생활, 차이">
+    <meta property="og:type" content="Website"><!--웹 인지 앱인지 정하는 것 -->
+    <meta property="og:title" content="차이 모바일 웹앱"> <!--해당사이트의 제목 -->
+    <meta property="og:url" content="./index.html"> <!--URL링크 -->
+    <meta property="og:description" content="매일매일 차이나는 생활, 차이"> <!--설명, 제목 아래에 설명글-->
+    <meta property="og:img" content="">
+    <title>CHAI</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    
+    <scrip src="js/jquery-1.12.4.min.js"></scrip>
+    <scrip src="js/jquery-ui-1.10.3.custom.min.js"></scrip>
+    <scrip src="js/modernizr.custom.min.js"></scrip>
+    <scrip src="js/main.js"></scrip>
+    <style>
+    
+        #page1{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            clear: both;
+            
+        }
+        
+        .title{
+            width: 60%;
+            position: relative;
+            left: 0;
+            padding-top: 1.5em;
+        }
+        .title p{
+            display: block;
+            font-size: 1.25em;
+            line-height: 2;
+            color: #222;
+        }
+        .title strong{
+            color: #f81420;
+        }
+        
+        
+        #page2{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            clear: both; 
+        }
+        #page2 ul{
+         position: relative;
+           margin-top: 40px;
+           
+        }
+        #page2 ul li{
+            background-color: #eee;
+            border-radius: 10px;
+            line-height:3;
+            display: block;
+            
+        }
+        #page2 ul li a{
+            display: block;
+            font-size: 1em;
+            color: #535353;
+            text-indent: 10px;
+            position: relative;
+        }
+        #page2 ul li a:after{
+            content: url(img/more2.png);
+            display: block; position: absolute; right:10%; top: 0;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        
+        .out{width: 100%; height: 30px; }
+        .out p{
+            font-size: 0.875em;
+            text-align: center;
+            color: #bfbfbf;
+            margin: 30px;
+        }
+        .out p:after{
+            content: url(img/more2.png);
+            margin-left: 15px;
+            width:10px;
+            height: 10px;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+   <div id="wrap">
+      <div class="hd2">
+      <input type="radio" name="radio1" class="ra" id="ra1">
+     <input type="radio" name="radio1" class="ra" id="ra2">
+     <label for="ra1" class="toggle"><img src="img/menu.png" alt=""></label>
+      
+     <nav class="side_menu">
+
+       <ul class="snb">
+ <li ><a href="index.html" >HOME</a></li>
+ <li ><a href="sub1.html">차이혜택</a></li>
+ <li ><a href="sub2.html">결제내역</a></li>
+ <li ><a href="sub3.html" class="on">더보기</a></li>
+ 
+
+</ul>
+   
+   <ul class="sBox">
+   <li class="search" ><input type="text" name="textfield" placeholder="검색어를 입력하세요"><button>검색</button></li>
+   </ul>
+    
+    <ul class="picBox">
+        <li><a href=""><img src="img/ad3.jpg" alt=""></a></li>
+        <li><a href=""><img src="img/ad4.jpg" alt=""></a></li>
+        <li><a href=""><img src="img/ad5.jpg" alt=""></a></li>
+        <li><a href=""><img src="img/ad6.jpg" alt=""></a></li>
+    </ul>
+    <label for="ra2" class="g_close">X</label>
+     
+     </nav>
+     </div>
+  <header id="hd">
+      <ul class="menu">
+ <li ><a href="index.html" >HOME</a></li>
+ <li ><a href="sub1.html">차이혜택</a></li>
+ <li ><a href="sub2.html">결제내역</a></li>
+ <li ><a href="sub3.html" class="on">더보기</a></li>
+
+</ul>
+  </header>
+   <section id="page1">
+       <div class="title">
+         <p>매일매일<br>
+<strong>차이나는 생활을</strong><br>
+경험해보세요</p>
+     </div>
+   </section>
+   
+    <section id="page2">
+     
+      
+        <ul class="d1">
+            <li><a href="#">공지사항</a></li>
+        </ul>
+        <ul class="d2">
+            <li><a href="#">연결계좌</a></li>
+            <li><a href="#">현금영수증</a></li>
+        </ul>
+        <ul class="d3">
+            <li><a href="#">생체인증</a> </li>
+            <li><a href="#">결제비밀번호</a></li>
+        </ul>
+        <ul class="d4">
+            <li><a href="#">약관 및 개인정보 활용</a></li>
+            <li><a href="#">자주 묻는 질문</a></li>
+        </ul>
+        <ul class="d5">
+            <li><a href="#">혜택 및 쿠폰정보 수신동의</a></li>
+        </ul>
+        
+        
+        
+    </section>
+    <div class="out">
+        <p>회원탈퇴</p>
+    </div>
+     </div>
+</body>
+</html>

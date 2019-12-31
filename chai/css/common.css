@@ -1,0 +1,162 @@
+@charset"UTF-8" ;
+
+*{margin: 0;padding: 0;}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Noto Sans KR','Noto Sans', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+a{text-decoration: none;}
+
+button,select,input,label{
+    outline: 0; border: 0;
+    background-color: transparent;
+}
+/*토글, 사이드, 사이드메뉴 광고*/
+#wrap{
+   width: 80%;
+    margin: 0 auto;
+    }
+
+.ra{display: none;}
+#ra1:checked ~ .side_menu{
+    right: 0;
+  
+}
+#ra2:checked ~ .side_menu{
+    right:  -90%;
+}
+.side_menu{
+    position: absolute;
+    top: 0;
+    right: -90%;
+    z-index: 10;
+width: 90%;
+height: 100%;
+    background-color: #eee;
+    transition: 0.5s;
+}
+
+.side_menu .snb{
+    width: 80%;
+    margin: 10px auto;
+}
+.side_menu .snb li{ width: 160px;
+display: block;}
+.side_menu .snb li a {
+  color: #222;
+  display: block;
+    font-weight: 600;
+  text-align: left;
+    font-size: 1em;
+    line-height: 3;
+
+ }
+.side_menu .snb li a:hover{
+    color: #f81420;
+}
+.sBox{
+    width: 90%;
+    margin: 0 auto;
+}
+.search input{
+    margin:20px;
+    width: 200px;
+    height: 40px;
+    line-height: 30px;
+    background-color: #fff;
+}
+.search button{
+    width: 50px;
+    height: 40px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.875em;
+    background-color: #6f6f6f;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.picBox{
+    width: 90%;
+    height:auto;
+    margin: 30px auto;
+}
+.picBox li{
+    width: 50%;
+    float: left;
+}
+.picBox li img{
+    width: 95%;
+    display: block;
+    margin: 5px;
+}
+
+.g_close{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 1.25em;
+    cursor: pointer;
+    text-align: center;
+    color: #f81420;
+    border: 2px solid #f81420;
+    border-radius: 50%;
+}
+
+.toggle{
+    display: block;
+    position: absolute;
+    right: 4%;
+    top: 2%;
+    cursor: pointer;
+    
+}
+.toggle img{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+
+/*원래 헤더*/
+    #hd{
+        width: 100%;
+        height: 65px;
+       
+        position: relative;
+    }
+    .menu{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+ .menu li {
+     width: 23%;
+     float: left;
+  display: inline-block;
+ }
+.menu li a {
+  color: #909090;
+  display: block;
+    font-weight: 600;
+  text-align: center;
+    font-size: 0.875em;
+    line-height: 2;
+    border-bottom: 2px solid #ddd;
+
+ }
+
+.menu li a.on {
+  color: #222;
+  border-bottom: 2px solid #222;
+ }
+    
