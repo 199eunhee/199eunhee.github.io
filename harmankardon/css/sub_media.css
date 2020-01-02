@@ -166,7 +166,7 @@ top: 20%; right: 0;}
 right:35%; top: 30%;opacity: 0;
 }
     #page3{
-        background-color: lavender;
+       /* background-color: lavender;*/
     }
  #page3 img{
     display: block;
@@ -191,6 +191,7 @@ right:35%; top: 30%;opacity: 0;
         font-size: 0.875em;
         width: 95%;
     }
+
     
     /*푸터*/
     
