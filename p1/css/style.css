@@ -1,0 +1,648 @@
+@charset"UTF-8";
+
+body,html{
+    width: 100%;
+    height: 100%;position: relative;
+    overflow-x: hidden;
+   font-family: 'Nanum Gothic','Roboto', sans-serif;
+}
+/*body{
+ overflow-x: hidden;   
+}*/
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+label,button,
+select{border: 0; outline: 0;
+background-color: transparent;}
+.wrap { width: 100%;
+      height: 100%;
+    position: relative;
+        }
+.sidebar{
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+     border-right: 1px solid #eee;
+    
+}
+/*
+.sidebar .mainTitle{
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 5em;
+}
+*/
+
+.typing-txt{display: none;}
+
+.typing{width: 100%; 
+
+height: 20%;
+position: relative;}
+.typing ul{
+    width: 75%;
+    margin: 15px auto;
+    position: relative;
+    top: 20%;
+}
+.typing ul li{
+    line-height: 1.5;
+    color: #333;
+    font-size: 2em;
+    font-weight: bold;
+  display:block;
+}
+.typing ul li:nth-child(2){
+    color: #3c9453;
+}
+.typing ul li:nth-child(3){
+    color: #3c9453;
+}
+
+
+.typing ul li.on {  
+    height: 50px;
+  display: inline-block; 
+  animation-name: cursor; 
+  animation-duration: 0.5s; 
+  animation-iteration-count: infinite; 
+} 
+@keyframes cursor{ 
+  0%{border-right: 1px solid #fff} 
+  50%{border-right: 1px solid #000} 
+  100%{border-right: 1px solid #fff} 
+}
+
+.gnb{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 5%;
+}
+.gnb li{
+    display: block;
+    width: 80%;
+    text-align: center;
+    line-height: 2;
+}
+.gnb li a{
+    display: block;
+    color: #646464;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.gnb li a:hover{
+    color: #222;
+}
+.gnb li a.select{
+    color: #222;
+}
+.profile {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 10%    ;
+  
+}
+.profile img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 10%;
+}
+.profile div{
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+.profile h4{
+    line-height: 1;
+}
+.profile a{
+  font-size: 1.25em;
+    font-weight: bold;
+    color: #333;
+    line-height: 1;
+}
+
+.content{
+    width: 80%;
+    height: 100%;
+  /*  background-color: #ddd;*/
+    padding: 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    clear: both;
+    
+}
+#page1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../img/f1.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100% 100%;
+}
+.mainLogo{
+    display: block;
+    width: 20%;
+    position: absolute;top: 30%;
+    left: 40%;
+}
+
+
+
+#page2{
+    width:90%;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    clear: both;
+     overflow: hidden;
+    background-color: #fff;
+}
+
+.txt0,.txt1,.txt2{
+position: relative;
+    top: 10%;
+   width:70%;
+    margin: 20px auto;
+}
+.self{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 5%; left: -10%;
+}
+
+#page2 .me{
+    float: left;
+    width: 33.3333%;
+    height: 100%;
+    position: relative;   
+}
+
+.name img{
+ display: block;
+    position: absolute;
+    top: 7%;
+    left:8%;
+    width: 50%;
+
+}
+.info{
+   width: 80%;
+    margin: 0px auto;
+    position: relative;
+    top: 20%;
+      
+}
+.info a{
+    color: #333; 
+    font-size: 1em;
+    display: block;
+}
+
+
+/*스킬*/
+
+.sTit{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+    top: 8%;
+}
+.skill_img{
+    width: 40%;
+    height: 100%;
+    margin: 10px auto;
+    display: block;
+}
+.skill>div{  width: 50%; float: left;
+    margin: 30px auto;
+position: relative;
+top: 10%;}
+        .graph_out{width: 170px;height: 20px;background-color: #adadad;position: relative;margin: 20px; left: 10px; border-radius: 10px;}
+        .g_mask{width: 0%;height: 100%;position: absolute;overflow: hidden;}
+        .g_color{width: 170px;height: 20px;background: #3c9453;position: absolute; border-radius: 10px}
+        .txt{width: 30px;height: 20px;color: #fff;position: absolute;left: 10%;line-height: 20px;font-size: 16px;}
+
+#page3{
+    width:100%;
+    
+    height: 100%;
+    clear: both;
+    position: relative;
+    background-color: #eee;
+}
+
+
+.portfolio {
+   width: 100%;
+   height: 100%;
+   margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.controls {
+   color: #333;
+   padding: 1.5%;
+   position: relative;
+}
+
+.por_tit {
+   font-size: 1.5em;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 0.5em;
+   text-align: center;
+}
+
+.btn_box {
+   position: absolute;
+   bottom: 0;
+   left: 40%;
+}
+
+button {
+   font-family: 'Montserrat', sans-serif;
+   background-color: #333;
+   color: #fff;
+   font-size: 14px;
+   display: inline-block;
+   padding: 0.4em;
+   font-weight: 300;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+button:active {
+   background-color: #3c9453;
+}
+
+button:focus {
+   outline: 0;
+}
+
+.container {
+  /* background: #fff;*/
+   width: 95%;
+    margin: 20px auto 0 auto;
+   height: 85%;
+   padding: 0;
+
+   backface-visibility: hidden;
+   box-sizing: border-box;
+   overflow: scroll;
+    clear: both;
+
+
+}
+
+.container:after {
+   content: "";
+   display: inline-block;
+   width: 100%;
+}
+
+.container .mix {
+   width: 31.33333%;
+   height: 357px;
+   display: inline-block;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.container .mix {
+   float: left;
+ 
+   margin: 1%;
+   display: none;
+   border-radius: 12px;
+   position: relative;
+}
+
+.container .mix:nth-child(3n-1) {
+   margin-right: none;
+}
+
+
+.container .mix img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   transform: scale(1);
+   transition: 0.3s;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.mixTit{
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0,0.8);
+   color: #fff;
+   font-size: 15px;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   padding-top: 120px;
+   line-height: 2;
+   opacity: 0;
+   visibility: hidden;
+   transition: 0.5s;
+}
+
+.bigTit{
+   font-size: 1.5em;
+   font-weight: bold;
+}
+.bigCon{
+   margin-top: 10px;
+   width: 80%;
+   margin-left: 10%;
+   overflow: hidden;
+}
+.bigTit:after{
+   content: "";
+   display: block;
+   width: 70%;
+   position: absolute;
+   left: 17%;
+   height: 1px;
+   background-color: #fff;
+}
+.mix:before{
+   content: "";
+   display: block;
+   width: 100%;
+   margin: 0 auto;
+   height: 100%;
+   box-sizing: border-box;
+   border: 12px solid #ccc;
+   z-index: 20;
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform: scale(0);
+   transition: 0.5s;
+}
+.container .mix:hover .mixTit{
+   opacity: 1;
+   visibility: visible;
+}
+.container .mix:hover img {
+   transform: scale(1.1);
+}
+.container .mix:hover:before{
+   transform: scale(1);
+}
+/*위에 숫자*/
+
+.container .mix:after {
+   /*위에 숫자*/
+   content: attr(data-myorder);
+   display: inline-block;
+   font-size: 1.2em;
+   vertical-align: top;
+   font-weight: 700;
+   color: #333;
+   padding: 4% 6%;
+   z-index: 10;
+}
+
+#black {
+   position: fixed;
+   background-color: rgba(0, 0, 0, 0.8);
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: 30;
+}
+#black a{
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   font-size: 2em;
+   top: 16%;
+   right: 25%;
+   transition: 0.3s;
+    color: #fff;
+}
+#black a:hover{
+   color: #3c9453;
+}
+.pop {
+   position: fixed;
+   width: 800px;
+   height: 600px;
+   top: calc(50% - 300px);
+   left: calc(50% - 400px);
+   background-color: #fff;
+   border-radius: 12px;
+   overflow: hidden;
+   z-index: 50;
+}
+.pop_scroll{
+   width: 100%;
+   padding: 30px 50px 50px 50px;
+   box-sizing: border-box;
+   height: 100%;
+
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+.pop_tit{
+   font-size: 22px;
+   text-align: center;
+}
+.pop_tit:after{
+   content: "";
+   display: block;
+   width: 100%;
+   height: 1px;
+   background-color: #333;
+   margin-top: 5px;
+   margin-bottom: 15px;
+}
+
+.popTit{
+   color: #333;
+}
+.address{
+   color: #333;
+   text-align: left;
+   display: block;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   font-size: 18px;
+   text-decoration: underline;
+}
+.pop_content{
+   width: 100%;
+   height: auto;
+   margin-top: 20px;
+}
+.pop_con{
+   width: 100%;
+   line-height:1.8;
+}
+.iconL{
+   width: 20%;
+}
+.iconL i{
+   color: #e58036;
+   margin-right: 5px;
+   font-size: 16px;
+}
+.pop_con td{
+   font-size: 14px;
+   
+}
+.pop_con td a{font-size: 14px; line-height: 1;}
+
+.pop_img{
+   width: 100%;
+    height: 100%;
+   margin: 20px auto;
+   text-align: center;
+}
+.pop_img img{
+    width: 100%;
+    height: 100%;
+   display: block;
+   margin: 0 auto;
+   border: 1px solid #eee;
+}
+
+#page4{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100% 100%;
+    background-image: url(../img/bg4.jpg);
+    position: relative;
+    clear: both;
+    
+}
+.conBox{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 15%;
+    font-family: 'Noto Sans KR','Roboto', sans-serif;
+   
+    opacity: 1;
+}
+
+.conBox img{
+   margin: 0 auto;
+    display: block;
+   
+}
+.conBox h2{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5em;
+    
+    margin-top: 5em;
+}
+.conBox a{
+    font-family:'Roboto', sans-serif;
+    color: #333;
+    display: block;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+  
+}
+.conBox span{
+    color: #333;
+    display: block;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 3;
+}
+.conBox p{
+     color: #333;
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.125em;
+  
+    margin-top: 2em;
+   
+}
+
+.sendmail{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    clear: both;
+}
+.sendmail ul{
+    width: 40%;
+    margin:0 auto;
+    
+}
+.sendmail li{
+    width: 50%;
+    display: block;
+    position: relative;
+    margin-left: 50px;
+    float: left;
+}
+.sendmail li a{
+    font-size: 1em;
+    display: block;
+    position: absolute;
+    right: 0px;
+    margin: 0;
+    top: 5px;
+    font-weight: 500;
+text-decoration: underline;
+    cursor: pointer;
+   
+}
+.sendmail li img{
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 30px;
+    left: 80px;
+   
+}
+
+.copy{
+   display: block;
+    position: absolute;
+   bottom: 25%;
+    color: #333;
+    right: 34%;
+    font-size: 0.875em;
+    line-height: 1.5;
+}

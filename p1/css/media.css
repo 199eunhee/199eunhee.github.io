@@ -1,0 +1,132 @@
+@media screen and (min-width: 1281px) and (max-width : 1919px){
+/*고해상도 태블릿*/
+    /* 사이드 바*/
+    .typing ul{
+        width: 90%;
+        
+    }
+    .typing ul li{
+    line-height: 1.5;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+  display:block;
+}
+    
+    .profile a{
+  font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    line-height: 1;
+}
+    
+    /*스킬*/
+    .skill_img{
+    width: 60%;
+    height: 100%;
+    margin: 10px auto;
+    display: block;
+}
+    .skill>div{  width: 50%; float: left;
+    margin: 30px auto;
+position: relative;
+top: 10%;}
+    .graph_out{
+        width: 130px; left: 0; 
+    }
+    
+    /*포트폴리오*/
+    
+
+.controls {
+   color: #333;
+   padding: 1%;
+   position: relative;
+}
+
+.por_tit {
+   font-size: 1.5em;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 0.5em;
+   text-align: center;
+}
+
+.btn_box {
+   position: absolute;
+   bottom: -20%;
+   left: 37%;
+}
+
+
+  
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1280px){
+    /*저해상도 태블릿*/
+    .sidebar{
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+    left: 0;
+     border-bottom: 1px solid #eee;
+    
+}
+    .typing ul{
+    width: 50%;
+    margin: 0;
+    position: relative;
+    top: 35%;
+}
+    .typing ul li{
+    line-height: 1.5;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+  display:block;
+}
+    .gnb li{
+    display: block;
+    width: 130px;
+        float: left;
+    text-align: center;
+    line-height: 2;
+}
+
+    .gnb li a{
+    display: block;
+    color: #646464;
+    font-size: 1em;
+    font-weight: 600;
+}
+    .gnb{
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+        right: 0;
+    top: 25%;
+}
+    
+    
+    .content{
+    width:100%;
+    height: 100%;
+  /*  background-color: #ddd;*/
+    padding: 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    clear: both;
+    
+}
+    
+    
+}
+
+@media screen and (max-width:767px){
+    /*모바일 사이즈*/
+}
