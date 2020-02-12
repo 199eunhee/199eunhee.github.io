@@ -63,8 +63,8 @@
                $(".gnb li a.menu4").addClass("select");
             }
          }); 
-
 */
+
 
    //소개 타이핑
      var typingBool = false; 
