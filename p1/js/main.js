@@ -154,6 +154,29 @@ function typing(){
             pop_close($(this).index());
             return false;
          });
+	 
+	  var intv = setInterval(function() { nextAni(); }, 2800);
+    function nextAni() {
+        $(".banFrame").not(":animated").animate({"margin-left":"-100%"}, 800, function(){
+            $(".banFrame li").eq(0).appendTo($(".banFrame"));
+            $(".banFrame").css("margin-left", "0%");
+        });
+    }
+    function prevAni(){
+        $(".banFrame li").eq(2).prependTo($(".banFrame"));
+        $(".banFrame").css("margin-left", "-100%");
+        $(".banFrame").not(":animated").animate({"margin-left":"0%"}, 800);
+    }
+    $(".nextBtn").click(function(){
+        clearInterval(intv);
+        nextAni();
+        intv = setInterval(function() { nextAni(); }, 2800);
+    });
+    $(".prevBtn").click(function(){
+        clearInterval(intv);
+        prevAni();
+        intv = setInterval(function() { nextAni(); }, 2800);
+    });
  
      
       

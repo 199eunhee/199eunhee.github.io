@@ -279,7 +279,7 @@ top: 10%;}
 .btn_box {
    position: absolute;
    bottom: 0;
-   left: 40%;
+   left: 42%;
 }
 
 button {
@@ -534,8 +534,51 @@ button:focus {
    margin: 0 auto;
    border: 1px solid #eee;
 }
-
 #page4{
+	width:100%;
+    height: 100%;
+    clear: both;
+    position: relative;
+    background-color: #eee;
+	overflow: hidden;
+}
+#page4 p{
+	font-size: 1em;
+   font-weight: 600;
+   color: #333;
+  
+   text-align: center;
+}
+.ban_tit{
+	font-size: 1.5em;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 0.5em;
+   text-align: center;
+}
+.slide{
+	width: 90%; height: 60%; position: relative; top: 10%;
+left: 8%;
+}
+.banFrame { width:300%; height: 100%; overflow: hidden; }
+.banFrame li { float:left; width: 33.3333%; margin: 0 auto; }
+.banFrame li img{
+	height: 100%;
+	position: relative; left: 20%;
+	display: block;
+}
+.btnFrame { position:absolute; top:44%; z-index:90; width:100%; }
+
+.btnFrame li { width: 40px; height:40px; }
+.banBtn{
+	width: 40px; height:40px;
+	background: #000; border-radius: 30px;
+	opacity: 0.6;
+}
+.btnFrame .left { float: left; margin-left: 40px; }
+.btnFrame .right { float: right; margin-right: 100px; }
+
+#page5{
     width: 100%;
    height: 100vh;
     overflow: hidden;
